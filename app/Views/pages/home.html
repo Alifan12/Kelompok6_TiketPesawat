@@ -14,10 +14,12 @@
 </head>
 <body>
     <style>
-        * {
+* {
   font-family: sans-serif;
 }
-
+body{
+  background: #E8F0FF;
+}
 .logo {
   width: 40px;
   margin: 4px 14px;
@@ -95,6 +97,7 @@ div .main {
 .intro {
   margin-top: 5px;
   background-image: url("gambar/pesawatt.jpg");
+  background-size: cover;
   height: 300px;
   background-repeat: no-repeat;
   background-position: center;
@@ -112,6 +115,8 @@ p {
 
 .content-top img {
   width: 12px;
+  
+
 }
 
 .content-top {
@@ -121,6 +126,7 @@ p {
   margin-left: 142px;
   border: 1px solid black;
   border-radius: 2px;
+  
 }
 
 .main-content {
@@ -136,6 +142,8 @@ p {
   text-align: center;
   margin-left: 142px;
   margin-right: 142px;
+  background: #d9e3f8e9 ;
+
 }
 
 .sub-menu {
@@ -149,6 +157,7 @@ p {
   display: inline-block;
   opacity: 0.8;
   border-radius: 4px;
+  background: #B5CEFF;
 }
 
     </style>
@@ -158,7 +167,7 @@ p {
         <ul>
             
             <li>
-                <a href="#"><button>Login</button></a>
+                <a href="login.html"><button>Sign In</button></a>
             </li>
             <li>
                 <a href="#"> <button>Register</button></a>
@@ -181,6 +190,8 @@ p {
   </div>
   <div class="main-content">
     <div class="menu">
+      <img src="gambar/pesan.png" width="120">
+      <img src="gambar/pesanansaya.png" width="80">
       <button class="sub-menu">Pesan Tiket</button>
       <button class="sub-menu">Pesanan Saya</button>
     </div>
