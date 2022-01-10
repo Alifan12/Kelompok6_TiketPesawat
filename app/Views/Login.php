@@ -28,6 +28,11 @@
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
+                <p>
+                    Belum punya akun? Buat disini
+                    <a href="/RegisterController"></a>
+
+                </p>
             </div>
              <div id="pwOut"></div>
         </div>

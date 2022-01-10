@@ -176,7 +176,7 @@
     <div class="navbar-right">
       <ul>
         <li>
-          <a href="login.html"><button>Sign In</button></a>
+          <a href="/LoginController/"><button>Sign In</button></a>
         </li>
       </ul>
     </div>
