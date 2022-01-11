@@ -124,13 +124,13 @@
                     <div class="txtfilled">
                         <input type="text" name="username" required class="form-control" id="username" value="<?= set_value('username') ?>">
                         <label for="username" class="form-label">
-                        <img src="gambar\login\arroba.png" width="30px">
+                        <img src="https://cdn-icons.flaticon.com/png/512/3059/premium/3059410.png?token=exp=1641867303~hmac=0da84edc66346c197b4a04d6e996546e" width="30px">
                         Username</label>
                     </div>
                     <div class="txtfilled">
                         <input type="password" required name="password" class="form-control" id="password">
                         <label for="password" class="form-label">
-                        <img src="public\gambar\login\padlock.png" width="30px">Password</label>
+                        <img src="https://cdn-icons.flaticon.com/png/512/2889/premium/2889676.png?token=exp=1641867336~hmac=117d80ef21226d6b5f1d3187143a5a21" width="30px">Password</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
