@@ -13,20 +13,54 @@
 
 </head>
 <body>
+<style>
+  .intro {
+      margin-top: 5px;
+      background-image: url("/gambar/pesawat2.jpg");
+      background-size: cover;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .intro img{
+      margin-top: 5px;
+      width: 900px;
+      background-size: cover;
+      height: 300px;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    .menu img:first-child{
+      position: relative;
+      height: 125px;
+      width: 115px;
+      left: 525px;
+      bottom: 50px;
+    }
+    .gambar2{
+      position: relative;
+      height: 125px;
+      width: 115px;
+      left: 720px;
+      bottom: 52px;
+    }
+</style>
+
 <nav class="navbar">
     <div class="navbar-left"><div class="logo"></div></div>
 
     <div class="navbar-right">
-        <?php $i=1;?>
-        <?php  foreach($account as $a): ?>
-        <?php $username; ?>
-        <?php endforeach; ?>
+      <div class="profile">
+        <h3>Selamat Datang</h3>
+      </div>
+        
         
     </div>
 </nav>
 <div class="main">
-  <div class="intro">
+  <div class="intro"> 
     <br>
+    <p>Selamat Datang <?= session()->get('username') ?></p>
 
     <div class="text-intro">
       <h2>SWINGS.com</h2>
@@ -35,10 +69,13 @@
     </div>
   </div>
   <div class="content-top">
-    <img src="plane.png"><span> Tiket Pesawat </span>
+    <img src="/gambar/plane.png"><span> Tiket Pesawat </span>
   </div>
   <div class="main-content">
     <div class="menu">
+      <img src="/gambar/booking.png" width="120">
+      <img class="gambar2" src="/gambar/clipboard.png" width="120">
+        
       <button class="sub-menu">Pesan Tiket</button>
       <button class="sub-menu">Pesanan Saya</button>
     </div>
