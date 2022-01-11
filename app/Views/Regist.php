@@ -154,7 +154,7 @@
                   <button type="submit" class="button">Register</button>
                   <br></br>
                   <div class="ketentuan">
-                      <small>Dengan mendaftar kamu menyetujui</small>
+                      <small>Dengan mendaftar kamu menyetujui</small><br>
                       <small >Kebijakan Privasi dan Ketentuan & Syarat kami.</small>
                       <br></br>
                       <br></br>
