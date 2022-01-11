@@ -9,7 +9,19 @@
 </head>
 
 <body>
+  <nav class="navbar">
+    <div class="navbar-left">
+      <div class="logo"></div>
+    </div>
 
+    <div class="navbar-right">
+      <?php $i = 1; ?>
+      <?php foreach ($account as $a) : ?>
+      <?php $username; ?>
+      <?php endforeach; ?>
+
+    </div>
+  </nav>
 </body>
 
 </html>
