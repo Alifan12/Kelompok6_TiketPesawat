@@ -108,7 +108,7 @@
     margin-left: 30px;
     margin-top: 30px;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 30px;
     letter-spacing: 1px;
     color: #091E44;
   }
