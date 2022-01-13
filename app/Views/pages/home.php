@@ -107,7 +107,7 @@
       margin-top: 5px;
       background-image: url("gambar/pesawatt.jpg");
       background-size: cover;
-      height: 300px;
+      height: 400px;
       background-repeat: no-repeat;
       background-position: center;
     }

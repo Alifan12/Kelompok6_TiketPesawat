@@ -114,10 +114,9 @@
             box-sizing: border-box;
         }
 
-        form .txtfilled {
+        .txtfilled {
             position: relative;
             margin: 30px 0;
-            
             justify-content: space-around;
         }
 
@@ -204,6 +203,9 @@
         .Register a:hover {
             text-decoration: underline;
         }
+        .option{
+            background-image: url('/gambar/Cari/cabin.png');
+        }
     </style>
 </head>
 
@@ -226,18 +228,19 @@
         <form method="post">
             <div class="txtfield">
                 <label for="departure">
-                    <img src="gambar/Cari/departures.png" width="30px">Departures</label>
+                    <img src="/gambar/Cari/departures.png" width="30px">Departures</label>
                 <select name="departure" id="departure">
                     <option></option>
                 </select>
                 <label for="arrival">
-                    <img src="gambar/Cari/arrivals.png" width="30px">Arrivals</label>
+                    <img src="/gambar/Cari/arrivals.png" width="30px">Arrivals</label>
                 <select name="arrival" id="arrival">
                     <option></option>
                 </select>
             </div>
+            <span></span>
+            <br>
             <div class="tanggalberangkat">
-                
                 <label for="date">Berangkat</label>
                 <input type="date" name="tanggalberangkat">
             </div>
@@ -251,20 +254,12 @@
                 <input type="number" name="Dewasa" id="Dewasa">
             </div>
             <div class="kabin">
-                <label for="kelaskabin">
-                    <img src="gambar/Cari/cabin.png" width="30px">Kelas Kabin</label>
-                <select name="kelaskabin">
-                    <option></option>
+                <label for="kelaskabin"></label>
+                <select name="kelaskabin" padding="10px">
+                    <option value="none" data-subtittle="pilihan 4" data-left="/gambar/Cari/arrivals.png" data-right="1" selected ></option>
                 </select>
-            </div>
-    
-            <div class="cari">
-                <label for="Cari">
-                    <img src="gambar/Cari/search.png" width="30px">
-                    cari
-                </label>
-                <input type="submit" value=" ">
-            </div>
+            
+            <input type="submit" value="Cari">
         </form>
 
     </div>
