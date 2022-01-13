@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="DetailPemesanPenumpang.css">
   <title>SWINGS.com</title>
   <style>
+  * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
   .navbar-menu {
     width: auto;
     height: 200px;
@@ -117,16 +122,21 @@
     margin: 20px 30px;
   }
 
-  .row-1 {
+  .row-1,
+  .row-2,
+  .row-3 {
     overflow: hidden;
+    margin-bottom: 30px;
   }
 
-  .row-1 .sub1-row1 {
+  .row-1 .sub1-row1,
+  .row-3 .sub1-row3 {
     width: 30%;
     float: left;
   }
 
-  .row-1 .sub2-row1 {
+  .row-1 .sub2-row1,
+  .row-3 .sub2-row3 {
     width: 60%;
     float: right;
   }
@@ -135,21 +145,35 @@
     width: 100%;
     height: 50px;
     font-size: 20px;
+    border: 1px solid rgba(9, 30, 68, 0.5);
+    border-radius: 2px;
   }
 
-  .row-1 input {
+  .row-1 input,
+  .row-2 input,
+  .row-3 input {
     width: 100%;
     height: 50px;
     font-size: 20px;
+    border: 1px solid rgba(9, 30, 68, 0.5);
+    border-radius: 2px;
   }
 
-  .sub2-row1 p {
+  .sub2-row1 p,
+  .sub-row2 p {
     margin: 0;
     font-size: 15px;
     color: rgba(9, 30, 68, 0.5);
   }
 
-  .row-1 label {
+  .row-2 .sub-row2 {
+    width: 100%;
+    float: left;
+  }
+
+  .row-1 label,
+  .row-2 label,
+  .row-3 label {
     display: block;
     color: rgba(9, 30, 68, 0.5);
   }
@@ -205,6 +229,26 @@
             <p>Isi sesuai KTP/Paspor/SIM (tanpa tanda baca dan gelar)</p>
           </div>
 
+        </div>
+
+        <div class="row-2">
+          <div class="sub-row2">
+            <label for="Email">Alamat Email</label>
+            <input type="email">
+            <p>E-ticket akan dikirim ke alamat email ini</p>
+          </div>
+        </div>
+
+        <div class="row-3">
+          <div class="sub1-row3">
+            <label for="kodeNegara">Kode Negara</label>
+            <input type="text">
+          </div>
+
+          <div class="sub2-row3">
+            <label for="noTelepon">No Telepon</label>
+            <input type="text">
+          </div>
         </div>
 
       </form>
