@@ -124,13 +124,13 @@
                     <div class="txtfilled">
                         <input type="text" name="username" required class="form-control" id="username" value="<?= set_value('username') ?>">
                         <label for="username" class="form-label">
-                        <img src="/gambar/arroba.png" width="30px">
+                        <img src="/gambar/login/arroba.png" width="30px">
                         Username</label>
                     </div>
                     <div class="txtfilled">
                         <input type="password" required name="password" class="form-control" id="password">
                         <label for="password" class="form-label">
-                        <img src="/gambar/padlock/png" width="30px">Password</label>
+                        <img src="/gambar/login/padlock.png" width="30px">Password</label>
                     </div>
                     <button type="submit" class="btn btn-primary">Login</button>
                 </form>
