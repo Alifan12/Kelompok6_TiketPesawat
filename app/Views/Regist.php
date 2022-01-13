@@ -13,17 +13,18 @@
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             background-color: #E8F0FF;
             height: 100vh;
-            overflow: hidden;
+            overflow: visible;
         }
         .center{
             position: absolute;
-            top: 50%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%,-50%);
             width: 600px;
             background: white;
             border: 1pt solid black;
             border-radius: 1px;
+            
         }
         .center h1{
             text-align: center;

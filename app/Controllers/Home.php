@@ -10,6 +10,6 @@ class Home extends BaseController
     }
     public function cari()
     {
-        return view('pages/caritiket.html');
+        return view('pages/caritiket.php');
     }
 }
