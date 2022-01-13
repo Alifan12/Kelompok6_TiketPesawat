@@ -18,7 +18,7 @@ class LoginController extends Controller
         $username=$this->request->getVar('username');
         $password=$this->request->getVar('password');
         $data=$model->where('username',$username)->first();
-
+        
         if($data){
             $data_pw=$model->where('password',$password);
             $pw=$data['password'];
@@ -27,6 +27,8 @@ class LoginController extends Controller
             if($data_pw){
                 $session_data=[
                     'id'          =>$data['id'],
+                    'nama_depan'  =>$data['nama_depan'],
+                    'nama_belakang' =>$data['nama_belakang'],
                     'username'    =>$data['username'],
                     'email'       =>$data['email'],
                     'logged_in'   =>TRUE

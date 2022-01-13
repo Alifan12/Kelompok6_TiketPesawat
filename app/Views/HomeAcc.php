@@ -44,6 +44,11 @@
       left: 720px;
       bottom: 52px;
     }
+    .profile{
+      position: relative;
+      right: 150px;
+      width: 350px;
+    }
 </style>
 
 <nav class="navbar">
@@ -51,7 +56,7 @@
 
     <div class="navbar-right">
       <div class="profile">
-        <h3>Selamat Datang</h3>
+        <h4>Selamat Datang <?= $nama_lengkap?></h4>
       </div>
         
         
@@ -60,10 +65,10 @@
 <div class="main">
   <div class="intro"> 
     <br>
-    <p>Selamat Datang <?= session()->get('username') ?></p>
+    
 
     <div class="text-intro">
-      <h2>SWINGS.com</h2>
+      <h2>SWINGS.com</h2> 
       <p>Pesan tiket pesawat tanpa antre, harga murah dan proses sangat mudah</p>
       <p>Ayo pesan tiket perjalanan kamu sekarang!</p>
     </div>
