@@ -73,11 +73,85 @@
     border-bottom-color: dimgray;
   }
 
+  .detail {
+    max-width: 100%;
+    margin: 20px 100px;
+    overflow: hidden;
+  }
+
   .detail-penerbangan {
+    width: 40%;
+    height: 500px;
+    float: right;
+    background-color: white;
+    border-radius: 5px;
+  }
+
+  .detail-pemesan {
+    width: 59%;
+    height: 400px;
+    float: left;
+    background-color: white;
+    border-radius: 5px
+  }
+
+  .detail-penumpang {
+    width: 59%;
+    height: 400px;
+    float: left;
     margin-top: 20px;
-    width: 50%;
-    height: 100px;
-    background-color: #FFFFFF;
+    background-color: white;
+    border-radius: 5px
+  }
+
+  .logo-detail {
+    margin-left: 30px;
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #091E44;
+  }
+
+  form {
+    margin: 20px 30px;
+  }
+
+  .row-1 {
+    overflow: hidden;
+  }
+
+  .row-1 .sub1-row1 {
+    width: 30%;
+    float: left;
+  }
+
+  .row-1 .sub2-row1 {
+    width: 60%;
+    float: right;
+  }
+
+  .row-1 select {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .row-1 input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+  }
+
+  .sub2-row1 p {
+    margin: 0;
+    font-size: 15px;
+    color: rgba(9, 30, 68, 0.5);
+  }
+
+  .row-1 label {
+    display: block;
+    color: rgba(9, 30, 68, 0.5);
   }
   </style>
 </head>
@@ -108,13 +182,44 @@
   </nav>
   <div class="detail">
     <div class="detail-pemesan">
+      <div class="logo-detail">
+        <img src="contacts.png" width="21px">
+        <span>Detail Pemesan</span>
+      </div>
 
-    </div>
-    <div class="detail-pemenang">
+      <form action="">
+        <div class="row-1">
+          <div class="sub1-row1">
+            <label for="titel">Titel</label>
+            <select name="titel" id="titel">
+              <option value=""></option>
+              <option value="Tuan">Tuan</option>
+              <option value="Nona">Nona</option>
+              <option value="Nyonya">Nyonya</option>
+            </select>
+          </div>
+
+          <div class="sub2-row1">
+            <label for="namaLengkap">Nama Lengkap</label>
+            <input type="text">
+            <p>Isi sesuai KTP/Paspor/SIM (tanpa tanda baca dan gelar)</p>
+          </div>
+
+        </div>
+
+      </form>
 
     </div>
     <div class="detail-penerbangan">
-
+      <div class="logo-detail">
+        Penerbangan
+      </div>
+    </div>
+    <div class="detail-penumpang">
+      <div class="logo-detail">
+        <img src="user_1.png" width="25px">
+        <span>Detail Penumpang</span>
+      </div>
     </div>
   </div>
 </body>
