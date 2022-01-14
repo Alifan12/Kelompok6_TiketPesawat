@@ -228,7 +228,6 @@
             <input type="text">
             <p>Isi sesuai KTP/Paspor/SIM (tanpa tanda baca dan gelar)</p>
           </div>
-
         </div>
 
         <div class="row-2">
@@ -252,18 +251,61 @@
         </div>
 
       </form>
-
     </div>
+
     <div class="detail-penerbangan">
       <div class="logo-detail">
         Penerbangan
       </div>
     </div>
+
     <div class="detail-penumpang">
       <div class="logo-detail">
         <img src="user_1.png" width="25px">
         <span>Detail Penumpang</span>
       </div>
+
+      <form action="">
+
+        <div class="row-1">
+          <div class="sub1-row1">
+            <label for="titel">Titel</label>
+            <select name="titel" id="titel">
+              <option value=""></option>
+              <option value="Tuan">Tuan</option>
+              <option value="Nona">Nona</option>
+              <option value="Nyonya">Nyonya</option>
+            </select>
+          </div>
+
+          <div class="sub2-row1">
+            <label for="namaLengkap">Nama Lengkap</label>
+            <input type="text">
+            <p>Isi sesuai KTP/Paspor/SIM (tanpa tanda baca dan gelar)</p>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="sub-row2">
+            <label for="Email">Alamat Email</label>
+            <input type="email">
+            <p>E-ticket akan dikirim ke alamat email ini</p>
+          </div>
+        </div>
+
+        <div class="row-3">
+          <div class="sub1-row3">
+            <label for="kodeNegara">Kode Negara</label>
+            <input type="text">
+          </div>
+
+          <div class="sub2-row3">
+            <label for="noTelepon">No Telepon</label>
+            <input type="text">
+          </div>
+        </div>
+
+      </form>
     </div>
   </div>
 </body>
