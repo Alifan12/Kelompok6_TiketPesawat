@@ -2,16 +2,24 @@
 
 namespace App\Controllers;
 
-use App\Controllers\PilihmModel;
+use App\Models\Peraktikum5Model;
 
 class Pilihm extends BaseController
 {
+    protected $data_pesawatModelModel;
+    public function __construct()
+    {
+        $this->data_pesawatModelModel = new Data_pesawatModelModel();
+    }
     public function index()
     {
-        $pilihmModel = new PilihmModel(
-          $pilihm = $pilihmModel ->findAll();
-            dd($pilihm);
-        )
-        return view('Pilihm.php');
+        $ = $this->data_pesawatModelModel->findAll();
+
+        $data = [
+            'title' => 'pilih maskpai',
+            'data_pesawat' => $data_pesawat
+        ];
+
+        return view('Pilihm', $data);
     }
 }

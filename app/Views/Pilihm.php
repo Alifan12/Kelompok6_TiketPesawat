@@ -11,39 +11,41 @@
   <title>SWINGS.com</title>
 
 </head>
+<?= $this->section('content'); ?>
+<div class="container">
+  <div class="raw">
+    <div class="col">
 
-<body>
-  <h1>Daftar Maskapai</h1>
-  <table class="table">
-    <thead>
-      <tr>
-        <th scope="col"> id </th>
-        <th scope="col"> nama </th>
-        <th scope="col"> gambar </th>
-        <th scope="col"> asal </th>
-        <th scope="col"> jam keberangkatan </th>
-        <th scope="col"> waktu </th>
-        <th scope="col"> jam tiba </th>
-        <th scope="col"> harga </th>
-        <th scope="col"> aksi </th>
-      </tr>
-    </thead>
-    <tbody>
-      <form action="">
-        <tr>
-          <th scope="row">1 </th>
-          <td>citilink</td>
-          <td>gambar dulu</td>
-          <td>cgk</td>
-          <td>04:30</td>
-          <td>1j 30m</td>
-          <td>06:00</td>
-          <td>833.400</td>
-          <td><button>pilih</button></td>
-        </tr>
-      </form>
-    </tbody>
-  </table>
-</body>
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">Device_name</th>
+            <th scope="col">Device_brand</th>
+            <th scope="col">Device_quantity</th>
+            <th scope="col">Device_satus</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php $i = 1; ?>
+          <?php foreach ($peraktikum5 as $k) : ?>
+            <tr>
+              <th scope="row"><?= $i++; ?></th>
+              <td><?= $k['Device_name']; ?></td>
+              <td><?= $k['Device_brand']; ?></td>
+              <td><?= $k['Device_quantity']; ?></td>
+              <td><?= $k['Device_satus']; ?></td>
+              <td>
+                <a href="" class="btn btn-success">Detail</a>
+              </td>
+            </tr>
+          <?php endforeach; ?>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>
 
 </html>
