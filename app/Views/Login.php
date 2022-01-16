@@ -111,18 +111,28 @@
         .Register a:hover{
             text-decoration: underline;
         }
+        
+        
     </style>
   </head>
  
   <body>
       <div class="center">
+          <div class="kembali">
+              <a href="/Home"><= Kembali</a>
+          </div>
             <h1>Sign In</h1>
                 <?php if(session()->getFlashdata('msg')):?>
-                    <div class="alert alert-danger"><?= session()->getFlashdata('msg') ?></div>
+                    <div class="alert">
+                      <div class="tag">
+                          <?= session()->getFlashdata('msg') ?>
+
+                      </div>
+                    </div>
                 <?php endif;?>
                 <form action="/loginController/auth" method="post">
                     <div class="txtfilled">
-                        <input type="text" name="username" required class="form-control" id="username" value="<?= set_value('username') ?>">
+                        <input type="text" name="username" required class="form-control" id="username">
                         <label for="username" class="form-label">
                         <img src="/gambar/login/arroba.png" width="30px">
                         Username</label>

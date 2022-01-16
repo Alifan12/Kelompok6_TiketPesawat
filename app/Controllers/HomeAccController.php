@@ -22,4 +22,7 @@ class HomeAccController extends Controller{
         ];
         return view('/HomeAcc.php',$data);
     }
+    public function profile(){
+        return view('/profile.php');
+    }
 }

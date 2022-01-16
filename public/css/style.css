@@ -84,8 +84,9 @@
       color: #444;
     }
 
-    div .main {
+    .main {
       width: auto;
+      height: 100px;
     }
 
     
@@ -119,12 +120,19 @@
     .main-content {
       width: auto;
       margin: 0 auto;
-      height: 900px;
+      height: 450px;
+    }
+    .kembali a{
+      text-decoration: none;
+      display: block;
+      margin-top: 10px;
+      margin-left: 5px;
+      color: rgb(224, 73, 35);
     }
 
     .menu {
       position: absolute;
-      width: 1400px;
+      width: 1250px;
       height: 360px;
       left: 150px;
       top: 415px;
@@ -140,7 +148,7 @@
     .sub-menu {
 
         position: relative;
-        left: 200px;
+        left: 100px;
       width: 180px;
       height: 80px;
       margin-bottom: 50px;
@@ -155,5 +163,22 @@
     }
     .profile{
         color: #fff;
+    }
+
+    .alert{
+      margin-left: 30px;
+      background-color: rgb(192, 65, 56);
+      height: 60px;
+      width: 350px;
+      color: white;
+      box-sizing: border-box;
+      border: 0px solid black;
+      border-radius: 10px;
+      align-items: center;
+    }
+    .tag{
+      position: relative;
+      top: 20px;
+      margin-left: 10px;
     }
  

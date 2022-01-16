@@ -19,8 +19,8 @@ class RegisterController extends Controller{
             'username'      => 'required|min_length[4]|max_length[20]',
             'password'      => 'required|min_length[4]|max_length[20]',
             
-            'email'         => 'required|min_length[4]|max_length[25]|valid_email|is_unique[account.email]',
-            'password'      => 'required|min_length[4]|max_length[20]',
+            'email'         => 'required|min_length[4]|max_length[25]',
+            'password'      => 'required|min_length[4]|max_length[70]',
             'confpassword'  => 'matches[password]',
             'no_telepon'    => 'required|min_length[3]|max_length[15]'
             
@@ -32,11 +32,11 @@ class RegisterController extends Controller{
                 'nama_belakang'   => $this->request->getVar('Bname'),
                 'email'           =>$this->request->getVar('email'),
                 'username'        =>$this->request->getVar('username'),
-                'password'        =>$this->request->getVar('password'),
+                'password'        =>password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
 
                 'no_telepon'      => $this->request->getVar('no_telepon')
             ];
-            $model->save($data);
+            $model->insert($data);
             return redirect()->to('/LoginController');
         }
         else{

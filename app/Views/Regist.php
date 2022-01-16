@@ -12,12 +12,12 @@
             padding: 0;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             background-color: #E8F0FF;
-            height: 100vh;
-            overflow: hidden;
+            height: 1000px;
+            overflow: auto;
         }
         .center{
             position: absolute;
-            top: 50%;
+            top: 70%;
             left: 50%;
             transform: translate(-50%,-50%);
             width: 600px;
@@ -103,8 +103,9 @@
             text-align: center;
         }
         small{
-            color: #a6a6a6;
-            font-family:Italic;
+            color: black;
+            font-weight: 500;
+            font-family:arial;
             font-size: 9pt;
         }
         </style>
@@ -114,36 +115,36 @@
               <h1>Register</h1>
               <form action="/RegisterController/save" method="post">
                   <div class="txtfilled">
-                      <input type="text" required name="Fname" class="input-data" id="InputFname" value="<?= set_value('Fname') ?>">
+                      <input type="text" required name="Fname" class="input-data" id="InputFname">
                       <label for="InputFname" class="label-data">Masukkan nama depan: </label>
                   </div>
                   <div class="txtfilled">
-                      <input type="text" name="Bname" required  class="input-data" id="InputBname" value="<?= set_value('Bname') ?>">
+                      <input type="text" name="Bname" required  class="input-data" id="InputBname">
                       <label for="InputBname" class="label-data">Masukkan nama belakang: </label>
                       <small>Jika tidak ada, isi dengan nama depan</small>
                   </div>
                   <div class="txtfilled">
-                      <input type="email" name="email" required class="input-data" id="InputEmail" value="<?= set_value('email') ?>">
+                      <input type="email" name="email" required class="input-data" id="email">
                       <label for="InputEmail" class="label-data">Masukkan Email: </label>
                       
                   </div>
                   <div class="txtfilled">
-                      <input type="text" name="username" required class="input-data" id="username" value="<?= set_value('username') ?>">
+                      <input type="text" name="username" required class="input-data" id="username">
                       <label for="InputUsername"  class="label-data">Username: </label>
                       
                   </div>
                   <div class="txtfilled">
-                      <input type="password" required name="password" class="input-data" id="InputPassword" >
+                      <input type="password" required name="password" class="input-data" id="password" >
                       <label for="InputPassword"  class="label-data">Masukkan password: </label>
                       <small>Minimal 8 karakter</small>
                   </div>
                   <div class="txtfilled">
-                      <input type="password" required name="confpassword" class="input-data" id="Inputconfpassword">
+                      <input type="password" required name="confpassword" class="input-data" id="confpassword">
                       <label for="Inputconfpassword" class="label-data">Konfirmasi password: </label>
                       
                   </div>
                   <div class="txtfilled" >
-                      <input type="number" required name="no_telepon" class="input-data" id="no_telepon" value="<?= set_value('no_telepon') ?>">
+                      <input type="number" required name="no_telepon" class="input-data" id="no_telepon">
                       <label for="InputnoTelepon"  class="label-data" >Masukkan nomor telepon: </label>
                   </div>
                   <div class="validasi">
@@ -156,7 +157,11 @@
                   <div class="ketentuan">
                       <small>Dengan mendaftar kamu menyetujui</small><br>
                       <small >Kebijakan Privasi dan Ketentuan & Syarat kami.</small>
-                      <br></br>
+
+                      <center><br>
+                          <small>Masuk jika sudah punya akun</small>
+                        </center>
+                      <br><a href="/LoginController/">Masuk</a> </br>
                       <br></br>
                   </div>
               </form>

@@ -34,21 +34,27 @@
       position: relative;
       height: 125px;
       width: 115px;
-      left: 525px;
+      left: 425px;
       bottom: 50px;
     }
     .gambar2{
       position: relative;
       height: 125px;
       width: 115px;
-      left: 720px;
+      left: 620px;
       bottom: 52px;
+    }
+    .Judul a{
+      text-decoration: none;
+      color: white;
     }
 </style>
 
   <nav class="navbar">
     <div class="navbar-left">
-      <div class="Judul">SWINGS.com</div>
+      <div class="Judul">
+        <a href="/">SWINGS.com</a>
+      </div>
     </div>
     <div class="navbar-right">
       <ul>
