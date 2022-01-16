@@ -12,18 +12,28 @@
             padding: 0;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             background-color: #E8F0FF;
+<<<<<<< HEAD
             height: 1000px;
             overflow: auto;
         }
         .center{
             position: absolute;
             top: 70%;
+=======
+            height: 100vh;
+            overflow: visible;
+        }
+        .center{
+            position: absolute;
+            top: 60%;
+>>>>>>> 95960296a5a30f85289831209ac2cf263810d341
             left: 50%;
             transform: translate(-50%,-50%);
             width: 600px;
             background: white;
             border: 1pt solid black;
             border-radius: 1px;
+            
         }
         .center h1{
             text-align: center;
