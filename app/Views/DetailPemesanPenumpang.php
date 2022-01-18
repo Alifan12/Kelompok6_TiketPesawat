@@ -51,6 +51,12 @@
     letter-spacing: 2px;
   }
 
+  .navbar-right {
+    float: right;
+    width: 290px;
+    padding-right: 10px;
+  }
+
   .rules-booking {
     text-align: center;
   }
