@@ -8,4 +8,9 @@ class PDD extends BaseController
     {
         return view('DetailPemesanPenumpang');
     }
+    public function metode()
+    {
+        return view('MetodePembayaran');
+    }
+
 }
