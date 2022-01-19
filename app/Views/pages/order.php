@@ -65,9 +65,7 @@
                 <span class="bold-blue">833.400</span>
                 <span style="color:gray">/pax</span>
             </div>
-            <a href="PDD">
-                <button class="kol7">Pilih</button>
-            </a>
+            <button class="kol7"><a href="PDD">Pilih</a></button>
         </div>
         <div class="card-penerbangan">
             <p class="kol6">Citilink Indonesia</p>
