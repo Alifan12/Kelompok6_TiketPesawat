@@ -5,10 +5,10 @@ namespace App\Controllers;
 use CodeIgniter\Controller;
 use App\Models\UserModel;
 
-class Order extends Controller
+class Ordertiket extends Controller
 {
     public function index()
     {
-        echo view('Order');
+        echo view('pages/order');
     }
 }

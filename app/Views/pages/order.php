@@ -20,8 +20,7 @@
         <div class="navbar-right">
             <ul>
                 <li>
-                    <img src="https://cdn-icons.flaticon.com/png/128/2102/premium/2102633.png?token=exp=1641823828~hmac=0ea66dd49c4f772b4e2993d861f32230"
-                        width="40px">
+                    <img src="https://cdn-icons.flaticon.com/png/128/2102/premium/2102633.png?token=exp=1641823828~hmac=0ea66dd49c4f772b4e2993d861f32230" width="40px">
                 </li>
             </ul>
         </div>
@@ -48,8 +47,31 @@
     <div class="container">
         <div class="card-penerbangan">
             <p class="kol6">Citilink Indonesia</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOy5NovtFWgOb3kowWhhUmRCdPGliqemHaifZhrSSGw8ml1rDS7nPf6-4EMjI4tjE5yc&usqp=CAU"
-                width="150px" outline="black" class="kol1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOy5NovtFWgOb3kowWhhUmRCdPGliqemHaifZhrSSGw8ml1rDS7nPf6-4EMjI4tjE5yc&usqp=CAU" width="150px" outline="black" class="kol1">
+            <div class="kol2">
+                <p class="bold">04.30</p>
+                <p>CKG</p>
+            </div>
+            <div class="kol3">
+                <p style="border-bottom: 1pt solid" align="center">1j 30m</p>
+                <p align="center">Langsung</p>
+            </div>
+            <div class="kol4">
+                <p class="bold">06.00</p>
+                <p>SUB</p>
+            </div>
+            <div class="kol5">
+                <span class="bold-blue">IDR</span>
+                <span class="bold-blue">833.400</span>
+                <span style="color:gray">/pax</span>
+            </div>
+            <a href="DPP">
+                <button class="kol7">Pilih</button>
+            </a>
+        </div>
+        <div class="card-penerbangan">
+            <p class="kol6">Citilink Indonesia</p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOy5NovtFWgOb3kowWhhUmRCdPGliqemHaifZhrSSGw8ml1rDS7nPf6-4EMjI4tjE5yc&usqp=CAU" width="150px" outline="black" class="kol1">
             <div class="kol2">
                 <p class="bold">04.30</p>
                 <p>CKG</p>
@@ -71,31 +93,7 @@
         </div>
         <div class="card-penerbangan">
             <p class="kol6">Citilink Indonesia</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOy5NovtFWgOb3kowWhhUmRCdPGliqemHaifZhrSSGw8ml1rDS7nPf6-4EMjI4tjE5yc&usqp=CAU"
-                width="150px" outline="black" class="kol1">
-            <div class="kol2">
-                <p class="bold">04.30</p>
-                <p>CKG</p>
-            </div>
-            <div class="kol3">
-                <p style="border-bottom: 1pt solid" align="center">1j 30m</p>
-                <p align="center">Langsung</p>
-            </div>
-            <div class="kol4">
-                <p class="bold">06.00</p>
-                <p>SUB</p>
-            </div>
-            <div class="kol5">
-                <span class="bold-blue">IDR</span>
-                <span class="bold-blue">833.400</span>
-                <span style="color:gray">/pax</span>
-            </div>
-            <button class="kol7">Pilih</button>
-        </div>
-        <div class="card-penerbangan">
-            <p class="kol6">Citilink Indonesia</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOy5NovtFWgOb3kowWhhUmRCdPGliqemHaifZhrSSGw8ml1rDS7nPf6-4EMjI4tjE5yc&usqp=CAU"
-                width="150px" outline="black" class="kol1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOy5NovtFWgOb3kowWhhUmRCdPGliqemHaifZhrSSGw8ml1rDS7nPf6-4EMjI4tjE5yc&usqp=CAU" width="150px" outline="black" class="kol1">
             <div class="kol2">
                 <p class="bold">04.30</p>
                 <p>CKG</p>
