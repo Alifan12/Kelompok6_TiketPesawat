@@ -62,7 +62,11 @@
   }
 
   .rules-booking {
+    width: 500px;
+    margin: 0 auto;
     text-align: center;
+    align-content: center;
+    align-items: center;
   }
 
   .rules-booking ul {
@@ -92,21 +96,84 @@
     max-width: 100%;
     margin: 20px 100px;
     overflow: hidden;
+    display: fixed;
   }
 
   .detail-penerbangan {
     width: 40%;
-    height: 500px;
+    height: 400px;
     float: right;
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 5px;
+  }
+
+  .body-detail,
+  .detail-bottom {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+
+  .detail-order {
+    float: right;
+    font-size: 17px;
+    font-weight: bolder;
+    border: none;
+    background-color: #FFFFFF;
+    color: #005BFF;
+    text-decoration: none;
+  }
+
+  .detail-bottom {
+    border-top: 1px solid black;
+  }
+
+  .row1,
+  .row2,
+  .row3 {
+    margin: 20px auto;
+  }
+
+  .row3 ul {
+    padding: 0;
+    zoom: 1;
+  }
+
+  .row3 li {
+    list-style: none;
+    margin: 20px auto;
+  }
+
+  .kebijakan {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #091E44;
+  }
+
+  .col-left {
+    float: left;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #091E44;
+  }
+
+  .col-right {
+    float: right;
+    margin-top: 20px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #005BFF;
   }
 
   .detail-pemesan {
     width: 59%;
     height: 400px;
     float: left;
-    background-color: white;
+    background-color: #FFFFFF;
     border-radius: 5px
   }
 
@@ -187,6 +254,28 @@
     display: block;
     color: rgba(9, 30, 68, 0.5);
   }
+
+  .submit {
+    width: auto;
+    margin-top: 60px;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .submit button {
+    width: 300px;
+    height: 50px;
+    padding: 10px;
+    margin-bottom: 50px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #FF9900;
+    border: none;
+  }
   </style>
 </head>
 
@@ -215,6 +304,7 @@
 
   </nav>
   <div class="detail">
+    <!-- Kolom Pemesan -->
     <div class="detail-pemesan">
       <div class="logo-detail">
         <img src="contacts.png" width="21px">
@@ -222,6 +312,7 @@
       </div>
 
       <form action="">
+
         <div class="row-1">
           <div class="sub1-row1">
             <label for="titel">Titel</label>
@@ -263,10 +354,91 @@
       </form>
     </div>
 
+    <!-- Kolom Penerbangan -->
     <div class="detail-penerbangan">
       <div class="logo-detail">
         Penerbangan
       </div>
+      <div class="body-detail">
+        <div class="row1">
+          Jakarta
+          <img src="img/right-arrow.png" width="13px">
+          Surabaya
+
+          <a href="homePembatalan.php" class="detail-order">Detail</a>
+        </div>
+        <div class="row2">
+          <img src="img/citilink.png" width="23px">
+          CKG - SUB <img src="img/record.png" width="5px"> Sen, 3 Jan 2022 <img src="img/record.png" width="5px"> 04:30
+        </div>
+        <div class="kebijakan">
+          <h2>Kebijakan Tiket</h2>
+        </div>
+        <div class="row3">
+          <ul>
+            <li><img src="img/cashback.png" width="18px"> Bisa Refund</li>
+            <li>-</li>
+          </ul>
+        </div>
+      </div>
+      <div class="detail-bottom">
+        <div class="col-left">
+          Total Pembayaran
+        </div>
+        <div class="col-right">
+          IDR 1.666.800
+        </div>
+      </div>
+    </div>
+
+    <!-- Kolom Penumpang -->
+    <div class="detail-penumpang">
+      <div class="logo-detail">
+        <img src="user_1.png" width="25px">
+        <span>Detail Penumpang</span>
+      </div>
+
+      <form action="">
+
+        <div class="row-1">
+          <div class="sub1-row1">
+            <label for="titel">Titel</label>
+            <select name="titel" id="titel">
+              <option value=""></option>
+              <option value="Tuan">Tuan</option>
+              <option value="Nona">Nona</option>
+              <option value="Nyonya">Nyonya</option>
+            </select>
+          </div>
+
+          <div class="sub2-row1">
+            <label for="namaLengkap">Nama Lengkap</label>
+            <input type="text">
+            <p>Isi sesuai KTP/Paspor/SIM (tanpa tanda baca dan gelar)</p>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div class="sub-row2">
+            <label for="nik">NIK</label>
+            <input type="text">
+            <p>Isi sesuai KTP/KK</p>
+          </div>
+        </div>
+
+        <div class="row-3">
+          <div class="sub1-row3">
+            <label for="kodeNegara">Kode Negara</label>
+            <input type="text">
+          </div>
+
+          <div class="sub2-row3">
+            <label for="noTelepon">No Telepon</label>
+            <input type="text">
+          </div>
+        </div>
+
+      </form>
     </div>
 
     <div class="detail-penumpang">
@@ -297,9 +469,9 @@
 
         <div class="row-2">
           <div class="sub-row2">
-            <label for="Email">Alamat Email</label>
-            <input type="email">
-            <p>E-ticket akan dikirim ke alamat email ini</p>
+            <label for="nik">NIK</label>
+            <input type="text">
+            <p>Isi sesuai KTP/KK</p>
           </div>
         </div>
 
@@ -317,6 +489,9 @@
 
       </form>
     </div>
+  </div>
+  <div class="submit">
+    <button type="submit">SUBMIT</button>
   </div>
 </body>
 
