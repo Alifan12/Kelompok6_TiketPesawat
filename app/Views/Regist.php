@@ -1,53 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    
+
+<head>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <title>Register</title>
     <style>
-        body{
+        body {
             margin: 0;
             padding: 0;
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
             background-color: #E8F0FF;
-<<<<<<< HEAD
             height: 1000px;
             overflow: auto;
         }
-        .center{
-            position: absolute;
-            top: 70%;
-=======
-            height: 100vh;
-            overflow: visible;
-        }
-        .center{
-            position: absolute;
-            top: 60%;
->>>>>>> 95960296a5a30f85289831209ac2cf263810d341
+
+        .center {
+            position: relative;
+            top: 50%;
             left: 50%;
-            transform: translate(-50%,-50%);
+            transform: translate(-50%, -50%);
             width: 600px;
             background: white;
             border: 1pt solid black;
             border-radius: 1px;
-            
+
         }
-        .center h1{
+
+        .center h1 {
             text-align: center;
             padding: 0 0 20px 0;
         }
-        .center form{
+
+        .center form {
             padding: 0 40px;
             box-sizing: border-box;
         }
-        form .txtfilled{
+
+        form .txtfilled {
             position: relative;
             margin: 30px 0;
-        }   
-        .txtfilled input{
+        }
+
+        .txtfilled input {
             width: 100%;
             padding: 0 5px;
             height: 40px;
@@ -55,7 +52,8 @@
             background-color: #d9e3f8e9;
             outline: none;
         }
-        .txtfilled label{
+
+        .txtfilled label {
             position: absolute;
             top: 50%;
             left: 5px;
@@ -65,122 +63,132 @@
             pointer-events: none;
             transition: .5s;
         }
-        .txtfilled span::before{
-        content: '';
-        position: absolute;
-        top: 40px;
-        left: 0;
-        width: 0%;
-        height: 2px;
-        background-color: #2691d9;
+
+        .txtfilled span::before {
+            content: '';
+            position: absolute;
+            top: 40px;
+            left: 0;
+            width: 0%;
+            height: 2px;
+            background-color: #2691d9;
 
         }
-        .txtfilled input:focus ~ label,
-        .txtfilled input:valid ~ label{
+
+        .txtfilled input:focus~label,
+        .txtfilled input:valid~label {
             top: -15px;
-            color: #2691d9;   
+            color: #2691d9;
         }
-        .txtfilled input:focus ~ span::before,
-        .txtfilled input:valid ~ span::before{
+
+        .txtfilled input:focus~span::before,
+        .txtfilled input:valid~span::before {
             width: 100%;
         }
-        .forgotpass{
+
+        .forgotpass {
             margin: -5px 0 20px 5px;
             color: #a6a6a6;
             cursor: pointer;
         }
-        .forgotpass:hover{
+
+        .forgotpass:hover {
             text-decoration: underline;
         }
 
-        button[type="submit"]{
+        button[type="submit"] {
             width: 100%;
             height: 50px;
             border: 1px solid;
             background-color: #2FD12C;
-            border-radius: 30px ;
+            border-radius: 30px;
             font-size: 16px;
             color: white;
             font-weight: 700;
             cursor: pointer;
             outline: none;
         }
-        button [type="submit"]{
+
+        button [type="submit"] {
             border-color: #2691d9;
             transition: .5s;
         }
-        .ketentuan{
+
+        .ketentuan {
             text-align: center;
         }
-        small{
+
+        small {
             color: black;
             font-weight: 500;
-            font-family:arial;
+            font-family: arial;
             font-size: 9pt;
         }
-        </style>
-  </head>
-  <body>
-      <div class="center">
-              <h1>Register</h1>
-              <form action="/RegisterController/save" method="post">
-                  <div class="txtfilled">
-                      <input type="text" required name="Fname" class="input-data" id="InputFname">
-                      <label for="InputFname" class="label-data">Masukkan nama depan: </label>
-                  </div>
-                  <div class="txtfilled">
-                      <input type="text" name="Bname" required  class="input-data" id="InputBname">
-                      <label for="InputBname" class="label-data">Masukkan nama belakang: </label>
-                      <small>Jika tidak ada, isi dengan nama depan</small>
-                  </div>
-                  <div class="txtfilled">
-                      <input type="email" name="email" required class="input-data" id="email">
-                      <label for="InputEmail" class="label-data">Masukkan Email: </label>
-                      
-                  </div>
-                  <div class="txtfilled">
-                      <input type="text" name="username" required class="input-data" id="username">
-                      <label for="InputUsername"  class="label-data">Username: </label>
-                      
-                  </div>
-                  <div class="txtfilled">
-                      <input type="password" required name="password" class="input-data" id="password" >
-                      <label for="InputPassword"  class="label-data">Masukkan password: </label>
-                      <small>Minimal 8 karakter</small>
-                  </div>
-                  <div class="txtfilled">
-                      <input type="password" required name="confpassword" class="input-data" id="confpassword">
-                      <label for="Inputconfpassword" class="label-data">Konfirmasi password: </label>
-                      
-                  </div>
-                  <div class="txtfilled" >
-                      <input type="number" required name="no_telepon" class="input-data" id="no_telepon">
-                      <label for="InputnoTelepon"  class="label-data" >Masukkan nomor telepon: </label>
-                  </div>
-                  <div class="validasi">
-                        <?php if(isset($validation)):?>
-                            <div class="alert"><?= $validation->listErrors() ?></div>
-                        <?php endif;?>
-                  </div>
-                  <button type="submit" class="button">Register</button>
-                  <br></br>
-                  <div class="ketentuan">
-                      <small>Dengan mendaftar kamu menyetujui</small><br>
-                      <small >Kebijakan Privasi dan Ketentuan & Syarat kami.</small>
+    </style>
+</head>
 
-                      <center><br>
-                          <small>Masuk jika sudah punya akun</small>
-                        </center>
-                      <br><a href="/LoginController/">Masuk</a> </br>
-                      <br></br>
-                  </div>
-              </form>
-          </div>
+<body>
+    <div class="center">
+        <h1>Register</h1>
+        <form action="/RegisterController/save" method="post">
+            <div class="txtfilled">
+                <input type="text" required name="Fname" class="input-data" id="InputFname">
+                <label for="InputFname" class="label-data">Masukkan nama depan: </label>
+            </div>
+            <div class="txtfilled">
+                <input type="text" name="Bname" required class="input-data" id="InputBname">
+                <label for="InputBname" class="label-data">Masukkan nama belakang: </label>
+                <small>Jika tidak ada, isi dengan nama depan</small>
+            </div>
+            <div class="txtfilled">
+                <input type="email" name="email" required class="input-data" id="email">
+                <label for="InputEmail" class="label-data">Masukkan Email: </label>
 
-      </div>
-  
-  
+            </div>
+            <div class="txtfilled">
+                <input type="text" name="username" required class="input-data" id="username">
+                <label for="InputUsername" class="label-data">Username: </label>
+
+            </div>
+            <div class="txtfilled">
+                <input type="password" required name="password" class="input-data" id="password">
+                <label for="InputPassword" class="label-data">Masukkan password: </label>
+                <small>Minimal 8 karakter</small>
+            </div>
+            <div class="txtfilled">
+                <input type="password" required name="confpassword" class="input-data" id="confpassword">
+                <label for="Inputconfpassword" class="label-data">Konfirmasi password: </label>
+
+            </div>
+            <div class="txtfilled">
+                <input type="number" required name="no_telepon" class="input-data" id="no_telepon">
+                <label for="InputnoTelepon" class="label-data">Masukkan nomor telepon: </label>
+            </div>
+            <div class="validasi">
+                <?php if (isset($validation)) : ?>
+                    <div class="alert"><?= $validation->listErrors() ?></div>
+                <?php endif; ?>
+            </div>
+            <button type="submit" class="button">Register</button>
+            <br></br>
+            <div class="ketentuan">
+                <small>Dengan mendaftar kamu menyetujui</small><br>
+                <small>Kebijakan Privasi dan Ketentuan & Syarat kami.</small>
+
+                <center><br>
+                    <small>Masuk jika sudah punya akun</small>
+                </center>
+                <br><a href="/LoginController/">Masuk</a> </br>
+                <br></br>
+            </div>
+        </form>
+    </div>
+
+    </div>
 
 
-    </body>
+
+
+</body>
+
 </html>
