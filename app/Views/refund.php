@@ -12,7 +12,6 @@
 
 </head>
 
-
 <body>
     <nav class="navbar">
         <div class="navbar-left">
@@ -57,11 +56,16 @@
                 <p>04.30</p>
             </div>
             <div class="re">
-                <button>Bisa Refund</button>
+                <a href="HomeAccController"><button onclick="myFunction()">Refund</button></a>
             </div>
         </div>
-        <button class="kol7">Lanjutkan</button>
+        <a href="HomeAccController"> <button class="kol7" onclick="myFunction()">Lanjutkan &raquo;</button> </a>
     </div>
+    <script>
+        function myFunction() {
+            alert("Refund berhasil di lakukan");
+        }
+    </script>
 </body>
 
 </html>
