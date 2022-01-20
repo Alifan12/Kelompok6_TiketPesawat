@@ -35,9 +35,18 @@
                     <label for="departure">
                         <img src="/gambar/Cari/departures.png"></label>
                     <select name="departure" id="departure">
-                        <option>Jakarta</option>
-                        <option>Surabaya</option>
-
+                        <option >-Silahkan isi kota asal-</option>
+                        <option value="ACHC">Banda Aceh</option>
+                        <option value="DPSC">Bali</option>
+                        <option value="JKTC">Jakarta</option>
+                        <option value="JOGC">Yogyakarta</option>
+                        <option value="KUPC">Kupang</option>
+                        <option value="MESC">Medan</option>
+                        <option value="MKSC">Makassar</option>
+                        <option value="PDGC">Padang</option>
+                        <option value="PLGC">Palembang</option>
+                        <option value="SRIC">Samarinda</option>
+                        <option value="SUBC">Surabaya</option>
                     </select>
                 </div>
 
@@ -46,8 +55,18 @@
                     <label for="arrival">
                         <img src="/gambar/Cari/arrivals.png" margin-right="5px" width="20px"></label>
                     <select name="arrival" id="arrival">
-                        <option>Jakarta</option>
-                        <option>Surabaya</option>
+                        <option >-Silahkan isi kota tujuan-</option>
+                        <option value="ACHC">Banda Aceh</option>
+                        <option value="DPSC">Bali</option>
+                        <option value="JKTC">Jakarta</option>
+                        <option value="JOGC">Yogyakarta</option>
+                        <option value="KUPC">Kupang</option>
+                        <option value="MESC">Medan</option>
+                        <option value="MKSC">Makassar</option>
+                        <option value="PDGC">Padang</option>
+                        <option value="PLGC">Palembang</option>
+                        <option value="SRIC">Samarinda</option>
+                        <option value="SUBC">Surabaya</option>
                     </select>
                 </div>
 
@@ -77,8 +96,8 @@
                 <label for="kelaskabin">
                     <img src="/gambar/Cari/cabin.png" width="30px"></label>
                 <select name="kelaskabin">
-                    <option>Economi</option>
-                    <option>Buisnis</option>
+                    <option value="Ekonomi">Ekonomi</option>
+                    <option value="Bisnis">Bisnis</option>
                 </select>
             </div>
             <br><br>
