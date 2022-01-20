@@ -155,8 +155,6 @@
 
                   <option value="/HomeAccController/profile">Profile</option>
                   <option value="/LoginController/logout">Sign Out</option>
-                  <option value="/Carimaskapi">cari</option>
-
 
                 </select>
 
