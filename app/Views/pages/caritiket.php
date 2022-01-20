@@ -35,7 +35,9 @@
                     <label for="departure">
                         <img src="/gambar/Cari/departures.png"></label>
                     <select name="departure" id="departure">
-                        <option>Kota Asal</option>
+                        <option>Jakarta</option>
+                        <option>Surabaya</option>
+
                     </select>
                 </div>
 
@@ -44,7 +46,8 @@
                     <label for="arrival">
                         <img src="/gambar/Cari/arrivals.png" margin-right="5px" width="20px"></label>
                     <select name="arrival" id="arrival">
-                        <option>Kota Tujuan</option>
+                        <option>Jakarta</option>
+                        <option>Surabaya</option>
                     </select>
                 </div>
 
@@ -74,7 +77,8 @@
                 <label for="kelaskabin">
                     <img src="/gambar/Cari/cabin.png" width="30px"></label>
                 <select name="kelaskabin">
-                    <option>Kelas Kabin</option>
+                    <option>Economi</option>
+                    <option>Buisnis</option>
                 </select>
             </div>
             <br><br>
