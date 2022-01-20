@@ -7,216 +7,216 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pembatalan Tiket</title>
   <style>
-  * {
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-  body {
-    background: #e8f0ff;
-  }
+    body {
+      background: #e8f0ff;
+    }
 
-  .navbar-menu {
-    width: auto;
-  }
+    .navbar-menu {
+      width: auto;
+    }
 
-  .navbar {
-    width: auto;
-    height: 70px;
-    background: rgb(9, 30, 68);
-    border-radius: 5px;
-  }
+    .navbar {
+      width: auto;
+      height: 70px;
+      background: rgb(9, 30, 68);
+      border-radius: 5px;
+    }
 
-  .logo {
-    width: 50px;
-    margin: 7px 190px;
-    height: 50px;
-    background-size: 40px 40px;
-    border: solid 2px #666;
-    border-radius: 50px;
-    background-color: #fff;
-  }
+    .logo {
+      width: 50px;
+      margin: 7px 190px;
+      height: 50px;
+      background-size: 40px 40px;
+      border: solid 2px #666;
+      border-radius: 50px;
+      background-color: #fff;
+    }
 
-  .navbar-left {
-    float: left;
-    width: 290px;
-    padding-top: 10pt;
-    padding-left: 10pt;
-    color: #FFFFFF;
-    font-weight: bold;
-    font-size: xx-large;
-    margin: 10px 10px;
-    letter-spacing: 2px;
-  }
+    .navbar-left {
+      float: left;
+      width: 290px;
+      padding-top: 10pt;
+      padding-left: 10pt;
+      color: #FFFFFF;
+      font-weight: bold;
+      font-size: xx-large;
+      margin: 10px 10px;
+      letter-spacing: 2px;
+    }
 
-  .navbar-right {
-    float: right;
-    width: 290px;
-    padding-right: 10px;
-  }
+    .navbar-right {
+      float: right;
+      width: 290px;
+      padding-right: 10px;
+    }
 
-  .top-container {
-    width: auto;
-    height: 180px;
-    background-color: #FFFFFF;
-    border: 1px solid 091E44;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 10px;
-  }
+    .top-container {
+      width: auto;
+      height: 180px;
+      background-color: #FFFFFF;
+      border: 1px solid 091E44;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 10px;
+    }
 
-  .top-container .top-right {
-    float: right;
-    height: auto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 40px;
+    .top-container .top-right {
+      float: right;
+      height: auto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 40px;
 
-    color: #377EFF;
-  }
+      color: #377EFF;
+    }
 
-  .top-container .top-left {
-    float: left;
-    height: auto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 25px;
-    line-height: 48px;
+    .top-container .top-left {
+      float: left;
+      height: auto;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 25px;
+      line-height: 48px;
 
-    color: rgba(9, 30, 68, 0.8);
-  }
+      color: rgba(9, 30, 68, 0.8);
+    }
 
-  .top-right img {
-    width: 15px;
-    height: 15px;
-  }
+    .top-right img {
+      width: 15px;
+      height: 15px;
+    }
 
-  .top-right {
-    margin-right: 30px;
-  }
+    .top-right {
+      margin-right: 30px;
+    }
 
-  .top-left {
-    margin-left: 30px;
-  }
+    .top-left {
+      margin-left: 30px;
+    }
 
-  .top-bottom {
-    margin-top: 70px;
-    margin-left: 30px;
-    border-bottom: 1px solid rgba(9, 30, 68, 0.2);
-  }
+    .top-bottom {
+      margin-top: 70px;
+      margin-left: 30px;
+      border-bottom: 1px solid rgba(9, 30, 68, 0.2);
+    }
 
-  .top-bottom img {
-    width: 20px;
-  }
+    .top-bottom img {
+      width: 20px;
+    }
 
-  .top-bottom span {
-    color: #005BFF;
-    font-weight: bold;
-    border-bottom: 2px solid #377EFF;
-  }
+    .top-bottom span {
+      color: #005BFF;
+      font-weight: bold;
+      border-bottom: 2px solid #377EFF;
+    }
 
-  .sorting-by {
-    float: right;
-    margin-top: 20px;
-    margin-right: 30px;
-    font-size: 15px;
-    color: rgba(9, 30, 68, 0.6);
-  }
+    .sorting-by {
+      float: right;
+      margin-top: 20px;
+      margin-right: 30px;
+      font-size: 15px;
+      color: rgba(9, 30, 68, 0.6);
+    }
 
-  .sorting-by select {
-    width: 150px;
-    height: 30px;
-    font-size: 15px;
-  }
+    .sorting-by select {
+      width: 150px;
+      height: 30px;
+      font-size: 15px;
+    }
 
-  .sorting-by button {
-    font-size: 15px;
-    font-weight: bold;
-    background-color: white;
-    border: 0px;
-    color: #377EFF;
-  }
+    .sorting-by button {
+      font-size: 15px;
+      font-weight: bold;
+      background-color: white;
+      border: 0px;
+      color: #377EFF;
+    }
 
-  .list-pesanan {
-    width: auto;
-    height: 180px;
-    background-color: #FFFFFF;
-    border: 1px solid 091E44;
-    border-radius: 5px;
-    margin-top: 10px;
-    margin-left: 20px;
-    margin-right: 20px;
-    padding: 10px;
-  }
+    .list-pesanan {
+      width: auto;
+      height: 180px;
+      background-color: #FFFFFF;
+      border: 1px solid 091E44;
+      border-radius: 5px;
+      margin-top: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
+      padding: 10px;
+    }
 
-  .list-pesanan .top-right {
-    float: right;
-    margin-right: 30px;
-    margin-top: 30px;
-    overflow: hidden;
-  }
+    .list-pesanan .top-right {
+      float: right;
+      margin-right: 30px;
+      margin-top: 30px;
+      overflow: hidden;
+    }
 
-  .list-pesanan .top-left {
-    float: left;
-    margin-left: 30px;
-    margin-top: 20px;
-    font-size: 30px;
-  }
+    .list-pesanan .top-left {
+      float: left;
+      margin-left: 30px;
+      margin-top: 20px;
+      font-size: 30px;
+    }
 
-  .list-pesanan .top-left img {
-    width: 35px;
-  }
+    .list-pesanan .top-left img {
+      width: 35px;
+    }
 
-  .top-list-pesanan {
-    width: auto;
-    height: 80px;
-    border-bottom: 1px solid rgba(9, 30, 68, 0.1);
-  }
+    .top-list-pesanan {
+      width: auto;
+      height: 80px;
+      border-bottom: 1px solid rgba(9, 30, 68, 0.1);
+    }
 
-  .order-id {
-    margin-left: 30px;
-    margin-top: 20px;
-  }
+    .order-id {
+      margin-left: 30px;
+      margin-top: 20px;
+    }
 
-  .resume-rute {
-    margin-left: 30px;
-    margin-top: 10px;
-    font-weight: bold;
-  }
+    .resume-rute {
+      margin-left: 30px;
+      margin-top: 10px;
+      font-weight: bold;
+    }
 
-  .keberangkatan {
-    margin-left: 30px;
-    margin-top: 10px;
-  }
+    .keberangkatan {
+      margin-left: 30px;
+      margin-top: 10px;
+    }
 
-  .row-bottom button {
-    margin-top: 10px;
-    font-size: 10px;
-  }
+    .row-bottom button {
+      margin-top: 10px;
+      font-size: 10px;
+    }
 
-  .e-ticket {
-    margin-left: 30px;
-  }
+    .e-ticket {
+      margin-left: 30px;
+    }
 
-  .refund {
-    margin-left: 20px;
-  }
+    .refund {
+      margin-left: 20px;
+    }
 
-  .lihat-detail {
-    float: right;
-    font-size: 17px;
-    font-weight: bolder;
-    border: none;
-    background-color: #FFFFFF;
-    color: #005BFF;
-    text-decoration: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 30px;
-  }
+    .lihat-detail {
+      float: right;
+      font-size: 17px;
+      font-weight: bolder;
+      border: none;
+      background-color: #FFFFFF;
+      color: #005BFF;
+      text-decoration: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      margin-right: 30px;
+    }
   </style>
 </head>
 
@@ -300,7 +300,7 @@
         <div class="row-bottom">
           <div class="info-batal-tiket">
             <button class="e-ticket">E-ticket sudah terbit</button>
-            <button class="refund">Refund sebagian</button>
+            <a href="Refund"> <button class="refund">Refund sebagian</button></a>
             <a class="lihat-detail" href="#">Lihat Detail</a>
           </div>
         </div>
