@@ -14,7 +14,7 @@
 
 <body>
   <style>
-  .intro {
+    .intro {
       margin-top: 5px;
       background-image: url("/gambar/pesawat2.jpg");
       background-size: cover;
@@ -22,7 +22,8 @@
       background-repeat: no-repeat;
       background-position: center;
     }
-    .intro img{
+
+    .intro img {
       margin-top: 5px;
       width: 900px;
       background-size: cover;
@@ -30,25 +31,28 @@
       background-repeat: no-repeat;
       background-position: center;
     }
-    .menu img:first-child{
+
+    .menu img:first-child {
       position: relative;
       height: 125px;
       width: 115px;
       left: 425px;
       bottom: 50px;
     }
-    .gambar2{
+
+    .gambar2 {
       position: relative;
       height: 125px;
       width: 115px;
       left: 620px;
       bottom: 52px;
     }
-    .Judul a{
+
+    .Judul a {
       text-decoration: none;
       color: white;
     }
-</style>
+  </style>
 
   <nav class="navbar">
     <div class="navbar-left">
@@ -69,23 +73,29 @@
       <br>
 
       <div class="text-intro">
-      <h2>SWINGS.com</h2>
-      <p>Pesan tiket pesawat tanpa antre, harga murah dan proses sangat mudah</p>
-      <p>Ayo pesan tiket perjalanan kamu sekarang!</p>
+        <h2>SWINGS.com</h2>
+        <p>Pesan tiket pesawat tanpa antre, harga murah dan proses sangat mudah</p>
+        <p>Ayo pesan tiket perjalanan kamu sekarang!</p>
+      </div>
     </div>
-  </div>
-  <div class="content-top">
-    <img src="/gambar/plane.png"><span> Tiket Pesawat </span>
-  </div>
-  <div class="main-content">
-    <div class="menu">
-      <img src="/gambar/booking.png" width="120">
-      <img class="gambar2" src="/gambar/clipboard.png" width="120">
-        
-      <button class="sub-menu">Pesan Tiket</button>
-      <button class="sub-menu">Pesanan Saya</button>
+    <div class="content-top">
+      <img src="/gambar/plane.png"><span> Tiket Pesawat </span>
     </div>
+    <div class="main-content">
+      <div class="menu">
+        <img src="/gambar/booking.png" width="120">
+        <img class="gambar2" src="/gambar/clipboard.png" width="120">
+
+        <button class="sub-menu" onclick=" myFunction()">Pesan Tiket</button>
+        <button class="sub-menu" onclick=" myFunction()">Pesanan Saya</button>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        alert("Login terlebih dahulu");
+      }
+    </script>
   </div>
-</div>
 </body>
+
 </html>
