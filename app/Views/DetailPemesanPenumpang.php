@@ -307,7 +307,7 @@
     <!-- Kolom Pemesan -->
     <div class="detail-pemesan">
       <div class="logo-detail">
-        <img src="contacts.png" width="21px">
+        <img src="/gambar/DetailPemesan/contacts.png" width="21px">
         <span>Detail Pemesan</span>
       </div>
 
@@ -362,21 +362,22 @@
       <div class="body-detail">
         <div class="row1">
           Jakarta
-          <img src="img/right-arrow.png" width="13px">
+          <img src="/gambar/DetailPemesan/right-arrow.png" width="13px">
           Surabaya
 
           <a href="homePembatalan.php" class="detail-order">Detail</a>
         </div>
         <div class="row2">
-          <img src="img/citilink.png" width="23px">
-          CKG - SUB <img src="img/record.png" width="5px"> Sen, 3 Jan 2022 <img src="img/record.png" width="5px"> 04:30
+          <img src="/gambar/Maskapai/Citilink.png" width="23px">
+          CKG - SUB <img src="/gambar/DetailPemesan/record.png" width="5px"> Sen, 3 Jan 2022 <img
+            src="/gambar/DetailPemesan/record.png" width="5px"> 04:30
         </div>
         <div class="kebijakan">
           <h2>Kebijakan Tiket</h2>
         </div>
         <div class="row3">
           <ul>
-            <li><img src="img/cashback.png" width="18px"> Bisa Refund</li>
+            <li><img src="/gambar/DetailPemesan/cashback.png" width="18px"> Bisa Refund</li>
             <li>-</li>
           </ul>
         </div>
@@ -394,7 +395,7 @@
     <!-- Kolom Penumpang -->
     <div class="detail-penumpang">
       <div class="logo-detail">
-        <img src="user_1.png" width="25px">
+        <img src="/gambar/DetailPemesan/user.png" width="25px">
         <span>Detail Penumpang</span>
       </div>
 
@@ -443,7 +444,7 @@
 
     <div class="detail-penumpang">
       <div class="logo-detail">
-        <img src="user_1.png" width="25px">
+        <img src="/gambar/DetailPemesan/user.png" width="25px">
         <span>Detail Penumpang</span>
       </div>
 
