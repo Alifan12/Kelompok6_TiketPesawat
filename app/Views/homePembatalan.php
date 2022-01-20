@@ -205,7 +205,8 @@
     margin-left: 20px;
   }
 
-  .lihat-detail {
+  .lihat-detail,
+  .to-refund {
     float: right;
     font-size: 17px;
     font-weight: bolder;
@@ -216,6 +217,16 @@
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 30px;
+  }
+
+  .to-refund {
+    width: 80px;
+    height: 18px;
+    background-color: red;
+    color: #FFFFFF;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 20px;
   }
   </style>
 </head>
@@ -259,11 +270,7 @@
     <div class="list-pesanan">
       <div class="top-list-pesanan">
         <div class="top-right">
-          <select name="dot-three">
-            <img src="img/more.png">
-            <option value=""></option>
-            <option value="Refund">Refund</option>
-          </select>
+          <a href="refund.php" class="to-refund">Refund</a>
         </div>
         <div class="top-left">
           <img src="/gambar/homePembatalan/plane.png"><span> Pesawat </span>
@@ -312,11 +319,7 @@
     <div class="list-pesanan">
       <div class="top-list-pesanan">
         <div class="top-right">
-          <select name="dot-three">
-            <img src="img/more.png">
-            <option value=""></option>
-            <option value="Refund">Refund</option>
-          </select>
+          <a href="refund.php" class="to-refund">Refund</a>
         </div>
         <div class="top-left">
           <img src="/gambar/homePembatalan/plane.png"><span> Pesawat </span>
@@ -365,11 +368,7 @@
     <div class="list-pesanan">
       <div class="top-list-pesanan">
         <div class="top-right">
-          <select name="dot-three">
-            <img src="img/more.png">
-            <option value=""></option>
-            <option value="Refund">Refund</option>
-          </select>
+          <a href="refund.php" class="to-refund">Refund</a>
         </div>
         <div class="top-left">
           <img src="/gambar/homePembatalan/plane.png"><span> Pesawat </span>
