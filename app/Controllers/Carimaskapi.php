@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 use CodeIgniter\Controller;
-use App\Models\UserModel;
+use App\Models\penerbanganModel;
 
 
 class Carimaskapi extends Controller
@@ -11,5 +11,11 @@ class Carimaskapi extends Controller
     public function index()
     {
         echo view('pages/caritiket');
+    }
+    public function cari()
+    {
+        $session = session();
+        $model = new penerbanganModel;
+        
     }
 }
