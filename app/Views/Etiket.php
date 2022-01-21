@@ -152,9 +152,9 @@
 
         .container {
             width: auto;
-            margin: 30pt 20%;
+            margin: 10pt 20%;
             height: 500px;
-            top: 1400px;
+            top: 1500px;
             background: #e8f0ff;
 
             box-sizing: border-box;
@@ -170,33 +170,26 @@
 
         .layout1 {
             grid-area: info;
-            width: 80%;
-            height: 80pt;
-            margin-top: 20%;
+            width: 50%;
+            height: 50pt;
+            margin-top: 10%;
             background-color: white;
-            text-align: center;
-            grid-gap: 2px;
+            grid-gap: 1px;
         }
 
         .layout p {
             padding: 20%;
-            align-items: center;
 
             border: 1pt solid white;
         }
 
         .layout2 {
             grid-area: kode;
-            width: 80%;
-            height: 80pt;
+            width: 50%;
+            height: 50pt;
             background-color: white;
-            ;
             padding: 10px;
             grid-gap: 2px;
-            width: 80%;
-
-            text-align: center;
-            border: 1pt solid white;
 
         }
 
@@ -206,11 +199,21 @@
             background-color: white;
             padding: 10px;
             grid-gap: 10px;
+            font-weight: bold;
 
             text-align: center;
-            padding-top: 20%;
+            padding-top: 2%;
             border: 1pt solid white;
             background: #e8f0ff;
+        }
+
+        .layout4 {
+            grid-area: penumpang;
+            width: 80%;
+            height: 80pt;
+            margin-top: 20%;
+            text-align: center;
+            grid-gap: 2px;
         }
 
         .judul {
@@ -223,6 +226,10 @@
             border-radius: 0px 90px 0px 0px;
             margin: 30pt 20%;
 
+        }
+
+        .br {
+            font-weight: normal;
         }
 
         .metode h2 {
@@ -260,9 +267,13 @@
         </div>
         <div class="layout3">
             <p>02 February 2022<span></span>
-            <p>04.00 <span> - </span>CKG</p>
-            <br><br><br>
-            <p>06.00 <span> - </span>SUB</p>
+            <p>04.00 <span> - </span>Jakarta (CKG)</p>
+            <br>|<br>|<br>|<br>2 jam 0 menit<br>|<br>|<br>|<br>
+            <p>02 February 2022<span></span>
+            <p>06.00 <span> - </span>Surabaya (SUB)</p>
+        </div>
+        <div class="detail-penumpang">
+            <h2>Detail Penumpang</h2>
         </div>
     </div>
 </body>
