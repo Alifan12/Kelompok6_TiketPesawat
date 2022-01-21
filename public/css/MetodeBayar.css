@@ -248,15 +248,12 @@ border-radius: 0px 90px 0px 0px;
   margin-left: 5px;
 }
 .BCA{
-   border-bottom: 1.5pt solid black;
-  margin-top: 5px;
+  border-bottom: 1.5pt solid black;
+  margin-top: 15px;
   width: 900px;
   height: fit-content;
   position: absolute;
   top: 80px;
-}
-.BCA p{
-  margin-left: 5px;
 }
 .BRI{
   border-bottom: 1.5pt solid black;
@@ -266,6 +263,14 @@ border-radius: 0px 90px 0px 0px;
   position: absolute;
   top: 145px;
 }
-.BRI p{
+.virtual span{
   margin-left: 5px;
+  float: inline-end;
+}
+span .choose{
+  float: right;
+}
+.choose img{
+  outline-color: none;
+  background-image: #B5CEFF;
 }

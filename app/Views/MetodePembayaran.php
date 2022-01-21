@@ -72,12 +72,13 @@
                         <small>Anda bisa membayar dengan transfer melalui ATM, Internet Banking & Mobile Banking</small>
                     </div>
                     <div class="BCA">
-                        <p>BCA Virtual Account</p>
-                    
+                        <span>BCA Virtual Account</span>
+                        <span><button class="choose"><img src="https://img.icons8.com/ios/50/000000/expand-arrow--v1.png" width="20px"></button></span>
                     </div>
                     <div class="BRI">
-                        <p>BRI Virtual Account</p>
-                    
+                        <span>BRI Virtual Account</span>
+                        <span><button class="choose"><img src="https://img.icons8.com/ios/50/000000/expand-arrow--v1.png" width="20px"></button></span>
+
                     </div>
 
                 </div>

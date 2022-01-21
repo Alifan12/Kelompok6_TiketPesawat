@@ -8,7 +8,7 @@ use App\Models\UserModel;
 class Ordertiket extends Controller
 {
     public function index()
-    {
+    { 
         echo view('pages/order');
     }
 }
