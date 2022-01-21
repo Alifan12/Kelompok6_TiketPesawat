@@ -101,6 +101,13 @@ h1 {
   font-size: 14pt;
 }
 
+/* .item1 .detail {
+  text-align: center;
+  font-size: 14pt;
+  margin-left: 30%;
+  font-weight: bold;
+} */
+
 .item2 {
   grid-area: right;
 }
