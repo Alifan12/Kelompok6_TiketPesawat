@@ -29,6 +29,7 @@ class LoginController extends Controller
                     'nama_belakang' =>$data['nama_belakang'],
                     'username'    =>$data['username'],
                     'email'       =>$data['email'],
+                    'no_telepon'  =>$data['no_telepon'],
                     'logged_in'   =>TRUE
                 ];
                 $session->set($session_data);
