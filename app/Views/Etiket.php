@@ -266,7 +266,7 @@
             <p>WAXCJ</p>
         </div>
         <div class="layout3">
-            <p>02 February 2022<span></span>
+            <p>03 January 2022<span></span>
             <p>04.00 <span> - </span>Jakarta (CKG)</p>
             <br>|<br>|<br>|<br>2 jam 0 menit<br>|<br>|<br>|<br>
             <p>02 February 2022<span></span>
