@@ -270,4 +270,23 @@ span .choose {
   background-image: #b5ceff;
 }
 .submit {
+  width: auto;
+  margin-top: 50px;
+  position: absolute;
+  left: 76%;
+  /* -ms-transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
+}
+
+.submit button {
+  width: 150px;
+  height: 40px;
+  padding: 1px;
+  margin-bottom: 50px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #ff9900;
+  border: none;
 }
