@@ -274,7 +274,6 @@ span .choose {
   margin-top: 50px;
   position: absolute;
   left: 76%;
-  /* -ms-transform: translate(-50%, -50%); */
   transform: translate(-50%, -50%);
 }
 
