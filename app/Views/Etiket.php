@@ -147,7 +147,7 @@
             width: auto;
             height: 100px;
             background-color: #B5CEFF;
-            
+
         }
 
         .container {
@@ -156,19 +156,19 @@
             height: 500px;
             top: 1400px;
             background: #e8f0ff;
-            
+
             box-sizing: border-box;
 
 
             display: grid;
             grid-template-areas:
-            'info detail '
-            'kode detail ';
+                'info detail '
+                'kode detail ';
             grid-gap: 0px;
             padding: 10px;
         }
 
-        .layout1{
+        .layout1 {
             grid-area: info;
             width: 80%;
             height: 80pt;
@@ -176,38 +176,43 @@
             background-color: white;
             text-align: center;
             grid-gap: 2px;
-        }   
-        .layout p{
+        }
+
+        .layout p {
             padding: 20%;
             align-items: center;
-            
+
             border: 1pt solid white;
         }
-        .layout2{
+
+        .layout2 {
             grid-area: kode;
             width: 80%;
             height: 80pt;
-            background-color: white;;
+            background-color: white;
+            ;
             padding: 10px;
             grid-gap: 2px;
             width: 80%;
-            
+
             text-align: center;
             border: 1pt solid white;
-        
+
         }
-        .layout3{
+
+        .layout3 {
             grid-area: detail;
             width: auto;
             background-color: white;
             padding: 10px;
             grid-gap: 10px;
-            
+
             text-align: center;
             padding-top: 20%;
-            border: 1pt solid white;            
+            border: 1pt solid white;
             background: #e8f0ff;
         }
+
         .judul {
             width: auto;
             height: 60px;
@@ -224,7 +229,6 @@
             margin: 0 20px 20px 10px;
             ;
         }
-        
     </style>
 </head>
 
@@ -255,9 +259,10 @@
             <p>WAXCJ</p>
         </div>
         <div class="layout3">
-            <p>04.00 <span></span>CKG</p>
+            <p>02 February 2022<span></span>
+            <p>04.00 <span> - </span>CKG</p>
             <br><br><br>
-            <p>06.00 <span></span>SUB</p>
+            <p>06.00 <span> - </span>SUB</p>
         </div>
     </div>
 </body>
