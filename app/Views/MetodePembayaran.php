@@ -2,29 +2,30 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="/css/MetodeBayar.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="/gambar/plane.png">
-  <title>SWINGS.com</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/MetodeBayar.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/gambar/plane.png">
+    <title>SWINGS.com</title>
 
 </head>
-<body>
-  <nav class="navbar-menu">
-    <div class="navbar">
-      <div class="navbar-left">
-        SWINGS.com
-      </div>
 
-      <div class="navbar-right">
-        <div class="logo">
+<body>
+    <nav class="navbar-menu">
+        <div class="navbar">
+            <div class="navbar-left">
+                SWINGS.com
+            </div>
+
+            <div class="navbar-right">
+                <div class="logo">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
-  <div class="grid-container">
+    </nav>
+    <div class="grid-container">
         <div class="item1">
             <div class="detail">
                 <span>Jakarta</span>
@@ -60,10 +61,10 @@
                     <h3>Detail harga </h3>
                 </div>
                 <div class="total">
-                     <p>Total pembayaran    IDR 1.666.800</p>  
+                    <p>Total pembayaran IDR 1.666.800</p>
                 </div>
 
-                
+
             </div>
             <div class="virtual">
                 <div class="virtual_content">
@@ -82,11 +83,15 @@
                     </div>
 
                 </div>
-                
-                
+
+
+            </div>
+            <div class="submit">
+                <a href="EtiketController"><button type="submit">SUBMIT</button></a>
             </div>
         </div>
-    
+
     </div>
 </body>
+
 </html>
