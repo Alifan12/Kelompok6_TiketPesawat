@@ -49,10 +49,21 @@
       </div>
       <div class="id">
         <div class="lokasi">
-          Jakarta-->Surabaya
+          <table>
+            <tr>
+              <td>Jakarta</td>
+              <td><img src="/gambar/DetailPemesan/right-arrow.png" width="10px"></td>
+              <td>Surabaya</td>
+            </tr>
+          </table>
         </div>
         <div class="order_id">
-          Order ID: 545226321
+          <table>
+            <tr>
+              <td>Order ID : </td>
+              <td>1234567</td>
+            </tr>
+          </table>
         </div>
 
       </div>
