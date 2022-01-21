@@ -12,130 +12,130 @@
 
 </head>
 
-<body>  
+<body>
   <style>
-    .intro {
-      margin-top: 5px;
-      background-image: url("/gambar/pesawat2.jpg");
-      background-size: cover;
-      height: 300px;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  .intro {
+    margin-top: 5px;
+    background-image: url("/gambar/pesawat2.jpg");
+    background-size: cover;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    .intro img {
-      margin-top: 5px;
-      width: 900px;
-      background-size: cover;
-      height: 300px;
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+  .intro img {
+    margin-top: 5px;
+    width: 900px;
+    background-size: cover;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    .menu img:first-child {
-      position: relative;
-      height: 125px;
-      width: 115px;
-      left: 425px;
-      bottom: 50px;
-    }
+  .menu img:first-child {
+    position: relative;
+    height: 125px;
+    width: 115px;
+    left: 425px;
+    bottom: 50px;
+  }
 
-    .gambar2 {
-      position: relative;
-      height: 125px;
-      width: 115px;
-      left: 620px;
-      bottom: 52px;
-    }
+  .gambar2 {
+    position: relative;
+    height: 125px;
+    width: 115px;
+    left: 620px;
+    bottom: 52px;
+  }
 
-    .profile {
-      position: relative;
-      right: 150px;
-      width: 350px;
-    }
+  .profile {
+    position: relative;
+    right: 150px;
+    width: 350px;
+  }
 
-    .profile_detail {
-      display: flex;
-      align-items: center;
+  .profile_detail {
+    display: flex;
+    align-items: center;
 
-    }
+  }
 
-    .nama {
-      display: inline-block;
-      z-index: 5;
-
-
-    }
-
-    .select_profile {
-      position: absolute;
-      top: 20px;
-      left: -80px;
-      box-sizing: border-box;
-      border: 1px solid black;
-      border-radius: 0;
-      z-index: 5;
-
-    }
-
-    .select_profile select {
-      box-sizing: border-box;
-      border: 0px solid black;
-      border-radius: 10px;
+  .nama {
+    display: inline-block;
+    z-index: 5;
 
 
-    }
+  }
 
-    .select_profile option:last-child {
-      background-color: red;
-    }
+  .select_profile {
+    position: absolute;
+    top: 20px;
+    left: -80px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 0;
+    z-index: 5;
 
-    .select_profile option:last-child:hover {
-      background-color: red;
-    }
+  }
 
-    .navbar-left nav {
-      position: absolute;
-      float: left;
-      top: 25px;
-      left: 100px;
+  .select_profile select {
+    box-sizing: border-box;
+    border: 0px solid black;
+    border-radius: 10px;
 
-    }
 
-    .navbar-left a {
-      text-decoration: none;
-      font-size: 20px;
-      font-family: sans-serif;
-      padding: 13px 10px;
-    }
+  }
 
-    ul {
-      padding: 15px;
-      position: absolute;
-      top: 18px;
-      left: 110px;
-    }
+  .select_profile option:last-child {
+    background-color: red;
+  }
 
-    li {
-      list-style: none;
-      display: inline;
-    }
+  .select_profile option:last-child:hover {
+    background-color: red;
+  }
 
-    li a {
-      background: rgb(9, 30, 68);
-      color: #d4d4d4;
-    }
+  .navbar-left nav {
+    position: absolute;
+    float: left;
+    top: 25px;
+    left: 100px;
 
-    li a:hover {
-      background: #4da4ff;
-      color: #fff;
-      padding: 13px 10px;
-    }
+  }
+
+  .navbar-left a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: sans-serif;
+    padding: 13px 10px;
+  }
+
+  ul {
+    padding: 15px;
+    position: absolute;
+    top: 18px;
+    left: 110px;
+  }
+
+  li {
+    list-style: none;
+    display: inline;
+  }
+
+  li a {
+    background: rgb(9, 30, 68);
+    color: #d4d4d4;
+  }
+
+  li a:hover {
+    background: #4da4ff;
+    color: #fff;
+    padding: 13px 10px;
+  }
   </style>
 
   <nav class="navbar">
     <div class="navbar-left">
-      <div class="logo"></div>
+      <!-- <div class="logo"></div> -->
       <ul>
         <li><a href="/HomeAccController">Home</a></li>
       </ul>
@@ -165,7 +165,6 @@
         </div>
 
       </div>
-
 
     </div>
   </nav>
