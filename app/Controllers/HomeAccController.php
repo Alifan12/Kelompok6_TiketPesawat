@@ -28,6 +28,15 @@ class HomeAccController extends Controller
     }
     public function profile()
     {
-        return view('/profile.php');
+        $session = session();
+        $model = new UserModel();
+        $nama_depan = $session->get('nama_depan');
+        $nama_belakang = $session->get('nama_belakang');
+        $nama_lengkap = $nama_depan . ' ' . $nama_belakang;
+        $data = [
+            'nama_lengkap' => $nama_lengkap
+
+        ];
+        return view('/profile.php',$data);
     }
 }
