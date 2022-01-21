@@ -52,49 +52,50 @@
   </nav>
   <div class="wrapper">
     <div class="left">
-        <img src="https://i.imgur.com/cMy8V5j.png" 
-        alt="user" width="100">
-        <h4><?= $nama_lengkap ?></h4>
-         <p><?= session()->get('username') ?></p>
+      <img src="https://i.imgur.com/cMy8V5j.png" alt="user" width="100">
+      <h4><?= $nama_lengkap ?></h4>
+      <p><?= session()->get('username') ?></p>
     </div>
     <div class="right">
-        <div class="info">
-            <h3>Information</h3>
-            <div class="info_data">
-                 <div class="data">
-                    <h4>Email</h4>
-                    <p><?= session()->get('email') ?></p>
-                 </div>
-                 <div class="data">
-                   <h4>Phone</h4>
-                    <p><?= session()->get('no_telepon') ?></p>
-              </div>
-            </div>
+      <div class="info">
+        <h3>Information</h3>
+        <div class="info_data">
+          <div class="data">
+            <h4>Email</h4>
+            <p><?= session()->get('email') ?></p>
+          </div>
+          <div class="data">
+            <h4>Phone</h4>
+            <p><?= session()->get('no_telepon') ?></p>
+          </div>
         </div>
+      </div>
 
-        <div class="projects">
-            <h3>Projects</h3>
-            <div class="projects_data">
-                 <div class="data">
-                    <h4>Recent</h4>
-                    <p>Lorem ipsum dolor sit amet.</p>
-                 </div>
-                 <div class="data">
-                   <h4>Most Viewed</h4>
-                    <p>dolor sit amet.</p>
-              </div>
-            </div>
+      <div class="projects">
+        <h3>Projects</h3>
+        <div class="projects_data">
+          <div class="data">
+            <h4>Recent</h4>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="data">
+            <h4>Most Viewed</h4>
+            <p>dolor sit amet.</p>
+          </div>
         </div>
-      
-        <div class="social_media">
-            <ul>
-              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-          </ul>
+      </div>
+
+      <div class="social_media">
+        <ul>
+          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+        </ul>
       </div>
     </div>
-</div>
+  </div>
+  </div>
 
 </body>
+
 </html>
