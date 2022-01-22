@@ -26,17 +26,7 @@
         </div>
     </nav>
     <div class="grid-container">
-        <div class="item1">
-            <div class="detail">
-                <span>Jakarta</span>
-                <span>--></span>
-                <span>Surabaya</span>
-                <span>.</span>
-                <span>Tanggal</span>
-                <span>.</span>
-                <span>Penumpang</span>
-                <span>.</span>
-                <span>Kelas</span>
+       
                 <!-- <table>
           <tr>
             <td>Jakarta</td>
@@ -53,7 +43,6 @@
             </div>
         </div>
         <div class="item2">
-            <button>Cari Penelusuran</button>
         </div>
     </div>
     <div class="container">
@@ -99,11 +88,11 @@
                     </div>
                     <div class="BCA">
                         <span>BCA Virtual Account</span>
-                        <span><button class="choose"><img src="https://img.icons8.com/ios/50/000000/expand-arrow--v1.png" width="20px"></button></span>
+                        <span><a class="choose" ><img src="https://cdn-icons.flaticon.com/png/512/1633/premium/1633716.png?token=exp=1642855090~hmac=b862043756dce69aea44a0872e58ccaf" width="20px"></a></span>
                     </div>
                     <div class="BRI">
                         <span>BRI Virtual Account</span>
-                        <span><button class="choose"><img src="https://img.icons8.com/ios/50/000000/expand-arrow--v1.png" width="20px"></button></span>
+                        <span><a class="choose" ><img src="https://cdn-icons.flaticon.com/png/512/1633/premium/1633716.png?token=exp=1642855090~hmac=b862043756dce69aea44a0872e58ccaf" width="20px"></a></span>
 
                     </div>
 

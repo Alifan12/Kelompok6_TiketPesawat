@@ -1,3 +1,84 @@
+<?php
+  $arrival = $_GET['arrival'];
+    $arriv=null;
+    switch ($arrival) {
+      case "ACHC":
+        $arriv= "Banda Aceh";
+        break;
+      case "DPSC":
+        $arriv="Bali";
+        break;
+      case "JKTC":
+        $arriv= "Jakarta";
+        break;
+      case "JOGC":
+        $arriv= "Yogyakarta";
+        break;        
+      case "KUPC":
+        $arriv= "Kupang";
+        break;
+      case "MESC":
+        $arriv= "Medan";
+        break;
+        case "MKSC":
+          $arriv= "Makassar";
+          break;
+        case "PDGC":
+          $arriv="Padang";
+          break;
+        case "PLGC":
+          $arriv= "Palembang";
+          break;
+        case "SRIC":
+          $arriv= "Samarinda";
+          break;        
+      default:
+         $arriv="Surabaya";
+    }
+  $depart = $_GET['departure'];
+  $departure=null;
+  switch ($depart) {
+    case "ACHC":
+      $departure= "Banda Aceh";
+      break;
+    case "DPSC":
+      $departure="Bali";
+      break;
+    case "JKTC":
+      $departure= "Jakarta";
+      break;
+    case "JOGC":
+      $departure= "Yogyakarta";
+      break;        
+    case "KUPC":
+      $departure= "Kupang";
+      break;
+    case "MESC":
+      $departure= "Medan";
+      break;
+      case "MKSC":
+        $departure= "Makassar";
+        break;
+      case "PDGC":
+        $departure="Padang";
+        break;
+      case "PLGC":
+        $departure= "Palembang";
+        break;
+      case "SRIC":
+        $departure= "Samarinda";
+        break;        
+    default:
+       $departure="Surabaya";
+  }
+
+  $tanggal=$_GET['tanggalberangkat'];
+  $dewasa=$_GET['Dewasa'];
+  $anak=$_GET['anak-anakk'];
+  $bayi=$_GET['bayi'];
+  $kelas=$_GET['kelaskabin'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,14 +89,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   <link rel="icon" href="/gambar/plane.png">
-  <title>SWINGS.com</title>
+  <title> SWINGS.com</title>
 
 </head>
 
 <body>
   <nav class="navbar">
     <div class="navbar-left">
-      <div class="Judul">SWINGS.com</div>
+      <div class="Judul"> <a class="Swing" href="HomeAccController" style="text-decoration: none;">SWINGS.com</a></div>
     </div>
     <div class="navbar-right">
       <ul>
@@ -30,18 +111,26 @@
   <div class="grid-container">
     <div class="item1">
       <div class="detail">
-        <span>Jakarta</span>
-        <span>---></span>
-        <span>.</span>
-        <span>Tanggal</span>
-        <span>.</span>
-        <span>Penumpang</span>
-        <span>.</span>
-        <span>Kelas</span>
+        <span><?= $departure ?></span>
+        <span><img src="https://cdn-icons.flaticon.com/png/512/664/premium/664866.png?token=exp=1642852163~hmac=861623af0e79b7d1a5de2f0d3707d068" width="14px"></span>
+        <span><?= $arriv ?></span>
+        <span><img src="https://cdn-icons.flaticon.com/png/512/717/premium/717219.png?token=exp=1642852331~hmac=e6fe2472e752bf9cb946e6d806e4f403" width="10px"></span>
+        <span><?= $tanggal ?></span>
+        <span><img src="https://cdn-icons.flaticon.com/png/512/717/premium/717219.png?token=exp=1642852331~hmac=e6fe2472e752bf9cb946e6d806e4f403" width="10px"></span>
+        <span><?= $dewasa ?></span>
+        <span>Dewasa</span>
+        <span>  </span>
+        <span><?= $anak ?></span>
+        <span>Anak anak</span>
+        <span>  </span>
+        <span><?= $bayi ?></span>
+        <span>Bayi</span>
+        <span><img src="https://cdn-icons.flaticon.com/png/512/717/premium/717219.png?token=exp=1642852331~hmac=e6fe2472e752bf9cb946e6d806e4f403" width="10px"></span>
+        <span><?= $kelas ?></span>
       </div>
     </div>
     <div class="item2">
-      <a href="Ordertiket">Cari Penelusuran</a>
+      <a href="   ">Cari Penelusuran</a>
     </div>
   </div>
 

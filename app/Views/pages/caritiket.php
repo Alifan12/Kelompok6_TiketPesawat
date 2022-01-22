@@ -1,3 +1,6 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -28,13 +31,13 @@
     </nav>
     <div class="container">
         <h1>Beli Tiket</h1>
-        <form method="post">
+        <form action="Ordertiket" method="Get">
             <div class="txtfield">
                 <div class="input-box">
                     <label>Dari</label><br>
                     <label for="departure">
                         <img src="/gambar/Cari/departures.png"></label>
-                    <select name="departure" id="departure">
+                    <select name="departure" id="departure" >
                         <option >-Silahkan isi kota asal-</option>
                         <option value="ACHC">Banda Aceh</option>
                         <option value="DPSC">Bali</option>
@@ -75,19 +78,19 @@
             <br>
             <div class="tanggalberangkat">
                 <label for="date">Berangkat</label><br>
-                <input type="date" name="tanggalberangkat">
+                <input type="date" name="tanggalberangkat" required>
             </div>
             <span></span><br><br>
             <label>Jumlah Penumpang</label>
-            <div class="penumpang ">
+            <div class="penumpang " >
                 <label class="grid-1">Dewasa</label>
-                <input type="number" name="Dewasa" id="Dewasa">
+                <input type="number" name="Dewasa" id="Dewasa" min="0" required >
 
                 <label class="grid-2">Anak-Anak</label>
-                <input type="number" name="anak-anakk" id="anak-anakk">
+                <input type="number" name="anak-anakk" id="anak-anakk" min="0" value=0>
 
                 <label class="grid-3">Bayi</label>
-                <input type="number" name="bayi" id="bayi">
+                <input type="number" name="bayi" id="bayi" min="0" value=0>
 
             </div>
             <br><br>
@@ -101,7 +104,6 @@
                 </select>
             </div>
             <br><br>
-        </form>
         <div class="cari">
             <a href="Ordertiket">
                 <button class="sub-menu" type="submit">
@@ -109,6 +111,7 @@
                 </button>
             </a>
         </div>
+        </form> 
     </div>
 </body>
 
