@@ -2,39 +2,54 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="/css/MetodeBayar.css">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="/gambar/plane.png">
-  <title>SWINGS.com</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/MetodeBayar.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="/gambar/plane.png">
+    <title>SWINGS.com</title>
 
 </head>
-<body>
-  <nav class="navbar-menu">
-    <div class="navbar">
-      <div class="navbar-left">
-        SWINGS.com
-      </div>
 
-      <div class="navbar-right">
-        <div class="logo">
+<body>
+    <nav class="navbar-menu">
+        <div class="navbar">
+            <div class="navbar-left">
+                SWINGS.com
+            </div>
+
+            <div class="navbar-right">
+                <div class="logo">
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  </nav>
-  <div class="grid-container">
+    </nav>
+    <div class="grid-container">
         <div class="item1">
             <div class="detail">
                 <span>Jakarta</span>
-                <span>---></span>
+                <span>--></span>
+                <span>Surabaya</span>
                 <span>.</span>
                 <span>Tanggal</span>
                 <span>.</span>
                 <span>Penumpang</span>
                 <span>.</span>
                 <span>Kelas</span>
+                <!-- <table>
+          <tr>
+            <td>Jakarta</td>
+            <td><img src="/gambar/DetailPemesan/right-arrow.png" width="10px"></td>
+            <td>Surabaya</td>
+            <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>
+            <td>Tanggal</td>
+            <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>
+            <td>JmlJns Penumpang</td>
+            <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>
+            <td>Kelass</td>
+          </tr>
+        </table> -->
             </div>
         </div>
         <div class="item2">
@@ -48,10 +63,21 @@
             </div>
             <div class="id">
                 <div class="lokasi">
-                    Jakarta-->Surabaya
+                    <table>
+                        <tr>
+                            <td>Jakarta</td>
+                            <td><img src="/gambar/DetailPemesan/right-arrow.png" width="10px"></td>
+                            <td>Surabaya</td>
+                        </tr>
+                    </table>
                 </div>
                 <div class="order_id">
-                    Order ID: 545226321
+                    <table>
+                        <tr>
+                            <td>Order ID : </td>
+                            <td>1234567</td>
+                        </tr>
+                    </table>
                 </div>
 
             </div>
@@ -60,10 +86,10 @@
                     <h3>Detail harga </h3>
                 </div>
                 <div class="total">
-                     <p>Total pembayaran    IDR 1.666.800</p>  
+                    <p>Total pembayaran IDR 1.666.800</p>
                 </div>
 
-                
+
             </div>
             <div class="virtual">
                 <div class="virtual_content">
@@ -82,11 +108,12 @@
                     </div>
 
                 </div>
-                
-                
             </div>
         </div>
-    
+        <div class="submit">
+            <a href="EtiketController"><button>SUBMIT</button></a>
+        </div>
     </div>
 </body>
+
 </html>

@@ -492,7 +492,7 @@
     </div>
   </div>
   <div class="submit">
-    <a href="EtiketController"><button type="submit">SUBMIT</button></a>
+    <a href="MetodebayarControl"><button type="submit">SUBMIT</button></a>
   </div>
 </body>
 

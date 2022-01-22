@@ -17,4 +17,10 @@ class Carimaskapi extends Controller
         // print_r($query->getResult());
         echo view('pages/caritiket');
     }
+    public function cari()
+    {
+        $session = session();
+        $model = new penerbanganModel;
+
+    }
 }
