@@ -355,7 +355,9 @@
                 <p>Bagasi</p>
             </div>
         </div>
-    </div>
+        <div class='button'>
+            <input </div>
+        </div>
     </div>
 
 </body>
