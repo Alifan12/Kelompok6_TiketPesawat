@@ -105,7 +105,7 @@ h1 {
   grid-area: right;
 }
 
-.item2 button {
+.item2 a {
   background-color: #2196f3;
   border: none;
   color: white;
@@ -189,7 +189,6 @@ h1 {
   border-radius: 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 24px;
 }
 .card-penerbangan button {
