@@ -168,11 +168,72 @@
             padding: 10px;
         }
 
+        .grid-detail-penumpang {
+            display: grid;
+            grid-template-areas: "menu menu right";
+            grid-gap: 0px;
+            padding: 10px;
+        }
+
+        .grid-detail-penumpang>div {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+
+        .container.detail-penumpang {
+            width: 80%;
+            margin: 0pt 0 20pt 10%;
+            padding: 2%;
+            border: 1pt solid gray;
+            border-radius: 2px;
+            display: grid;
+            grid-template-areas:
+                "detail";
+            grid-gap: 0px;
+        }
+
+        .no {
+            grid-area: detail;
+            padding-right: 30pt;
+            font-size: 12pt;
+            margin-left: -0cm;
+            margin-top: -10px;
+        }
+
+        .nama-penumpang {
+            grid-area: detail;
+            font-size: 12pt;
+            margin-left: 0cm;
+            margin-top: -10px;
+        }
+
+        .no-tiket {
+            grid-area: detail;
+            font-size: 12pt;
+            margin-left: -0cm;
+            margin-top: -10px;
+        }
+
+        .no-penerbangan {
+            grid-area: detail;
+            font-size: 12pt;
+            margin-left: -0cm;
+            margin-top: -10px;
+        }
+
+        .bagasi {
+            grid-area: detail;
+            font-size: 12pt;
+            margin-left: -0cm;
+            margin-top: -10px;
+        }
+
         .layout1 {
             grid-area: info;
             width: 50%;
             height: 50pt;
-            margin-top: 10%;
+            margin-top: 5%;
             background-color: white;
             grid-gap: 1px;
         }
@@ -188,8 +249,8 @@
             width: 50%;
             height: 50pt;
             background-color: white;
-            padding: 10px;
-            grid-gap: 2px;
+            padding: 5px;
+            grid-gap: 1px;
 
         }
 
@@ -236,6 +297,10 @@
             margin: 0 20px 20px 10px;
             ;
         }
+
+        .h3 {
+            font-size: medium;
+        }
     </style>
 </head>
 
@@ -268,14 +333,31 @@
         <div class="layout3">
             <p>03 January 2022<span></span>
             <p>04.00 <span> - </span>Jakarta (CKG)</p>
-            <br>|<br>|<br>|<br>2 jam 0 menit<br>|<br>|<br>|<br>
+            <br>|<br>|<br>|<br>2 jam 0 menit<br>|<br>|<br>|<br>v<br>
             <p>02 February 2022<span></span>
             <p>06.00 <span> - </span>Surabaya (SUB)</p>
         </div>
         <div class="detail-penumpang">
-            <h2>Detail Penumpang</h2>
+            <h3>Detail Penumpang</h3>
+            <div class="no">
+                <p>No</p>
+            </div>
+            <div class="nama-penumpang">
+                <p>Nama Penumpang</p>
+            </div>
+            <div class="no-tiket">
+                <p>No Tiket</p>
+            </div>
+            <div class="no-penerbangan">
+                <p>No Penerbangan</p>
+            </div>
+            <div class="bagasi">
+                <p>Bagasi</p>
+            </div>
         </div>
     </div>
+    </div>
+
 </body>
 
 </html>

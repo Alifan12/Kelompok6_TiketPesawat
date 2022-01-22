@@ -41,84 +41,44 @@
       </div>
     </div>
     <div class="item2">
-      <button>Cari Penelusuran</button>
+      <a href="Ordertiket">Cari Penelusuran</a>
     </div>
   </div>
 
   <!-- Body Pencarian Maskapai -->
+
   <div class="container">
+    <?php foreach ($tampil as $index => $value) : ?>
     <div class="card-penerbangan">
-      <p class="kol6">Citilink Indonesia</p>
+      <p class="kol6">
+        <?=$value->nama?>
+      </p>
       <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOy5NovtFWgOb3kowWhhUmRCdPGliqemHaifZhrSSGw8ml1rDS7nPf6-4EMjI4tjE5yc&usqp=CAU"
+        src="<?= $value->lambang ?> "
         width="150px" outline="black" class="kol1">
       <div class="kol2">
-        <p class="bold">04.30</p>
-        <p>CKG</p>
+        <p class="bold"><?= $value->waktu_berangkat?></p>
+        <p><?= $value->kode_bandara_asal?></p>
       </div>
       <div class="kol3">
         <p style="border-bottom: 1pt solid" align="center">1j 30m</p>
         <p align="center">Langsung</p>
       </div>
       <div class="kol4">
-        <p class="bold">06.00</p>
-        <p>SUB</p>
+        <p class="bold"><?= $value->waktu_sampai?></p>
+        <p><?= $value->kode_bandara_tujuan?></p>
       </div>
       <div class="kol5">
         <span class="bold-blue">IDR</span>
-        <span class="bold-blue">833.400</span>
+        <span class="bold-blue"><?= $value->harga?></span>
         <span style="color:gray">/pax</span>
       </div>
-      <button class="kol7"><a href="PDD">Pilih</a></button>
+      <a class="kol7" href="PDD">Pilih
+    </a>
     </div>
-    <div class="card-penerbangan">
-      <p class="kol6">Citilink Indonesia</p>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOy5NovtFWgOb3kowWhhUmRCdPGliqemHaifZhrSSGw8ml1rDS7nPf6-4EMjI4tjE5yc&usqp=CAU"
-        width="150px" outline="black" class="kol1">
-      <div class="kol2">
-        <p class="bold">04.30</p>
-        <p>CKG</p>
-      </div>
-      <div class="kol3">
-        <p style="border-bottom: 1pt solid" align="center">1j 30m</p>
-        <p align="center">Langsung</p>
-      </div>
-      <div class="kol4">
-        <p class="bold">06.00</p>
-        <p>SUB</p>
-      </div>
-      <div class="kol5">
-        <span class="bold-blue">IDR</span>
-        <span class="bold-blue">833.400</span>
-        <span style="color:gray">/pax</span>
-      </div>
-      <button class="kol7">Pilih</button>
-    </div>
-    <div class="card-penerbangan">
-      <p class="kol6">Citilink Indonesia</p>
-      <img
-        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOy5NovtFWgOb3kowWhhUmRCdPGliqemHaifZhrSSGw8ml1rDS7nPf6-4EMjI4tjE5yc&usqp=CAU"
-        width="150px" outline="black" class="kol1">
-      <div class="kol2">
-        <p class="bold">04.30</p>
-        <p>CKG</p>
-      </div>
-      <div class="kol3">
-        <p style="border-bottom: 1pt solid" align="center">1j 30m</p>
-        <p align="center">Langsung</p>
-      </div>
-      <div class="kol4">
-        <p class="bold">06.00</p>
-        <p>SUB</p>
-      </div>
-      <div class="kol5">
-        <span class="bold-blue">IDR</span>
-        <span class="bold-blue">833.400</span>
-        <span style="color:gray">/pax</span>
-      </div>
-      <button class="kol7">Pilih</button>
-    </div>
+    <?php endforeach; ?>
+
+  </div>
   </div>
 </body>
 

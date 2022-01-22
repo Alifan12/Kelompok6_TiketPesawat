@@ -276,13 +276,6 @@ span .choose {
   outline-color: none;
   background-image: #b5ceff;
 }
-.submit {
-  width: auto;
-  margin-top: 50px;
-  position: absolute;
-  left: 76%;
-  transform: translate(-50%, -50%);
-}
 
 .submit button {
   width: 150px;
@@ -295,4 +288,5 @@ span .choose {
   color: #ffffff;
   background-color: #ff9900;
   border: none;
+  margin-left: 30cm;
 }
