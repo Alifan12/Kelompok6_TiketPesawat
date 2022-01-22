@@ -18,7 +18,6 @@ class Ordertiket extends Controller
         $builder->join('penerbangan', 'pesawat.id = penerbangan.id_pesawat');
         $builder->join('harga', 'harga.id_penerbangan = penerbangan.id');
         $query = $builder->get()->getResult();
-        print_r($query);
         $data['tampil']=$query;
         return view('pages/order',$data);
     }

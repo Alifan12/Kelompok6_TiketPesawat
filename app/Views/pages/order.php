@@ -1,18 +1,3 @@
-<?php
-// foreach ($tampil as $index => $value) : 
-//   $awal  = $value->waktu_berangkat;
-//   $akhir = $value->waktu_sampai; // waktu sekarang
-//   $diff  = date_diff( $awal, $akhir );
-  
-// echo 'Selisih waktu: ';
-// echo $diff->y . ' tahun, ';
-// echo $diff->m . ' bulan, ';
-// echo $diff->d . ' hari, ';
-// echo $diff->h . ' jam, ';
-// echo $diff->i . ' menit, ';
-// echo $diff->s . ' detik, ';
-//   endforeach;
-?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -56,7 +41,7 @@
       </div>
     </div>
     <div class="item2">
-      <button>Cari Penelusuran</button>
+      <a href="Ordertiket">Cari Penelusuran</a>
     </div>
   </div>
 
