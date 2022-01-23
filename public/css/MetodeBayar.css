@@ -140,8 +140,8 @@ h1 {
 
 .container {
   width: auto;
-  height: 600px;
-  top: 1400px;
+  height: 800px;
+  top: 140px;
   background: white;
   border: 1px solid #091e44;
   box-sizing: border-box;
@@ -149,36 +149,37 @@ h1 {
   z-index: 5;
 }
 .kolom {
-  display: grid;
   position: relative;
-  top: 0px;
-  left: 17%;
-  display: flex;
-  width: 1000px;
-  height: 500px;
+  top: 50px;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: auto;
+  height: 400px;
   background-color: white;
-  box-sizing: border-box;
-  border: 0px solid black;
+  border: 0px solid rgba(0, 0, 0, 0.288);
   align-self: center;
   z-index: 4;
 }
 .metode {
   position: relative;
   z-index: 2;
-  width: 1000px;
-  height: 60px;
+  width: 100%;
+  height: 40px;
   left: 0px;
   top: 25px;
   background: #b5ceff;
   border-radius: 0px 90px 0px 0px;
+  display: inline-block;
 }
-.metode h2 {
-  margin-left: 10px;
+
+h2 {
+  margin: 10px 10px;
+  font-size: 20px;
 }
 .id {
   position: absolute;
-  height: 85px;
-  width: 300px;
+  height: 80px;
+  width: 38%;
   box-sizing: border-box;
   border: 0px solid black;
   background-color: #e8f0ff;
@@ -186,92 +187,105 @@ h1 {
   z-index: 2;
   left: 0px;
   top: 100px;
-  padding: 15pt;
+  padding: 10pt;
 }
+
 .detail_harga {
   position: absolute;
   right: 0px;
   top: 100px;
-  width: 550px;
-  height: 85px;
+  width: 60%;
+  height: 80px;
   background-color: #e8f0ff;
   box-sizing: border-box;
   border: 0px solid black;
   border-radius: 5px;
-  padding: 15px;
+  padding: 10pt;
 }
+
 .harga {
   position: absolute;
   margin-bottom: 5px;
   top: 0px;
-  left: 70px;
+  left: 30px;
 }
+
 .total {
   position: relative;
   top: 15px;
-  left: 55px;
+  left: 17px;
 }
+
 .virtual {
   position: absolute;
   top: 220px;
   left: 0px;
 
   height: 250px;
-  width: 1000px;
+  width: 100%;
   background-color: #e8f0ff;
   box-sizing: border-box;
   border: 0px solid black;
   border-radius: 5px;
   z-index: 3;
 }
+
 .virtual_content {
   display: grid;
   left: 50px;
   position: relative;
-  width: 900px;
+  width: 100%;
   height: 500px;
 
   z-index: 2;
 }
+
 .virtual_acc {
   border-bottom: 1.5pt solid black;
   margin-top: 5px;
-  width: 900px;
+  width: 100%;
   height: fit-content;
 }
+
 .virtual_acc h1 {
   margin: 0px;
   padding: 5px;
   font-weight: 150;
   border: 0px;
 }
+
 .virtual_acc small {
   color: grey;
   margin-left: 5px;
 }
+
 .BCA {
   border-bottom: 1.5pt solid black;
   margin-top: 15px;
-  width: 900px;
+  width: 100%;
   height: fit-content;
   position: absolute;
   top: 80px;
 }
+
 .BRI {
   border-bottom: 1.5pt solid black;
   margin-top: 5px;
-  width: 900px;
+  width: 100%;
   height: fit-content;
   position: absolute;
   top: 145px;
 }
+
 .virtual span {
   margin-left: 5px;
   float: inline-end;
 }
+
 span .choose {
   float: right;
 }
+
 .choose img {
   outline-color: none;
   background-image: #b5ceff;
@@ -281,6 +295,7 @@ span .choose {
   width: 150px;
   height: 40px;
   padding: 1px;
+  margin-top: 100px;
   margin-bottom: 50px;
   border-radius: 30px;
   font-size: 20px;
