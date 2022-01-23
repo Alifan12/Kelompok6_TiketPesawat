@@ -9,7 +9,7 @@ class penerbanganModel extends Model
 {
     protected $table = 'penerbangan';
     protected $useTimestamps = true;
-    protected $allowedFields = ['id', 'id_pesawat', 'waktu_berangkat','waktu_sampai','kode_bandara_asal','kode_bandara_tujuan','status_penerbangan'];
+    protected $allowedFields = ['id', 'id_pesawat', 'waktu_berangkat', 'waktu_sampai', 'kode_bandara_asal', 'kode_bandara_tujuan', 'status_penerbangan'];
 
     public function cariPenerbangan($kode_bandara_asal,$kode_bandara_tujuan,$waktu_berangkat,$kelas){
         

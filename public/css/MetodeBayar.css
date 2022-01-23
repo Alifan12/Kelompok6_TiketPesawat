@@ -224,7 +224,7 @@ h2 {
   height: 250px;
   width: 100%;
   background-color: #e8f0ff;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
   border: 0px solid black;
   border-radius: 5px;
   z-index: 3;
