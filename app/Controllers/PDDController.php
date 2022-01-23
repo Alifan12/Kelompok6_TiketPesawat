@@ -30,9 +30,19 @@ class PDDController extends BaseController
         $data['tampil']=$query;
         return view('DetailPemesanPenumpang',$data);
     }
-    public function metode()
+    public function save()
     {
-        return view('MetodePembayaran');
+        $model=new transaksidetailModel();
+            $data=[
+                
+                'title'           =>$this->request->getVar('titel'),
+                'nama_penumpang'  => $this->request->getVar('nama_lengkap'),
+                'NIK'             =>$this->request->getVar('nik'),
+                'no_telepon'      => $this->request->getVar('noTelepon')
+            ];
+            $model->insert($data);
+            return redirect()->to('/PDDController');
+
     }
 
 }

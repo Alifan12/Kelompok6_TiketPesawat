@@ -312,13 +312,12 @@
         <img src="/gambar/DetailPemesan/contacts.png" width="21px">
         <span>Detail Pemesan</span>
       </div>
-
       <form action="">
 
         <div class="row-1">
           <div class="sub1-row1">
             <label for="titel">Titel</label>
-            <select name="titel" id="titel">
+            <select name="title" id="titel">
               <option value=""></option>
               <option value="Tuan">Tuan</option>
               <option value="Nona">Nona</option>
@@ -327,7 +326,7 @@
           </div>
 
           <div class="sub2-row1">
-            <label for="namaLengkap">Nama Lengkap</label>
+            <label for="namalengkap">Nama Lengkap</label>
             <input type="text">
             <p>Isi sesuai KTP/Paspor/SIM (tanpa tanda baca dan gelar)</p>
           </div>
@@ -335,7 +334,7 @@
 
         <div class="row-2">
           <div class="sub-row2">
-            <label for="Email">Alamat Email</label>
+            <label for="email">Alamat Email</label>
             <input type="email">
             <p>E-ticket akan dikirim ke alamat email ini</p>
           </div>
@@ -348,7 +347,7 @@
           </div>
 
           <div class="sub2-row3">
-            <label for="noTelepon">No Telepon</label>
+            <label for="notelepon">No Telepon</label>
             <input type="text">
           </div>
         </div>
@@ -405,7 +404,7 @@
         <span>Detail Penumpang</span>
       </div>
 
-      <form action="<?= base_url(); ?>/MetodebayarControl " method="post">
+      <form action="<?= base_url(); ?>/MetodebayarControl/save " method="post">
         <div class="row-1">
           <div class="sub1-row1">
             <label for="titel">Titel</label>
@@ -419,7 +418,7 @@
 
           <div class="sub2-row1">
             <label for="namaLengkap">Nama Lengkap</label>
-            <input type="text">
+            <input type="text" name="nama_lengkap">
             <p>Isi sesuai KTP/Paspor/SIM (tanpa tanda baca dan gelar)</p>
           </div>
         </div>
@@ -444,7 +443,7 @@
           </div>
         </div>
         <div class="submit">
-          <a href="">
+          <a href="/MetodebayarControl">
             <input type="button" value="Lanjutkan Ke Pembayaran">
           </a>
         </div>
