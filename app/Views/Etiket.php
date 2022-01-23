@@ -20,9 +20,9 @@
             font-size: auto;
         }
 
-        h1 {
+        h3 {
             border-bottom: 1pt solid black;
-            margin: 30px;
+            margin: 5px;
         }
 
         .navbar {
@@ -146,7 +146,7 @@
         } */
         .styling {
             width: auto;
-            height: 80px;
+            height: 50px;
             background-color: #B5CEFF;
 
         }
@@ -163,120 +163,49 @@
 
             display: grid;
             grid-template-areas:
-                'info detail '
-                'kode detail ';
+                'info detail'
+                'info none'
+                'penumpang penumpang';
             grid-gap: 0px;
             padding: 5px;
-        }
-
-        .grid-detail-penumpang {
-            display: grid;
-            grid-template-areas: "detail detail detail detail detail";
-            grid-gap: 0px;
-            padding: 10px;
-        }
-
-        .grid-detail-penumpang>div {
-            text-align: center;
-            padding: 20px 0;
-            font-size: 30px;
-        }
-
-        .container.detail-penumpang {
-            width: 80%;
-            margin: 0pt 0 20pt 10%;
-            padding: 2%;
-            border: 1pt solid gray;
-            border-radius: 2px;
-            display: grid;
-            grid-template-areas:
-                "detail detail detail detail detail";
-            grid-gap: 0px;
-        }
-
-        .no {
-            grid-area: detail;
-            padding-right: 30pt;
-            font-size: 12pt;
-            margin-left: -0cm;
-            margin-top: -10px;
-        }
-
-        .nama-penumpang {
-            grid-area: detail;
-            font-size: 12pt;
-            margin-left: 0cm;
-            margin-top: -10px;
-        }
-
-        .no-tiket {
-            grid-area: detail;
-            font-size: 12pt;
-            margin-left: -0cm;
-            margin-top: -10px;
-        }
-
-        .no-penerbangan {
-            grid-area: detail;
-            font-size: 12pt;
-            margin-left: -0cm;
-            margin-top: -10px;
-        }
-
-        .bagasi {
-            grid-area: detail;
-            font-size: 12pt;
-            margin-left: -0cm;
-            margin-top: -10px;
         }
 
         .layout1 {
             grid-area: info;
             width: 50%;
-            height: 50pt;
+            height: 200pt;
             margin-top: 5%;
+            grid-gap: 5px;
+            padding: 1px;
             background-color: white;
-            grid-gap: 1px;
-            padding: 5px;
         }
 
         .layout p {
             padding: 20%;
-
             border: 1pt solid white;
-        }
-
-        .layout2 {
-            grid-area: kode;
-            width: 50%;
-            height: 50pt;
-            background-color: white;
-            padding: 5px;
-            grid-gap: 1px;
-
         }
 
         .layout3 {
             grid-area: detail;
-            width: auto;
+            width: 50%;
             background-color: white;
-            padding: 10px;
-            grid-gap: 10px;
+            padding: 1px;
+            grid-gap: 1px;
             font-weight: bold;
 
             text-align: center;
             padding-top: 2%;
-            border: 1pt solid white;
             background: #e8f0ff;
         }
 
-        .layout4 {
+        .detail-penumpang {
             grid-area: penumpang;
-            width: 80%;
-            height: 80pt;
-            margin-top: 20%;
-            text-align: center;
-            grid-gap: 2px;
+            height: 130pt;
+            background-color: white;
+            width: 89%;
+            padding: 5px;
+            grid-gap: 1px;
+
         }
 
         .judul {
@@ -291,17 +220,12 @@
 
         }
 
-        .br {
-            font-weight: normal;
-        }
-
         .metode h2 {
-            margin: 0 20px 20px 10px;
-            ;
+            margin: 0 10px 10px 5px;
         }
 
         .h3 {
-            font-size: medium;
+            font-size: small;
         }
 
         p {
@@ -323,6 +247,12 @@
 
         input[type=submit]:hover {
             opacity: 0.9;
+        }
+
+        table {
+            width: auto;
+            border: 0px;
+            background-color: white;
         }
     </style>
 </head>
@@ -346,12 +276,16 @@
     </div>
     <div class="container">
         <div class="layout1">
-            <p>Citilink Indonesia</p>
-            <p>Subclass S(Economy)</p>
-        </div>
-        <div class="layout2">
-            <p>Kode Booking</p>
-            <p>WAXCJ</p>
+            <img src="/gambar/Maskapai/Citilink.png" width="150px">
+            <div class='class-maskapai'>
+                <p>Subclass S(Economy)</p>
+            </div>
+            <div class="kode-maskapai">
+                <tr>
+                    <h4>Kode Booking</h4>
+                    <h2>WAXCJ</h2>
+                </tr>
+            </div>
         </div>
         <div class="layout3">
             <p>03 January 2022<span></span>
@@ -362,22 +296,47 @@
         </div>
         <div class="detail-penumpang">
             <h3>Detail Penumpang</h3>
-            <div class="no">
-                <p>No</p>
-            </div>
-            <div class="nama-penumpang">
-                <p>Nama Penumpang</p>
-            </div>
-            <div class="no-tiket">
-                <p>No Tiket</p>
-            </div>
-            <div class="no-penerbangan">
-                <p>No Penerbangan</p>
-            </div>
-            <div class="bagasi">
-                <p>Bagasi</p>
+            <div class='table-penumpang'>
+                <table>
+                    <tr>
+                        <div class="no">
+                            <th>No</th>
+                        </div>
+                        <div class="nama-penumpang">
+                            <th>Nama Penumpang</th>
+                        </div>
+                        <div class="tipe-tiket">
+                            <th>Tipe Tiket</th>
+                        </div>
+                        <div class="no-tiket">
+                            <th>No Tiket</th>
+                        </div>
+                        <div class="no-penerbangan">
+                            <th>No Penerbangan</th>
+                        </div>
+                        <div class="bagasi">
+                            <th>Bagasi</th>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Faris</td>
+                        <td>Dewasa</td>
+                        <td>18976</td>
+                        <td>QG877</td>
+                        <td>20Kg</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Farhan</td>
+                        <td>Dewasa</td>
+                        <td>18977</td>
+                        <td>QG877</td>
+                        <td>20Kg</td>
+                    </tr>
             </div>
         </div>
+        </table>
 
     </div>
     <input type="submit" value="Back" />
