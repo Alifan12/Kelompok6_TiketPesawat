@@ -24,7 +24,7 @@ class HomeAccController extends Controller
             'nama_lengkap' => $nama_lengkap
 
         ];
-        return view('/HomeAcc.php', $data);
+        return view('HomeAcc', $data);
     }
     public function profile()
     {

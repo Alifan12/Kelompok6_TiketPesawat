@@ -155,10 +155,7 @@
         </div>
     <script>
         var pw=document.getElementById('password').value;
-        console.log(password);
         document.getElementById('pwOut').innerHTML=pw;
     </script>
-
-
   </body>
 </html>

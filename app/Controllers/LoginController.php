@@ -33,18 +33,19 @@ class LoginController extends Controller
                     'logged_in'   =>TRUE
                 ];
                 $session->set($session_data);
-                return redirect()->to('/HomeAccController');
+                return redirect()->to(base_url() .'/HomeAccController');
+
         
             }
             else{
                 $session->setFlashdata('msg','Wrong password');
-                return redirect()->to('LoginController');
+                return redirect()->to(base_url() .'LoginController');
         
             }
         }
         else{
             $session->setFlashdata('msg','Username not found');
-            return redirect()->to('LoginController');
+            return redirect()->to(base_url() .'LoginController');
         
         }
 
