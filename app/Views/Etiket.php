@@ -171,7 +171,7 @@
 
         .grid-detail-penumpang {
             display: grid;
-            grid-template-areas: "menu menu right";
+            grid-template-areas: "detail detail detail detail detail";
             grid-gap: 0px;
             padding: 10px;
         }
@@ -190,7 +190,7 @@
             border-radius: 2px;
             display: grid;
             grid-template-areas:
-                "detail";
+                "detail detail detail detail detail";
             grid-gap: 0px;
         }
 
@@ -357,7 +357,7 @@
             <p>03 January 2022<span></span>
             <p>04.00 <span> - </span>Jakarta (CKG)</p>
             <br>|<br>|<br>|<br>2 jam 0 menit<br>|<br>|<br>|<br>v<br>
-            <p>02 February 2022<span></span>
+            <p>03 January 2022<span></span>
             <p>06.00 <span> - </span>Surabaya (SUB)</p>
         </div>
         <div class="detail-penumpang">
