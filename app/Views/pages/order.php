@@ -30,7 +30,7 @@ dd($this->data);
   <div class="grid-container">
     <div class="item1">
       <div class="detail">
-        <span><?= $this->data['$departure'] ?></span>
+        <span><?= $this->data['kode_bandara_asal'] ?></span>
         <span><img src="/gambar/DetailPemesan/right-arrow.png" width="14px"></span>
         <span><?= $arriv ?></span>
         <span><img src="/gambar/DetailPemesan/record.png" width="10px"></span>
