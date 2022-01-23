@@ -33,7 +33,6 @@ class RegisterController extends Controller{
                 'email'           =>$this->request->getVar('email'),
                 'username'        =>$this->request->getVar('username'),
                 'password'        =>password_hash($this->request->getVar('password'), PASSWORD_BCRYPT),
-
                 'no_telepon'      => $this->request->getVar('no_telepon')
             ];
             $model->insert($data);
@@ -42,6 +41,6 @@ class RegisterController extends Controller{
         else{
             $data['validation']=$this->validator;
             echo view('Regist',$data);
-        }
+        }   
     }
 }

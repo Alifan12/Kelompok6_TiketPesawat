@@ -175,7 +175,6 @@
             <div class="ketentuan">
                 <small>Dengan mendaftar kamu menyetujui</small><br>
                 <small>Kebijakan Privasi dan Ketentuan & Syarat kami.</small>
-
                 <center><br>
                     <small>Masuk jika sudah punya akun</small>
                 </center>
