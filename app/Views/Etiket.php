@@ -17,6 +17,7 @@
             font-family: sans-serif;
             background: #e8f0ff;
             overflow: auto;
+            font-size: auto;
         }
 
         h1 {
@@ -145,7 +146,7 @@
         } */
         .styling {
             width: auto;
-            height: 100px;
+            height: 80px;
             background-color: #B5CEFF;
 
         }
@@ -157,7 +158,7 @@
             top: 1500px;
             background: #e8f0ff;
 
-            box-sizing: border-box;
+            box-sizing: content-box;
 
 
             display: grid;
@@ -165,7 +166,7 @@
                 'info detail '
                 'kode detail ';
             grid-gap: 0px;
-            padding: 10px;
+            padding: 5px;
         }
 
         .grid-detail-penumpang {
@@ -236,6 +237,7 @@
             margin-top: 5%;
             background-color: white;
             grid-gap: 1px;
+            padding: 5px;
         }
 
         .layout p {
@@ -285,7 +287,7 @@
             padding-left: 20pt;
             background: #B5CEFF;
             border-radius: 0px 90px 0px 0px;
-            margin: 30pt 20%;
+            margin: 23pt 20%;
 
         }
 
@@ -300,6 +302,27 @@
 
         .h3 {
             font-size: medium;
+        }
+
+        p {
+            font-size: smaller;
+        }
+
+        input[type=submit] {
+            font-size: 15px;
+            margin-top: -300cm;
+            margin-bottom: 50px;
+            margin-left: 25cm;
+            font-family: sans-serif;
+            background: #22a4cf;
+            color: white;
+            border: white 3px solid;
+            border-radius: 5px;
+            padding: 11px 20px;
+        }
+
+        input[type=submit]:hover {
+            opacity: 0.9;
         }
     </style>
 </head>
@@ -355,10 +378,10 @@
                 <p>Bagasi</p>
             </div>
         </div>
-        <div class='button'>
-            <input </div>
-        </div>
+
     </div>
+    <input type="submit" value="Back" />
+
 
 </body>
 
