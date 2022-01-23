@@ -34,6 +34,7 @@ $routes->setAutoRoute(true);
 $routes->get('/', 'Home::index');
 $routes->get('/HomeAcc', 'HomeAccController::index',['filter' => 'auth']);
 $routes->post('/search','Carimaskapi::cari');
+$routes->post('/PDD','PDDController::Ambil');
 
 /*
  * --------------------------------------------------------------------
