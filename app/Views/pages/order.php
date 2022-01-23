@@ -12,7 +12,8 @@
 
 </head>
 <?php
-dd($this->data);
+// dd($this->data);
+
 ?>
 <body>
   <nav class="navbar">
@@ -30,57 +31,54 @@ dd($this->data);
   <div class="grid-container">
     <div class="item1">
       <div class="detail">
-        <span><?= $this->data['kode_bandara_asal'] ?></span>
+        <span><?= $this->data[0]['kode_bandara_asal'] ?></span>
         <span><img src="/gambar/DetailPemesan/right-arrow.png" width="14px"></span>
-        <span><?= $arriv ?></span>
+        <span><?= $this->data[0]['kode_bandara_tujuan'] ?></span>
         <span><img src="/gambar/DetailPemesan/record.png" width="10px"></span>
-        <span><?= $tanggal ?></span>
+        <span><?= $this->data[0]['waktu_berangkat'] ?></span>
+      
         <span><img src="/gambar/DetailPemesan/record.png" width="10px"></span>
-        <span><?= $dewasa ?></span>
-        <span>Dewasa</span>
-        <span> </span>
-        <span><?= $anak ?></span>
-        <span>Anak anak</span>
-        <span> </span>
-        <span><?= $bayi ?></span>
-        <span>Bayi</span>
-        <span><img src="/gambar/DetailPemesan/record.png" width="10px"></span>
-        <span><?= $kelas ?></span>
+        <span><?=$this->data[0]['kelas'] ?></span>
       </div>
     </div>
     <div class="item2">
-      <a href="">Cari Penelusuran</a>
+      <a href="Carimaskapi">Cari Penelusuran</a>
     </div>
   </div>
 
   <!-- Body Pencarian Maskapai -->
 
   <div class="container">
-    <?php foreach ($tampil as $index => $value) : ?>
+    <?php foreach ($this->data as $index => $value) : 
+      $date1=date_create($value['waktu_berangkat']);
+      $date2=date_create($value['waktu_sampai']);
+
+      $interval = date_diff($date1, $date2,true);
+      ?>
     <div class="card-penerbangan">
       <p class="kol6">
-        <?= $value->nama ?>
+        <?= $value['nama'] ?>
       </p>
-      <img src="<?= $value->lambang ?> " width="150px" outline="black" class="kol1">
+      <img src="<?= $value['lambang'] ?> " width="150px" outline="black" class="kol1">
       <div class="kol2">
-        <p class="bold"><?= $value->waktu_berangkat ?></p>
-        <p><?= $value->kode_bandara_asal ?></p>
+        <p class="bold"><?php echo date_format($date1, 'H:i'); ?></p>
+        <p><?= $value['kode_bandara_asal'] ?></p>
       </div>
       <div class="kol3">
-        <p style="border-bottom: 1pt solid" align="center">1j 30m</p>
+        <p style="border-bottom: 1pt solid" align="center">
+      <?= $interval->format('%h jam %i menit'); ?></p>
         <p align="center">Langsung</p>
       </div>
       <div class="kol4">
-        <p class="bold"><?= $value->waktu_sampai ?></p>
-        <p><?= $value->kode_bandara_tujuan ?></p>
+        <p class="bold"><?= date_format($date2, 'H:i'); ?></p>
+        <p><?= $value['kode_bandara_tujuan'] ?></p>
       </div>
       <div class="kol5">
         <span class="bold-blue">IDR</span>
-        <span class="bold-blue"><?= $value->harga ?></span>
+        <span class="bold-blue"><?= $value['harga'] ?></span>
         <span style="color:gray">/pax</span>
       </div>
-      <a class="kol7" href="PDD">Pilih
-      </a>
+      <a class="kol7" href="PDD">Pilih</a>
     </div>
     <?php endforeach; ?>
 
