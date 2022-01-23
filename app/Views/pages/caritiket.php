@@ -31,7 +31,7 @@
     </nav>
     <div class="container">
         <h1>Beli Tiket</h1>
-        <form action="Ordertiket" method="Get">
+        <form action="/search" method="POST">
             <div class="txtfield">
                 <div class="input-box">
                     <label>Dari</label><br>
@@ -98,7 +98,7 @@
             <div class="kabin">
                 <label for="kelaskabin">
                     <img src="/gambar/Cari/cabin.png" width="30px"></label>
-                <select name="kelaskabin">
+                <select name="kelas">
                     <option value="Ekonomi">Ekonomi</option>
                     <option value="Bisnis">Bisnis</option>
                 </select>
