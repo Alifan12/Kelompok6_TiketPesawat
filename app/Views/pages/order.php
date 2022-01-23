@@ -1,84 +1,3 @@
-<?php
-$arrival = $_GET['arrival'];
-$arriv = null;
-switch ($arrival) {
-  case "ACHC":
-    $arriv = "Banda Aceh";
-    break;
-  case "DPSC":
-    $arriv = "Bali";
-    break;
-  case "JKTC":
-    $arriv = "Jakarta";
-    break;
-  case "JOGC":
-    $arriv = "Yogyakarta";
-    break;
-  case "KUPC":
-    $arriv = "Kupang";
-    break;
-  case "MESC":
-    $arriv = "Medan";
-    break;
-  case "MKSC":
-    $arriv = "Makassar";
-    break;
-  case "PDGC":
-    $arriv = "Padang";
-    break;
-  case "PLGC":
-    $arriv = "Palembang";
-    break;
-  case "SRIC":
-    $arriv = "Samarinda";
-    break;
-  default:
-    $arriv = "Surabaya";
-}
-$depart = $_GET['departure'];
-$departure = null;
-switch ($depart) {
-  case "ACHC":
-    $departure = "Banda Aceh";
-    break;
-  case "DPSC":
-    $departure = "Bali";
-    break;
-  case "JKTC":
-    $departure = "Jakarta";
-    break;
-  case "JOGC":
-    $departure = "Yogyakarta";
-    break;
-  case "KUPC":
-    $departure = "Kupang";
-    break;
-  case "MESC":
-    $departure = "Medan";
-    break;
-  case "MKSC":
-    $departure = "Makassar";
-    break;
-  case "PDGC":
-    $departure = "Padang";
-    break;
-  case "PLGC":
-    $departure = "Palembang";
-    break;
-  case "SRIC":
-    $departure = "Samarinda";
-    break;
-  default:
-    $departure = "Surabaya";
-}
-
-$tanggal = $_GET['tanggalberangkat'];
-$dewasa = $_GET['Dewasa'];
-$anak = $_GET['anak-anakk'];
-$bayi = $_GET['bayi'];
-$kelas = $_GET['kelaskabin'];
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -92,7 +11,9 @@ $kelas = $_GET['kelaskabin'];
   <title> SWINGS.com</title>
 
 </head>
-
+<?php
+dd($this->data);
+?>
 <body>
   <nav class="navbar">
     <div class="navbar-left">
@@ -109,7 +30,7 @@ $kelas = $_GET['kelaskabin'];
   <div class="grid-container">
     <div class="item1">
       <div class="detail">
-        <span><?= $departure ?></span>
+        <span><?= $this->data['$departure'] ?></span>
         <span><img src="/gambar/DetailPemesan/right-arrow.png" width="14px"></span>
         <span><?= $arriv ?></span>
         <span><img src="/gambar/DetailPemesan/record.png" width="10px"></span>
