@@ -55,6 +55,6 @@ class LoginController extends Controller
     {
         $session = session();
         $session->destroy();
-        return redirect()->to('/LoginController');
+        return redirect()->to('/Home');
     }
 } 

@@ -23,7 +23,7 @@ class penerbanganModel extends Model
         // // ->join('bandara','bandara.kode_bandara=penerbangan.kode_bandara_asal and bandara.kode_bandara=penerbangan.kode_bandara_tujuan')
         ->where(['kode_bandara_asal'=>$kode_bandara_asal,'kode_bandara_tujuan'=>$kode_bandara_tujuan,'kelas'=>$kelas,'DATE(waktu_berangkat)'=>date('Y-m-d', strtotime($waktu_berangkat))])
         ->get()
-        ->getResult();
+        ->getResult('array');
         return($result);
 
     }
