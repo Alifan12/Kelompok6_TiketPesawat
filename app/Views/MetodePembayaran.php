@@ -61,7 +61,7 @@
           <h3>Detail harga </h3>
         </div>
         <div class="total">
-          <p>Total pembayaran <?= $this->data['tampil'][0]['id_transaksi'] ?></p>
+          <p>Total pembayaran <?= $this->data['tampil'][0]['harga'] ?></p>
         </div>
 
 
