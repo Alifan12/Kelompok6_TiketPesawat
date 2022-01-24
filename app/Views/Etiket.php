@@ -316,7 +316,7 @@
                 <br>
                 <h4>Kode Booking</h4>
                 <div class="kode-maskapai">
-                    <h2>WAXCJ</h2>
+                    <h2>WAKXCJ</h2>
             </tr>
         </div>
     </div>
