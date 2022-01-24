@@ -126,15 +126,15 @@
     </div>
   </div>
   <script>
-  function menuToggleBCA() {
-    const toggleMenu = document.querySelector('.menu-bca');
-    toggleMenu.classList.toggle('active')
-  }
+    function menuToggleBCA() {
+      const toggleMenu = document.querySelector('.menu-bca');
+      toggleMenu.classList.toggle('active')
+    }
 
-  function menuToggleBRI() {
-    const toggleMenu = document.querySelector('.menu-bri');
-    toggleMenu.classList.toggle('active')
-  }
+    function menuToggleBRI() {
+      const toggleMenu = document.querySelector('.menu-bri');
+      toggleMenu.classList.toggle('active')
+    }
   </script>
 </body>
 
