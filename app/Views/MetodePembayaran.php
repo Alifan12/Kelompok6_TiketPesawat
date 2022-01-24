@@ -89,7 +89,7 @@
                   <p>Total Pembayaran</p>
                 </li>
                 <li>
-                  <h4>IDR total</h4>
+                  <h4>IDR <?= $this->data['tampil'][0]['harga'] ?></h4>
                 </li>
               </ul>
             </div>
@@ -112,7 +112,7 @@
                   <p>Total Pembayaran</p>
                 </li>
                 <li>
-                  <h4>IDR total</h4>
+                  <h4>IDR <?= $this->data['tampil'][0]['harga'] ?></h4>
                 </li>
               </ul>
             </div>
