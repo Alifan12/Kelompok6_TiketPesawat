@@ -378,7 +378,7 @@
       </form>
     </div>
     <?php 
-// dd($this->data) 
+// dd($this->data) ;
 ?>
     <!-- Kolom Penerbangan -->
     <div class="detail-penerbangan">
@@ -387,7 +387,7 @@
       </div>
       <div class="body-detail">
         <div class="row1">
-          <?= $this->data['tampil'][0]['kode_bandara_asal'] ?>
+
           <img src="/gambar/DetailPemesan/right-arrow.png" width="13px">
           <?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?>
         </div>
@@ -465,6 +465,8 @@
             <input type="text">
           </div>
         </div>
+      </form>
+      <form action="<?= base_url(); ?> " method="post">
         <div class="submit">
           <a href="/MetodebayarControl">
             <input type="button" class="submit" value="Lanjutkan Ke Pembayaran">
@@ -472,6 +474,7 @@
           </a>
         </div>
       </form>
+      
     </div>
   </div>
   
