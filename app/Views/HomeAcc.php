@@ -330,7 +330,7 @@ p {
     <div class="navbar-left">
       <!-- <div class="logo"></div> -->
       <div class="Judul">
-        <a href="/">SWINGS.com</a>
+        <a href="HomeAccController">SWINGS.com</a>
       </div>
 
     </div>

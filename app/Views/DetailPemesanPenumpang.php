@@ -278,6 +278,27 @@
       border: none;
       cursor: pointer;
     }
+    .Judul a {
+  color: white;
+  font-size: 24px;
+  font-weight: 500;
+  outline: none;
+}
+.Judul a:link {
+  text-decoration: none;
+}
+
+.Judul a:visited {
+  text-decoration: none;
+}
+
+.Judul a:hover {
+  text-decoration: underline;
+}
+
+.Judul a:active {
+  text-decoration: underline;
+}
   </style>
 </head>
 
@@ -285,7 +306,9 @@
   <nav class="navbar-menu">
     <div class="navbar">
       <div class="navbar-left">
-        SWINGS.com
+      <div class="Judul">
+        <a href="HomeAccController">SWINGS.com</a>
+      </div>
       </div>
 
       <div class="navbar-right">
