@@ -229,6 +229,7 @@
     text-align: center;
     border-radius: 20px;
   }
+
   .Judul a {
     text-decoration: none;
     color: white;
@@ -242,9 +243,9 @@
   <nav class="navbar-menu">
     <div class="navbar">
       <div class="navbar-left">
-      <div class="Judul">
-        <a href="HomeAccController">SWINGS.com</a>
-      </div>
+        <div class="Judul">
+          <a href="HomeAccController">SWINGS.com</a>
+        </div>
       </div>
 
       <div class="navbar-right">
@@ -277,10 +278,14 @@
     </div>
 
     <?php
-      $date1 = date_create($tampil[0]['waktu_berangkat']);
-      $date2 = date_create($tampil[0]['waktu_sampai']);
+    // dd($this->data['tampil'][0]['username']); 
+    ?>
 
-      $interval = date_diff($date1, $date2, true);
+    <?php
+    $date1 = date_create($tampil[0]['waktu_berangkat']);
+    $date2 = date_create($tampil[0]['waktu_sampai']);
+
+    $interval = date_diff($date1, $date2, true);
     ?>
     <div class="list-pesanan">
       <div class="top-list-pesanan">
@@ -297,16 +302,16 @@
           <table>
             <tr>
               <td>Order ID : </td>
-              <td>XCA980<?= $tampil[0]['idtransaksidetail']?></td>
+              <td>XCA980<?= $tampil[0]['idtransaksidetail'] ?></td>
             </tr>
           </table>
         </div>
         <div class="resume-rute">
           <table>
             <tr>
-              <td>  <?= date_format($date1, 'H:i'); ?></td>
+              <td> <?= date_format($date1, 'H:i'); ?></td>
               <td><img src="/gambar/DetailPemesan/right-arrow.png" width="10px"></td>
-              <td>  <?= date_format($date2, 'H:i'); ?></td>
+              <td> <?= date_format($date2, 'H:i'); ?></td>
             </tr>
           </table>
         </div>
@@ -315,14 +320,14 @@
             <tr>
               <td>2 Dewasa</td>
               <td><img src="/gambar/homePembatalan/line.png" width="18px"></td>
-              <td>  <?= date_format($date1, 'l,d F Y'); ?></td>
+              <td> <?= date_format($date1, 'l,d F Y'); ?></td>
               <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>
             </tr>
           </table>
         </div>
         <div class="row-bottom">
           <div class="info-batal-tiket">
-            <a href="EtiketController"> <button class="refund">E-ticket sudah terbit</button></a>  
+            <a href="EtiketController"> <button class="refund">E-ticket sudah terbit</button></a>
             <a href="/Refund"> <button class="refund">Refund sebagian</button></a>
           </div>
         </div>
