@@ -297,7 +297,7 @@
           <table>
             <tr>
               <td>Order ID : </td>
-              <td><?= $tampil[0]['id_transaksi']?></td>
+              <td>XCA980<?= $tampil[0]['idtransaksidetail']?></td>
             </tr>
           </table>
         </div>
