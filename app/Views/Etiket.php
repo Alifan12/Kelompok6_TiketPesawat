@@ -284,6 +284,7 @@
         .durasi {
             font-size: small;
             text-align: center;
+            color: blue;
         }
     </style>
 </head>
