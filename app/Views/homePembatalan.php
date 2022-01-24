@@ -276,10 +276,16 @@
       </div>
     </div>
 
+    <?php
+      $date1 = date_create($tampil[0]['waktu_berangkat']);
+      $date2 = date_create($tampil[0]['waktu_sampai']);
+
+      $interval = date_diff($date1, $date2, true);
+    ?>
     <div class="list-pesanan">
       <div class="top-list-pesanan">
         <div class="top-right">
-          <a href="refund.php" class="to-refund">Refund</a>
+          <a href="#" class="to-refund">Refund</a>
         </div>
         <div class="top-left">
           <img src="/gambar/homePembatalan/plane.png"><span> Pesawat </span>
@@ -291,16 +297,16 @@
           <table>
             <tr>
               <td>Order ID : </td>
-              <td>1234567</td>
+              <td><?= $tampil[0]['id_transaksi']?></td>
             </tr>
           </table>
         </div>
         <div class="resume-rute">
           <table>
             <tr>
-              <td>Jakarta</td>
+              <td>  <?= date_format($date1, 'H:i'); ?></td>
               <td><img src="/gambar/DetailPemesan/right-arrow.png" width="10px"></td>
-              <td>Surabaya</td>
+              <td>  <?= date_format($date2, 'H:i'); ?></td>
             </tr>
           </table>
         </div>
@@ -309,115 +315,15 @@
             <tr>
               <td>2 Dewasa</td>
               <td><img src="/gambar/homePembatalan/line.png" width="18px"></td>
-              <td>Sen, 3 Jan 2022</td>
+              <td>  <?= date_format($date1, 'l,d F Y'); ?></td>
               <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>
-              <td>04:30</td>
             </tr>
           </table>
         </div>
         <div class="row-bottom">
           <div class="info-batal-tiket">
-            <button class="e-ticket">E-ticket sudah terbit</button>
-            <a href="Refund"> <button class="refund">Refund sebagian</button></a>
-            <a class="lihat-detail" href="#">Lihat Detail</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="list-pesanan">
-      <div class="top-list-pesanan">
-        <div class="top-right">
-          <a href="refund.php" class="to-refund">Refund</a>
-        </div>
-        <div class="top-left">
-          <img src="/gambar/homePembatalan/plane.png"><span> Pesawat </span>
-        </div>
-      </div>
-      <div class="top-border"></div>
-      <div class="middle-list-pesanan">
-        <div class="order-id">
-          <table>
-            <tr>
-              <td>Order ID : </td>
-              <td>1213567</td>
-            </tr>
-          </table>
-        </div>
-        <div class="resume-rute">
-          <table>
-            <tr>
-              <td>Jakarta</td>
-              <td><img src="/gambar/DetailPemesan/right-arrow.png" width="10px"></td>
-              <td>Semarang</td>
-            </tr>
-          </table>
-        </div>
-        <div class="keberangkatan">
-          <table>
-            <tr>
-              <td>1 Dewasa</td>
-              <td><img src="/gambar/homePembatalan/line.png" width="18px"></td>
-              <td>Sen, 3 Jan 2021</td>
-              <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>
-              <td>04:30</td>
-            </tr>
-          </table>
-        </div>
-        <div class="row-bottom">
-          <div class="info-batal-tiket">
-            <button class="e-ticket">E-ticket sudah terbit</button>
-            <button class="refund">Refund sebagian</button>
-            <a class="lihat-detail" href="#">Lihat Detail</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="list-pesanan">
-      <div class="top-list-pesanan">
-        <div class="top-right">
-          <a href="refund.php" class="to-refund">Refund</a>
-        </div>
-        <div class="top-left">
-          <img src="/gambar/homePembatalan/plane.png"><span> Pesawat </span>
-        </div>
-      </div>
-      <div class="top-border"></div>
-      <div class="middle-list-pesanan">
-        <div class="order-id">
-          <table>
-            <tr>
-              <td>Order ID : </td>
-              <td>1223567</td>
-            </tr>
-          </table>
-        </div>
-        <div class="resume-rute">
-          <table>
-            <tr>
-              <td>Semarang</td>
-              <td><img src="/gambar/DetailPemesan/right-arrow.png" width="10px"></td>
-              <td>Jakarta</td>
-            </tr>
-          </table>
-        </div>
-        <div class="keberangkatan">
-          <table>
-            <tr>
-              <td>1 Dewasa</td>
-              <td><img src="/gambar/homePembatalan/line.png" width="18px"></td>
-              <td>Sen, 12 Maret 2021</td>
-              <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>
-              <td>13:30</td>
-            </tr>
-          </table>
-        </div>
-        <div class="row-bottom">
-          <div class="info-batal-tiket">
-            <button class="e-ticket">E-ticket sudah terbit</button>
-            <button class="refund">Refund sebagian</button>
-            <a class="lihat-detail" href="#">Lihat Detail</a>
+            <a href="EtiketController"> <button class="refund">E-ticket sudah terbit</button></a>  
+            <a href="/Refund"> <button class="refund">Refund sebagian</button></a>
           </div>
         </div>
       </div>

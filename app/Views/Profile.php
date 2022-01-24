@@ -33,12 +33,10 @@
               <div class="select_profile">
                 <select class="select" nama="pilihprofile" onchange="location = this.value;">
                   <option selected value="#">-Menu-</option>
-
                   <option value="/HomeAccController/profile">Profile</option>
                   <option value="/LoginController/logout">Sign Out</option>
 
                 </select>
-
               </div>
 
             </div>

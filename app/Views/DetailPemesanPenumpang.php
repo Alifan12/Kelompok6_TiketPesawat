@@ -390,7 +390,7 @@
       </div>
       <div class="body-detail">
         <div class="row1">
-
+          <?= $this->data['tampil'][0]['kode_bandara_asal'] ?>
           <img src="/gambar/DetailPemesan/right-arrow.png" width="13px">
           <?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?>
         </div>
@@ -473,7 +473,9 @@
       <form action="<?= base_url(); ?> /show" method="post">
         <div class="submit">
           <input type="text" name="id_harga" id="id_harga" value="<?= $this->data['tampil'][0]['id_harga']; ?>" hidden>
-          <input class="submit" type="submit" value="Lanjut Ke Pembayaran">
+          <a href="MetodebayarControl/Ambil">
+            <input class="submit" type="submit" value="Lanjut Ke Pembayaran">
+          </a>
         </div>
       </form>
 

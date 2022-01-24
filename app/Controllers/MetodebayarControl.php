@@ -11,6 +11,12 @@ class MetodebayarControl extends BaseController
         $query   = $builder->get();  // Produces: SELECT * FROM mytable
         return view('MetodePembayaran.php');
     }
+    public function Ambil(){
+        $db      = \Config\Database::connect();
+        $builder = $db->table('metode_pembayaran');
+        $query   = $builder->get();  // Produces: SELECT * FROM mytable
+        return view('MetodePembayaran.php');
+    }
 
     // public function tampilPerjalanan()
     // {
