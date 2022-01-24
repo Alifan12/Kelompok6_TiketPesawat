@@ -26,20 +26,6 @@
     </div>
   </nav>
   <div class="grid-container">
-
-    <!-- <table>
-          <tr>
-            <td>Jakarta</td>
-            <td><img src="/gambar/DetailPemesan/right-arrow.png" width="10px"></td>
-            <td>Surabaya</td>
-            <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>
-            <td>Tanggal</td>
-            <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>
-            <td>JmlJns Penumpang</td>
-            <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>
-            <td>Kelass</td>
-          </tr>
-        </table> -->
   </div>
   </div>
   <div class="item2">
