@@ -427,7 +427,7 @@
         <span>Detail Penumpang</span>
       </div>
 
-      <form action="<?= base_url(); ?>/MetodebayarControl/save " method="post">
+      <form action="<?= base_url(); ?>/Metode " method="post">
         <div class="row-1">
           <div class="sub1-row1">
             <label for="titel">Titel</label>
@@ -467,7 +467,8 @@
         </div>
         <div class="submit">
           <a href="/MetodebayarControl">
-            <input type="button" value="Lanjutkan Ke Pembayaran">
+            <input type="button" class="submit" value="Lanjutkan Ke Pembayaran">
+            <input type="text" name="id_harga" id="id_harga" value="<?= $this->data['tampil'][0]['id_harga']; ?>" hidden>
           </a>
         </div>
       </form>

@@ -229,6 +229,12 @@
     text-align: center;
     border-radius: 20px;
   }
+  .Judul a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-left: 10px;
+  }
   </style>
 </head>
 
@@ -236,7 +242,9 @@
   <nav class="navbar-menu">
     <div class="navbar">
       <div class="navbar-left">
-        SWINGS.com
+      <div class="Judul">
+        <a href="HomeAccController">SWINGS.com</a>
+      </div>
       </div>
 
       <div class="navbar-right">

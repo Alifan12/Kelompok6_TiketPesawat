@@ -11,4 +11,5 @@ class MetodebayarControl extends BaseController
         $query   = $builder->get();  // Produces: SELECT * FROM mytable
         return view('MetodePembayaran.php');
     }
+    
 }

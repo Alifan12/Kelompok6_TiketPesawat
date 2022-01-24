@@ -99,6 +99,7 @@
                 <label for="kelaskabin">
                     <img src="/gambar/Cari/cabin.png" width="30px"></label>
                 <select name="kelas">
+                    <option ></option>
                     <option value="Ekonomi">Ekonomi</option>
                     <option value="Bisnis">Bisnis</option>
                 </select>

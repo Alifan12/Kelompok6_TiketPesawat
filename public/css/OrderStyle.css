@@ -115,6 +115,7 @@ h1 {
 
 .item2 {
   grid-area: right;
+  float: right;
 }
 
 .item2 a {
@@ -126,7 +127,7 @@ h1 {
   text-decoration: none;
   display: inline-block;
   font-size: 24px;
-  margin-left: 20pt;
+  margin-left: 50pt;
   border-radius: 20pt;
 }
 
@@ -192,16 +193,20 @@ h1 {
   font-size: 14pt;
   margin-top: 10pt;
 }
-.kol7 {
+form{
+  grid-area: tombol;
+}
+form .kol7 {
   grid-area: tombol;
   background-color: #ff9900;
   border: none;
   color: white;
   padding: 8px 100px;
   border-radius: 20px;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   font-size: 24px;
+  cursor: pointer;
 }
 
 .bold {
