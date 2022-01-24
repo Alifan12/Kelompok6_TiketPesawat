@@ -178,6 +178,7 @@
             grid-gap: 5px;
             padding: 1px;
             background-color: white;
+            text-align: center;
         }
 
         .layout p {
@@ -198,9 +199,14 @@
             background: #e8f0ff;
         }
 
+        .kode-maskapai {
+            font-size: large;
+            color: blue;
+        }
+
         .detail-penumpang {
             grid-area: penumpang;
-            height: 130pt;
+            height: 100pt;
             background-color: white;
             width: 89%;
             padding: 5px;
@@ -221,7 +227,7 @@
         }
 
         .metode h2 {
-            margin: 0 10px 10px 5px;
+            margin: 0 20px 20px 10px;
         }
 
         .h3 {
@@ -254,6 +260,31 @@
             border: 0px;
             background-color: white;
         }
+
+        .jam {
+            font-size: large;
+            text-align: left;
+        }
+
+        .hari {
+            font-size: small;
+            text-align: left;
+        }
+
+        .bandara-asal {
+            font-size: larger;
+            text-align: right;
+        }
+
+        .bandara-tujuan {
+            font-size: larger;
+            text-align: right;
+        }
+
+        .durasi {
+            font-size: small;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -277,72 +308,89 @@
     <div class="container">
         <div class="layout1">
             <img src="/gambar/Maskapai/Citilink.png" width="150px">
-            <div class='class-maskapai'>
+            <div class="class-maskapai">
                 <p>Subclass S(Economy)</p>
             </div>
-            <div class="kode-maskapai">
-                <tr>
-                    <h4>Kode Booking</h4>
+            <tr>
+                <br>
+                <h4>Kode Booking</h4>
+                <div class="kode-maskapai">
                     <h2>WAXCJ</h2>
-                </tr>
-            </div>
+            </tr>
         </div>
-        <div class="layout3">
-            <p>03 January 2022<span></span>
-            <p>04.00 <span> - </span>Jakarta (CKG)</p>
+    </div>
+    <div class="layout3">
+        <div class="jam">
+            <p>04.00</p>
+        </div>
+        <div class="hari">
+            <p>Senin, 3 Januari 2022</p>
+        </div>
+        <div class="bandara-asal">
+            <p>Jakarta (CKG)</p>
+        </div>
+        <div class="durasi">
             <br>|<br>|<br>|<br>2 jam 0 menit<br>|<br>|<br>|<br>v<br>
-            <p>03 January 2022<span></span>
-            <p>06.00 <span> - </span>Surabaya (SUB)</p>
         </div>
-        <div class="detail-penumpang">
-            <h3>Detail Penumpang</h3>
-            <div class='table-penumpang'>
-                <table>
-                    <tr>
-                        <div class="no">
-                            <th>No</th>
-                        </div>
-                        <div class="nama-penumpang">
-                            <th>Nama Penumpang</th>
-                        </div>
-                        <div class="tipe-tiket">
-                            <th>Tipe Tiket</th>
-                        </div>
-                        <div class="no-tiket">
-                            <th>No Tiket</th>
-                        </div>
-                        <div class="no-penerbangan">
-                            <th>No Penerbangan</th>
-                        </div>
-                        <div class="bagasi">
-                            <th>Bagasi</th>
-                        </div>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>Faris</td>
-                        <td>Dewasa</td>
-                        <td>18976</td>
-                        <td>QG877</td>
-                        <td>20Kg</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Farhan</td>
-                        <td>Dewasa</td>
-                        <td>18977</td>
-                        <td>QG877</td>
-                        <td>20Kg</td>
-                    </tr>
-            </div>
+        <div class="bandara-tujuan">
+            <p>Surabaya (SUB)</p>
         </div>
-        </table>
+        <div class="jam">
+            <p>06.00</p>
+        </div>
+        <div class="hari">
+            <p>Senin, 3 Januari 2022</p>
+        </div>
+    </div>
+    <div class="detail-penumpang">
+        <h3>Penumpang</h3>
+        <div class='table-penumpang'>
+            <table>
+                <tr>
+                    <div class="no">
+                        <th>No</th>
+                    </div>
+                    <div class="nama-penumpang">
+                        <th>Nama Penumpang</th>
+                    </div>
+                    <div class="tipe-tiket">
+                        <th>Tipe Tiket</th>
+                    </div>
+                    <div class="no-tiket">
+                        <th>No Tiket</th>
+                    </div>
+                    <div class="no-penerbangan">
+                        <th>No Penerbangan</th>
+                    </div>
+                    <div class="bagasi">
+                        <th>Bagasi</th>
+                    </div>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Faris</td>
+                    <td>Dewasa</td>
+                    <td>18976</td>
+                    <td>QG877</td>
+                    <td>20Kg</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Farhan</td>
+                    <td>Dewasa</td>
+                    <td>18977</td>
+                    <td>QG877</td>
+                    <td>20Kg</td>
+                </tr>
+        </div>
+    </div>
+    </table>
 
     </div>
     <a href="HomeAccController">
-        <input type="submit" value="Back" >
+        <input type="submit" value="Back">
     </a>
-        
+
 
 
 </body>
