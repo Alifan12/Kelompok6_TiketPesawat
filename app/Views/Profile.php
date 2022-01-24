@@ -20,37 +20,11 @@
       <ul>
         <li><a href="/HomeAccController">Home</a></li>
       </ul>
-
-    </div>
-
-    <div class="navbar-right">
-      <div class="profile">
-        <div class="profile_detail">
-
-          <div class="nama_profile">
-            <div class="nama">
-              <h4>Selamat Datang <?= $nama_lengkap ?></h4>
-              <div class="select_profile">
-                <select class="select" nama="pilihprofile" onchange="location = this.value;">
-                  <option selected value="#">-Menu-</option>
-                  <option value="/HomeAccController/profile">Profile</option>
-                  <option value="/LoginController/logout">Sign Out</option>
-
-                </select>
-              </div>
-
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-
-    </div>
+    </div>  
   </nav>
   <div class="wrapper">
     <div class="left">
-      <img src="https://i.imgur.com/cMy8V5j.png" alt="user" width="100">
+      <img src="/gambar/white.jpg" alt="user" width="100" height="150">
       <h4><?= $nama_lengkap ?></h4>
       <p><?= session()->get('username') ?></p>
     </div>
@@ -70,26 +44,17 @@
       </div>
 
       <div class="projects">
-        <h3>Projects</h3>
+        <h3>Status</h3>
         <div class="projects_data">
           <div class="data">
-            <h4>Recent</h4>
-            <p>Lorem ipsum dolor sit amet.</p>
+            
+            <p>Lorem ipsum dolor sit amet.dolor sit amet.</p>
           </div>
-          <div class="data">
-            <h4>Most Viewed</h4>
-            <p>dolor sit amet.</p>
-          </div>
+          
         </div>
       </div>
 
-      <div class="social_media">
-        <ul>
-          <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-        </ul>
-      </div>
+      
     </div>
   </div>
   </div>
