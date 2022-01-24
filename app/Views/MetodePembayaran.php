@@ -86,23 +86,65 @@
             <h1>Virtual Account</h1>
             <small>Anda bisa membayar dengan transfer melalui ATM, Internet Banking & Mobile Banking</small>
           </div>
-          <div class="BCA">
+
+          <div class="BCA" onclick="menuToggle();">
             <span>BCA Virtual Account</span>
-            <span><a class="choose"><img src="/gambar/BRI.jpeg" width="50px"></a></span>
-          </div>
-          <div class="BRI">
-            <span>BRI Virtual Account</span>
             <span><a class="choose"><img src="/gambar/BCA.jpeg" width="50px"></a></span>
 
+            <div class="menu-bca">
+              <ul>
+                <li>
+                  <p>Virtual Account</p>
+                </li>
+                <li>
+                  <h4>7800 1010 0559 1862</h4>
+                </li>
+                <li>
+                  <p>Total Pembayaran</p>
+                </li>
+                <li>
+                  <h4>IDR total</h4>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class="BRI" onclick="menuToggle();">
+            <span>BRI Virtual Account</span>
+            <span><a class="choose"><img src="/gambar/BRI.jpeg" width="50px"></a></span>
+
+            <div class="menu-bri">
+              <ul>
+                <li>
+                  <p>Virtual Account</p>
+                </li>
+                <li>
+                  <h4>8878 8000 0899 7599</h4>
+                </li>
+                <li>
+                  <p>Total Pembayaran</p>
+                </li>
+                <li>
+                  <h4>IDR total</h4>
+                </li>
+              </ul>
+            </div>
           </div>
 
         </div>
       </div>
     </div>
     <div class="submit">
-      <a href="EtiketController"><button>SUBMIT</button></a>
+      <a href="EtiketController"><button>SAYA SUDAH MEMBAYAR</button></a>
     </div>
   </div>
+  <script>
+  function menuToggle() {
+    const toggleMenu = document.querySelector('.menu-bca');
+    toggleMenu.classList.toggle('active')
+  }
+  </script>
 </body>
 
 </html>
