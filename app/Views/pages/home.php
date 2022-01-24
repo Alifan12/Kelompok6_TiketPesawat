@@ -73,7 +73,6 @@
   <div class="main">
     <div class="intro">
       <br>
-
       <div class="text-intro">
         <h2>SWINGS.com</h2>
         <p>Pesan tiket pesawat tanpa antre, harga murah dan proses sangat mudah</p>

@@ -369,7 +369,7 @@
           <?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?>
         </div>
         <div class="row2">
-          <img src="/gambar/Maskapai/Citilink.png" width="23px">
+          <img src="<?= $this->data['tampil'][0]['lambang'] ?>" width="23px">
           <img src="/gambar/DetailPemesan/record.png" width="5px">
           <?php $tanggal=date_create($this->data['tampil'][0]['waktu_berangkat']);
                       echo date_format($tanggal, 'd M Y'); ?><img src="/gambar/DetailPemesan/record.png" width="5px">

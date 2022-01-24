@@ -3,7 +3,6 @@
 
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
@@ -39,10 +38,26 @@ body {
   padding-left: 10pt;
 }
 
-.Judul {
+.Judul a {
   color: white;
   font-size: 24px;
   font-weight: 500;
+  outline: none;
+}
+.Judul a:link {
+  text-decoration: none;
+}
+
+.Judul a:visited {
+  text-decoration: none;
+}
+
+.Judul a:hover {
+  text-decoration: underline;
+}
+
+.Judul a:active {
+  text-decoration: underline;
 }
 
 .navbar-right {
@@ -314,9 +329,9 @@ p {
   <nav class="navbar">
     <div class="navbar-left">
       <!-- <div class="logo"></div> -->
-      <ul>
-        <li><a href="/HomeAccController">Home</a></li>
-      </ul>
+      <div class="Judul">
+        <a href="/">SWINGS.com</a>
+      </div>
 
     </div>
 
