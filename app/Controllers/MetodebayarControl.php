@@ -12,16 +12,18 @@ class MetodebayarControl extends BaseController
         return view('MetodePembayaran.php');
     }
 
-    // public function tampilPerjalanan()
-    // {
-    //     $this->request = \Config\Services::request();
-    //     $session = session();
-    //     $arrival = $this->request->getVar('arrival', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    //     $depart = $this->request->getVar('departure', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    //     $waktu_mulai = $this->request->getVar('tanggalberangkat', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    //     $kelas = $this->request->getVar('kelas', FILTER_SANITIZE_FULL_SPECIAL_CHARS);
-    //     $model = new penerbanganModel;
-    //     $data = $model->cariPenerbangan($depart, $arrival, $waktu_mulai, $kelas);
-    //     return view('pages/order', $data);
-    // }
+    public function Ambil()
+    {
+        $request    = \Config\Services::request();
+        $db      = \Config\Database::connect();
+        $builder = $db->table('penerbangan');
+        $builder->select('*');
+        $builder->join('harga', 'penerbangan.id = harga.id_penerbangan');
+        $builder->join('transaksi_detail', 'harga.id = transaksi_detail.id_harga_harga');
+        $builder->join('transaksi', 'transaksi_detail.id_transaksi = transaksi.id');
+        $builder->where('id_harga', $_POST['id_harga']);
+        $query = $builder->get()->getResult('array');
+        $data['tampil'] = $query;
+        return view('MetodePembayaran', $data);
+    }
 }

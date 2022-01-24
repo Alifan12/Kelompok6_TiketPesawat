@@ -40,9 +40,9 @@
         <div class="lokasi">
           <table>
             <tr>
-              <td>Jakarta</td>
+              <td><?= $this->data['tampil'][0]['kode_bandara_asal'] ?></td>
               <td><img src="/gambar/DetailPemesan/right-arrow.png" width="10px"></td>
-              <td>Surabaya</td>
+              <td><?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?></td>
             </tr>
           </table>
         </div>
@@ -50,7 +50,7 @@
           <table>
             <tr>
               <td>Order ID : </td>
-              <td>1234567</td>
+              <td><?= $this->data['tampil'][0]['id_transaksi'] ?></td>
             </tr>
           </table>
         </div>
@@ -61,7 +61,7 @@
           <h3>Detail harga </h3>
         </div>
         <div class="total">
-          <p>Total pembayaran IDR 1.666.800</p>
+          <p>Total pembayaran <?= $this->data['tampil'][0]['id_transaksi'] ?></p>
         </div>
 
 

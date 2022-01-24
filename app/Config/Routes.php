@@ -32,9 +32,10 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
-$routes->get('/HomeAcc', 'HomeAccController::index',['filter' => 'auth']);
-$routes->post('/search','Carimaskapi::cari');
-$routes->post('/PDD','PDDController::Ambil');
+$routes->get('/HomeAcc', 'HomeAccController::index', ['filter' => 'auth']);
+$routes->post('/search', 'Carimaskapi::cari');
+$routes->post('/PDD', 'PDDController::Ambil');
+$routes->post('/show', 'MetodebayarControl::Ambil');
 // $routes->post('/Metode','MetodebayarController::save');
 
 

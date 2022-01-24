@@ -390,7 +390,7 @@
       </div>
       <div class="body-detail">
         <div class="row1">
-
+          <?= $this->data['tampil'][0]['kode_bandara_asal'] ?>
           <img src="/gambar/DetailPemesan/right-arrow.png" width="13px">
           <?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?>
         </div>
