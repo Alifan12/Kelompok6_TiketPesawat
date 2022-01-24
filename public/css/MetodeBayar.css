@@ -36,6 +36,11 @@ h1 {
   font-weight: 500;
 }
 
+.navbar-left a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .navbar {
   width: auto;
   height: 50px;
@@ -281,6 +286,7 @@ h2 {
 .virtual span {
   margin-left: 5px;
   float: inline-end;
+  cursor: pointer;
 }
 
 span .choose {

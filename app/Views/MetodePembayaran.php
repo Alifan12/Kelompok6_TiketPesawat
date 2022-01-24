@@ -16,7 +16,7 @@
   <nav class="navbar-menu">
     <div class="navbar">
       <div class="navbar-left">
-        SWINGS.com
+        <a href="HomeAccController">SWINGS.com</a>
       </div>
 
       <div class="navbar-right">
@@ -87,7 +87,7 @@
             <small>Anda bisa membayar dengan transfer melalui ATM, Internet Banking & Mobile Banking</small>
           </div>
 
-          <div class="BCA" onclick="menuToggle();">
+          <div class="BCA" onclick="menuToggleBCA();">
             <span>BCA Virtual Account</span>
             <span><a class="choose"><img src="/gambar/BCA.jpeg" width="50px"></a></span>
 
@@ -110,7 +110,7 @@
           </div>
 
 
-          <div class="BRI" onclick="menuToggle();">
+          <div class="BRI" onclick="menuToggleBRI();">
             <span>BRI Virtual Account</span>
             <span><a class="choose"><img src="/gambar/BRI.jpeg" width="50px"></a></span>
 
@@ -140,8 +140,13 @@
     </div>
   </div>
   <script>
-  function menuToggle() {
+  function menuToggleBCA() {
     const toggleMenu = document.querySelector('.menu-bca');
+    toggleMenu.classList.toggle('active')
+  }
+
+  function menuToggleBRI() {
+    const toggleMenu = document.querySelector('.menu-bri');
     toggleMenu.classList.toggle('active')
   }
   </script>
