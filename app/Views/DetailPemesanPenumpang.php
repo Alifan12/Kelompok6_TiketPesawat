@@ -469,7 +469,6 @@
           </div>
         </div>
       </form>
-
       <form action="<?= base_url(); ?>/show" method="post">
         <input type="text" name="id_harga" id="id_harga" value="<?= $this->data['tampil'][0]['id_harga']; ?>" hidden>
         <button class="submit" type="submit">Lanjut Ke Pembayaran</button>

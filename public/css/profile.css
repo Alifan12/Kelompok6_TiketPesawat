@@ -120,7 +120,7 @@ body{
     .navbar {
       width: auto;
       height: 50px;
-      background: rgb(181, 241, 243);
+      background: #0b2338;
       border-radius: 2px;
     }
 
@@ -175,8 +175,16 @@ body{
     .navbar-left a {
       text-decoration: none;
       font-size: 20px;
+      cursor: pointer;
+      color: white;
+      background-color: rgb(91, 165, 161);
       font-family: sans-serif;
+      border: 0px solid black;
+      border-radius: 0px 0px 10px 0px;
       padding: 13px 10px;
+    }
+    .navbar-left a:hover{
+      background-color: #0b2338;
     }
     .profile {
       position: relative;
