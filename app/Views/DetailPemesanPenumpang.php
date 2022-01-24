@@ -427,7 +427,7 @@
         <span>Detail Penumpang</span>
       </div>
 
-      <form action="<?= base_url(); ?>/Metode " method="post">
+      <form action="<?= base_url(); ?> MetodebayarControl/save " method="post">
         <div class="row-1">
           <div class="sub1-row1">
             <label for="titel">Titel</label>

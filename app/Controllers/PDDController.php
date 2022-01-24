@@ -36,13 +36,16 @@ class PDDController extends BaseController
         $db->table('transaksi_detail');
         helper(['form']);
             $data=[
-                'title'           =>$this->request->getVar('titel'),
-                'nama_penumpang'  =>$this->request->getVar('nama_lengkap'),
-                'NIK'             =>$this->request->getVar('nik'),
-                'no_telepon'      => $this->request->getVar('noTelepon')
+                'id_transaksi'      =>'TR2',
+                'id_harga_harga'    =>'P0002',
+                'kelompok_penumpang'=>'Dewasa',
+                'title'             =>$this->request->getVar('titel'),
+                'nama_penumpang'    =>$this->request->getVar('nama_lengkap'),
+                'NIK'               =>$this->request->getVar('nik'),
+                'no_telepon'        => $this->request->getVar('noTelepon')
             ];
             $db->table('transaksi_detail')->insert($data);
-            return redirect()->to('/PDDController');
+            return redirect()->to('/MetodebayarController');
 
     }
 
