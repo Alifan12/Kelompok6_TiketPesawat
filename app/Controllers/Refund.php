@@ -6,6 +6,6 @@ class Refund extends BaseController
 {
     public function index()
     {
-        return view('refund');
+        return view('refund.php');
     }
 }

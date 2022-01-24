@@ -378,10 +378,10 @@ p {
       <div class="menu">
         <img src="/gambar/booking.png" width="120">
         <img class="gambar2" src="/gambar/clipboard.png" width="120">
-
         <a href="Carimaskapi"> <button class="sub-menu">Pesan Tiket</button></a>
         <a href="Homepembatalan"> <button class="sub-menu">pesanan saya</button></a>
       </div>
+      
     </div>
   </div>
 </body>

@@ -473,7 +473,9 @@
       <form action="<?= base_url(); ?> /show" method="post">
         <div class="submit">
           <input type="text" name="id_harga" id="id_harga" value="<?= $this->data['tampil'][0]['id_harga']; ?>" hidden>
-          <input class="submit" type="submit" value="Lanjut Ke Pembayaran">
+          <a href="MetodebayarControl/Ambil">
+            <input class="submit" type="submit" value="Lanjut Ke Pembayaran">
+          </a>
         </div>
       </form>
 
