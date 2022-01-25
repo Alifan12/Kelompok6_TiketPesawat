@@ -54,11 +54,11 @@
     }
 
     .Judul a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     .Judul a:active {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     .navbar-right {
@@ -404,7 +404,7 @@
 
       <div class="text-intro">
         <h2>SWINGS.com</h2>
-        <p>Pesan tiket pesawat tanpa antre, harga murah dan proses sangat mudah</p>
+        <p>Pesan tiket domestik pesawat tanpa antre, harga murah dan proses sangat mudah</p>
         <p>Ayo pesan tiket perjalanan kamu sekarang!</p>
       </div>
     </div>

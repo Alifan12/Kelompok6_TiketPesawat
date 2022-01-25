@@ -11,6 +11,30 @@ body {
             border-bottom:1pt solid black;
             margin: 30px;
         }
+        .Judul a {
+            color: white;
+            font-size: 24px;
+            font-weight: 500;
+            outline: none;
+            text-decoration: none;
+          }
+      
+          .Judul a:link {
+            text-decoration: none;
+          }
+      
+          .Judul a:visited {
+            text-decoration: none;
+          }
+      
+          .Judul a:hover {
+            text-decoration: none;
+          }
+      
+          .Judul a:active {
+            text-decoration: none;
+          }
+      
         .navbar {
             width: auto;
             height: 50px;
