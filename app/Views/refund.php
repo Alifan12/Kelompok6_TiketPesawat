@@ -64,7 +64,7 @@
                 <a href="HomeAccController"><button onclick="myFunction()" name="refund" >Refund</button></a>
             </div>
         </div>
-        <a href="HomeAccController"> <button class="kol7" name="refund" onclick="myFunction()">Lanjutkan &raquo;</button> </a>
+            <a href="HomeAccController"> <button class="kol7" name="refund" onclick="myFunction()">Lanjutkan &raquo;</button> </a>
         
     </div>
     <script>
