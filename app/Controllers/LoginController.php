@@ -38,11 +38,11 @@ class LoginController extends Controller
                 return redirect()->to(base_url() . '/HomeAccController');
             } else {
                 $session->setFlashdata('msg', 'Wrong password');
-                return redirect()->to(base_url() . 'LoginController');
+                return redirect()->to(base_url() . '/LoginController');
             }
         } else {
             $session->setFlashdata('msg', 'Username not found');
-            return redirect()->to(base_url() . 'LoginController');
+            return redirect()->to(base_url() . '/LoginController');
         }
     }
     public function logout()
