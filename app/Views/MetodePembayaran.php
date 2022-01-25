@@ -121,9 +121,12 @@
         </div>
       </div>
     </div>
+    <form action="<?= base_url(); ?>/Informasibayar" method="post">
     <div class="submit">
+    <input type="text" name="id_harga" value="<?= $this->data['tampil'][0]['id_harga'] ?>" hidden>
       <a href="EtiketController"><button>SAYA SUDAH MEMBAYAR</button></a>
     </div>
+    </form>
   </div>
   <script>
     function menuToggleBCA() {
