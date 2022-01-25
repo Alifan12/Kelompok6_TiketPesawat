@@ -278,19 +278,24 @@
     </div>
 
     <?php
-    // dd($this->data['tampil'][0]['username']); 
+    // dd($this->data); 
     ?>
 
     <?php
-    $date1 = date_create($tampil[0]['waktu_berangkat']);
-    $date2 = date_create($tampil[0]['waktu_sampai']);
+     foreach ($this->data as $index => $value) :
+      $i=0;
+    $date1 = date_create($value[$i]['waktu_berangkat']);
+    $date2 = date_create($value[$i]['waktu_sampai']);
 
     $interval = date_diff($date1, $date2, true);
     ?>
     <div class="list-pesanan">
       <div class="top-list-pesanan">
         <div class="top-right">
-          <a href="#" class="to-refund">Refund</a>
+          <form action="<?= base_url(); ?>/getRefund" method="post">
+          <input type="text" name="id_transaksi" value="<?= $value[$i]['id_transaksi']; ?>" hidden>
+            <button class="to-refund">Refund</button>
+          </form>
         </div>
         <div class="top-left">
           <img src="/gambar/homePembatalan/plane.png"><span> Pesawat </span>
@@ -302,7 +307,7 @@
           <table>
             <tr>
               <td>Order ID : </td>
-              <td>XCA980<?= $tampil[0]['idtransaksidetail'] ?></td>
+              <td>XCA980<?= $value[$i]['idtransaksidetail'] ?></td>
             </tr>
           </table>
         </div>
@@ -328,11 +333,13 @@
         <div class="row-bottom">
           <div class="info-batal-tiket">
             <a href="EtiketController"> <button class="refund">E-ticket sudah terbit</button></a>
-            <a href="/Refund"> <button class="refund">Refund sebagian</button></a>
           </div>
         </div>
       </div>
     </div>
+    
+    <?php $i++;
+  endforeach; ?>
   </div>
 </body>
 
