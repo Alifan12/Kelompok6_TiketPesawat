@@ -420,12 +420,14 @@
     </div>
     <div class="main-content">
       <div class="menu">
-        <img src="/gambar/booking.png" width="120">
-        <img class="gambar2" src="/gambar/clipboard.png" width="120">
+        <img src="/gambar/booking.png" width="120" width="120">
+        
+        <input class="gambar2" type="image" src="/gambar/clipboard.png" onClick="window.location.href='/Homepembatalan'" alt="submit">
+        
         <a href="Carimaskapi"> <button class="sub-menu">Pesan Tiket</button></a>
         <form action="<?= base_url(); ?>/getUsername" method="post">
           <input type="text" name="username" id="username" value="<?= $username ?>" hidden>
-          <b href="Homepembatalan"><button class="sub-menu2">pesanan saya</button></b>
+          <b href="Homepembatalan/tampil"><button class="sub-menu2">pesanan saya</button></b>
         </form>
         <!-- <a href="Homepembatalan"><button class="sub-menu">pesanan saya</button></a> -->
       </div>

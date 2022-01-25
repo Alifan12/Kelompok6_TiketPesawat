@@ -23,6 +23,7 @@ class penerbanganModel extends Model
         ->get()
         ->getResult('array');
         return($result);
+    }   
 
-    }
+    
 }

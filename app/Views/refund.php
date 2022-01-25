@@ -43,10 +43,10 @@
             <img src="<?= $this->data['tampil'][0]['lambang'] ?>" width="150px" outline="black" class="kol1"><br>
             <p class="kol6"><?= $this->data['tampil'][0]['nama'] ?></p>
             <div class="kol2">
-                <p><?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?></p>
+                <p><?= $this->data['tampil'][0]['kode_bandara_asal'] ?></p>
             </div>
             <div class="kol3">
-                <h2>></h2>
+                <p>></p>
             </div>
             <div class="kol4">
                 <p><?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?></p>
@@ -60,16 +60,26 @@
             <div class="kol13">
                 <p><?= date_format($date1, 'H:i'); ?></p>
             </div>
-            <div class="re">
-                <a href="HomeAccController"><button onclick="myFunction()" name="refund" >Refund</button></a>
-            </div>
-        </div>
-            <a href="HomeAccController"> <button class="kol7" name="refund" onclick="myFunction()">Lanjutkan &raquo;</button> </a>
+        </div> 
+        <form action="<?= base_url(); ?>/del" method="post">
+            <input type="text" name="hasil" value="<?= $this->data['tampil'][0]['idtransaksidetail']; ?>" hidden>
+            <input type="text" name="transaksi" value="<?= $this->data['tampil'][0]['id_transaksi']; ?>" hidden>
+                <a href="HomeAccController"> <button class="kol7" name="refund" onclick="myFunction()">Refund &raquo;</button> </a>
+        </form>
         
     </div>
     <script>
         function myFunction() {
-            alert("Refund berhasil di lakukan");
+            var r=confirm("Anda Yakin?  ");
+            if (r==true)
+            {
+                x="You pressed OK!";
+                alert("Database Berhasil diperbarui");
+            }
+            else    
+            {
+                x="You pressed Cancel!";
+            }
         }
     </script>
 </body>

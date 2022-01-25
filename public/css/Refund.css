@@ -142,14 +142,14 @@ h1 {
 .kol2 {
   grid-area: depart;
   font-size: 14pt;
-  margin-left: -9cm;
+  margin-left: 9pt;
 }
 
 .kol3 {
   grid-area: details;
   padding-right: 30pt;
-  margin-left: -10cm;
-  margin-top: -5px;
+  margin-left: -6.7cm;
+  margin-top: 3px;
 }
 .kol11 {
   grid-area: arrival;

@@ -37,8 +37,9 @@ $routes->post('/search', 'Carimaskapi::cari');
 $routes->post('/PDD', 'PDDController::Ambil');
 $routes->post('/show', 'MetodebayarControl::Show');
 $routes->post('/Informasibayar','EtiketController::Show');
-$routes->post('/getUsername', 'Homepembatalan::index');
-$routes->post('/getRefund', 'Refund::gotrefund');
+$routes->post('/getUsername', 'Homepembatalan::tampil');
+$routes->post('/getRefund','Refund::gotRefund');
+$routes->post('/del','KonfirmControl::delete');
 
 
 /*
