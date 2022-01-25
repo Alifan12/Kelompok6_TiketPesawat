@@ -25,41 +25,47 @@
             </ul>
         </div>
     </nav>
+<?php $date1 = date_create($this->data['tampil'][0]['waktu_berangkat']);
+      $date2 = date_create($this->data['tampil'][0]['waktu_sampai']);
+
+      $interval = date_diff($date1, $date2, true);
+?>
     <div class="container">
         <div class="atas1">
             <div class="atas">
                 <p class="kol16">Kode Boking</p>
             </div>
             <div class="atas">
-                <p class="kol66">#########</p>
+                <p class="kol66"><?= $this->data['tampil'][0]['id_transaksi'] ?></p>
             </div>
         </div>
         <div class="card-penerbangan">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOOy5NovtFWgOb3kowWhhUmRCdPGliqemHaifZhrSSGw8ml1rDS7nPf6-4EMjI4tjE5yc&usqp=CAU" width="150px" outline="black" class="kol1">
-            <p class="kol6">Citilink Indonesia</p>
+            <img src="<?= $this->data['tampil'][0]['lambang'] ?>" width="150px" outline="black" class="kol1"><br>
+            <p class="kol6"><?= $this->data['tampil'][0]['nama'] ?></p>
             <div class="kol2">
-                <p>JAKARTA</p>
+                <p><?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?></p>
             </div>
             <div class="kol3">
                 <h2>></h2>
             </div>
             <div class="kol4">
-                <p>SURABAYA</p>
+                <p><?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?></p>
             </div>
             <div class="kol11">
                 <p>|</p>
             </div>
             <div class="kol12">
-                <p>Sen, 3 Januari 2021</p>
+                <p><?= date_format($date1, 'l,d F Y'); ?></p>
             </div>
             <div class="kol13">
-                <p>04.30</p>
+                <p><?= date_format($date1, 'H:i'); ?></p>
             </div>
             <div class="re">
-                <a href="HomeAccController"><button onclick="myFunction()">Refund</button></a>
+                <a href="HomeAccController"><button onclick="myFunction()" name="refund" >Refund</button></a>
             </div>
         </div>
-        <a href="HomeAccController"> <button class="kol7" onclick="myFunction()">Lanjutkan &raquo;</button> </a>
+        <a href="HomeAccController"> <button class="kol7" name="refund" onclick="myFunction()">Lanjutkan &raquo;</button> </a>
+        
     </div>
     <script>
         function myFunction() {
