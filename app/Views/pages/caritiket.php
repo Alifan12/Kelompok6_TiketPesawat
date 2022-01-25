@@ -18,9 +18,9 @@
 
 <body>
     <nav class="navbar">
-        <div class="navbar-left">
-            <div class="Judul">SWINGS.com</div>
-        </div>
+    <div class="Judul">
+        <a href="HomeAccController">SWINGS.com</a>
+      </div>
         <div class="navbar-right">
             <ul>
                 <li>

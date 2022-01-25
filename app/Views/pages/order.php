@@ -51,7 +51,7 @@
       </div>
     </div>
     <div class="item2">
-      <a href="Carimaskapi">Cari Penelusuran</a>
+      <a href="Carimaskapi">Ubah Penelusuran</a>
     </div>
   </div>
 

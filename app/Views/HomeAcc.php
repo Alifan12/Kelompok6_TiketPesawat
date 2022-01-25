@@ -54,11 +54,11 @@
     }
 
     .Judul a:hover {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     .Judul a:active {
-      text-decoration: underline;
+      text-decoration: none;
     }
 
     .navbar-right {
@@ -149,6 +149,11 @@
       height: 450px;
     }
 
+    .sub-menu:hover a {
+      opacity: 0.9;
+    }
+
+
     .kembali a {
       text-decoration: none;
       display: block;
@@ -188,7 +193,9 @@
       background: #b5ceff;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       font-weight: bold;
+
     }
+
 
     .profile {
       color: #fff;
@@ -404,7 +411,7 @@
 
       <div class="text-intro">
         <h2>SWINGS.com</h2>
-        <p>Pesan tiket pesawat tanpa antre, harga murah dan proses sangat mudah</p>
+        <p>Pesan tiket domestik pesawat tanpa antre, harga murah dan proses sangat mudah</p>
         <p>Ayo pesan tiket perjalanan kamu sekarang!</p>
       </div>
     </div>
