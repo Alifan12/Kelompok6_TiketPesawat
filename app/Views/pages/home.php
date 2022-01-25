@@ -13,48 +13,6 @@
 </head>
 
 <body>
-  <style>
-  .intro {
-    margin-top: 5px;
-    background-image: url("/gambar/pesawat2.jpg");
-    background-size: cover;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .intro img {
-    margin-top: 5px;
-    width: 900px;
-    background-size: cover;
-    height: 300px;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-
-  .menu img:first-child {
-    position: relative;
-    height: 125px;
-    width: 115px;
-    left: 425px;
-    bottom: 50px;
-  }
-
-  .gambar2 {
-    position: relative;
-    height: 125px;
-    width: 115px;
-    left: 620px;
-    bottom: 52px;
-  }
-
-  .Judul a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    margin-left: 10px;
-  }
-  </style>
 
   <nav class="navbar">
     <div class="navbar-left">
@@ -92,9 +50,9 @@
       </div>
     </div>
     <script>
-    function myFunction() {
-      alert("Login terlebih dahulu");
-    }
+      function myFunction() {
+        alert("Login terlebih dahulu");
+      }
     </script>
   </div>
 </body>
