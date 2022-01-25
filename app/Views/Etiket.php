@@ -288,7 +288,7 @@
         }
     </style>
 </head>
-
+<?php  //$this->data[0]; ?>
 <body>
     <nav class="navbar-menu">
         <div class="navbar">
@@ -308,15 +308,15 @@
     </div>
     <div class="container">
         <div class="layout1">
-            <img src="/gambar/Maskapai/Citilink.png" width="150px">
+            <img src="<?= $this->data['tampil'][0]['lambang']; ?>" width="150px">
             <div class="class-maskapai">
-                <p>Subclass S(Economy)</p>
+                <p><?= $this->data['tampil'][0]['kelas']; ?></p>
             </div>
             <tr>
                 <br>
                 <h4>Kode Booking</h4>
                 <div class="kode-maskapai">
-                    <h2>WAKXCJ</h2>
+                    <h2><?= $this->data['tampil'][0]['id_transaksi']; ?></h2>
             </tr>
         </div>
     </div>
@@ -369,18 +369,10 @@
                 </tr>
                 <tr>
                     <td>1</td>
-                    <td>Faris</td>
-                    <td>Dewasa</td>
-                    <td>18976</td>
-                    <td>QG877</td>
-                    <td>20Kg</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Farhan</td>
-                    <td>Dewasa</td>
-                    <td>18977</td>
-                    <td>QG877</td>
+                    <td><?= $this->data['tampil'][0]['nama_penumpang']; ?></td>
+                    <td><?= $this->data['tampil'][0]['kelompok_penumpang']; ?></td>
+                    <td><?= $this->data['tampil'][0]['title']; ?></td>
+                    <td>XCA980<?= $this->data['tampil'][0]['idtransaksidetail']; ?></td>
                     <td>20Kg</td>
                 </tr>
         </div>

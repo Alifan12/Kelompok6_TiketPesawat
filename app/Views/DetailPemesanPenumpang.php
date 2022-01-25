@@ -303,7 +303,9 @@
   .Judul a:active {
     text-decoration: underline;
   }
-
+  .pesan{
+    font-weight: bold ;
+  }
   /* input[type=submit]:hover {
       opacity: 0.9;
     } */
@@ -326,7 +328,7 @@
     </div>
     <div class="rules-booking">
       <ul>
-        <li>1. Pesan</li>
+        <li class="pesan">1. Pesan</li>
         <li>></li>
         <li>2. Bayar</li>
         <li>></li>
