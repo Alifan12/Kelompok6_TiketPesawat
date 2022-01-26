@@ -17,7 +17,7 @@ class KonfirmCOntrol extends Controller
         $builder = $db->table('transaksi_detail');
         $builder->select('*');
         $builder->where('transaksi_detail.id_transaksi', $_POST['transaksi']);
-        // $builder->where('id_transaksi', $_POST['transaksi']);
+        $builder->where('id_transaksi', $_POST['transaksi']);
         $builder->delete();    
         
         $builder = $db->table('transaksi');
