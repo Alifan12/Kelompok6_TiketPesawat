@@ -8,8 +8,4 @@ class Home extends BaseController
     {
         return view('pages/home.php');
     }
-    public function cari()
-    {
-        return view('pages/caritiket.php');
-    }
 }

@@ -6,6 +6,7 @@ class Refund extends BaseController
 {
     public function gotrefund()
     {
+        //ambil data refund
         $request = \Config\Services::request();
         $db      = \Config\Database::connect();
         $builder = $db->table('account');
@@ -19,7 +20,6 @@ class Refund extends BaseController
         $builder->where('id_transaksi', $_POST['id_transaksi']);
         $query = $builder->get()->getResult('array');
         $data['tampil'] = $query;
-        // print_r($data);
         return view('refund.php',$data);
     }
 }

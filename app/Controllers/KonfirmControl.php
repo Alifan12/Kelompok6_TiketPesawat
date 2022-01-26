@@ -11,7 +11,8 @@ class KonfirmCOntrol extends Controller
 {
     public function delete()
     { 
-        // print_r($_POST['transaksi']);   
+        //REFUND
+        //Hapus data transaksi  
         $db      = \Config\Database::connect();
         $model= new transaksiModel;
         $builder = $db->table('transaksi_detail');
@@ -20,6 +21,7 @@ class KonfirmCOntrol extends Controller
         $builder->where('id_transaksi', $_POST['transaksi']);
         $builder->delete();    
         
+        //Hapus data transaksi
         $builder = $db->table('transaksi');
         $builder->select('*');
         $builder->where('transaksi.id', $_POST['transaksi']);

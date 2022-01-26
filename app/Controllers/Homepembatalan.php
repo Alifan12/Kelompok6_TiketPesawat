@@ -10,6 +10,7 @@ class Homepembatalan extends BaseController
         
     }
     public function tampil(){
+        //ambil data dari homepage Acc
         $request = \Config\Services::request();
         $db      = \Config\Database::connect();
         $builder = $db->table('account');
@@ -21,7 +22,6 @@ class Homepembatalan extends BaseController
         $builder->where('username', $_POST['username']);
         $query = $builder->get()->getResult('array');
         $data['tampil'] = $query;
-        // print_r($query);
         return view('homePembatalan', $data);
         
     }

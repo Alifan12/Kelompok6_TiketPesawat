@@ -208,7 +208,7 @@
             grid-area: penumpang;
             height: 100pt;
             background-color: white;
-            width: 89%;
+            width: 85%;
             padding: 5px;
             grid-gap: 1px;
 
@@ -286,6 +286,16 @@
             text-align: center;
             color: blue;
         }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 100%;
+        }
     </style>
 </head>
 <?php  //$this->data[0]; 
@@ -347,7 +357,7 @@ $interval = date_diff($date1, $date2, true);
     <div class="detail-penumpang">
         <h3>Penumpang</h3>
         <div class='table-penumpang'>
-            <table">
+            <table>
                 <tr>
                     <div class="no">
                         <th>No</th>
@@ -384,8 +394,6 @@ $interval = date_diff($date1, $date2, true);
     <a href="HomeAccController">
         <input type="submit" value="Back">
     </a>
-
-
 
 </body>
 

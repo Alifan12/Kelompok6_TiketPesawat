@@ -10,6 +10,7 @@ class HomeAccController extends Controller
 {
     public function index()
     {
+        //ambil data profil
         $session = session();
         $model = new UserModel();
         $account = $model->findAll();
@@ -28,6 +29,7 @@ class HomeAccController extends Controller
     }
     public function profile()
     {
+        //ambil data ke profil
         $session = session();
         $model = new UserModel();
         $nama_depan = $session->get('nama_depan');
