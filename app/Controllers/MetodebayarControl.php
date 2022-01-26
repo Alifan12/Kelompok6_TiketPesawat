@@ -14,12 +14,8 @@ class MetodebayarControl extends BaseController
         $query   = $builder->get();  // Produces: SELECT * FROM mytable
         return view('MetodePembayaran.php');
     }
-    // public function Ambil(){
-    //     $db      = \Config\Database::connect();
-    //     $builder = $db->table('metode_pembayaran');
-    //     $query   = $builder->get();  // Produces: SELECT * FROM mytable
-    //     return view('MetodePembayaran.php');
-    // }
+    
+    //fungsi random id
     public function RandomString()
     {
         $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
@@ -30,10 +26,20 @@ class MetodebayarControl extends BaseController
         return $randstring;
     }
 
+    //fungsi random id
+    public function RandomIDdetail()
+    {
+        $characters = '0123456789A';
+        $randstring = '';
+        for ($i = 0; $i < 7; $i++) {
+            $randstring = $randstring.$characters[rand(0, strlen($characters))];
+        }
+        return $randstring;
+    }
+
     public function Show()
     {
         //inserttransaksiModel
-        
         $session = session();
         $request = \Config\Services::request();
         $db      = \Config\Database::connect();
@@ -49,10 +55,12 @@ class MetodebayarControl extends BaseController
         $builder1->select('*');
         $builder1->insert($data1);
 
+        //INSERT detailtransaksi
         $model=new transaksidetailModel();
         $builder2 = $db->table('transaksi_detail');
         helper(['form']);
         $data2 = [
+            'id'                    => $this->RandomIDdetail(),
             'id_transaksi'          => $data1['id'],
             'id_harga_harga'        => $_POST['id_harga'],
             'kelompok_penumpang'    =>'Dewasa',
@@ -65,6 +73,7 @@ class MetodebayarControl extends BaseController
         $builder2->insert($data2);
 
         
+        //Bawa Data dari page order
         $builder = $db->table('transaksi');
         $builder->select('*');
         $builder->join('transaksi_detail', 'transaksi_detail.id_transaksi = transaksi.id');
@@ -72,11 +81,7 @@ class MetodebayarControl extends BaseController
         $builder->join('penerbangan', 'harga.id_penerbangan = penerbangan.id');
         $builder->where('id_harga', $_POST['id_harga']);
         $query = $builder->get()->getResult('array');
-        
         $data['tampil'] = $query;
-        // dd($query);
-        
-
         return view('MetodePembayaran', $data);
     }
 }

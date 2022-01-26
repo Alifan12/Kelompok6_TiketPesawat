@@ -13,7 +13,7 @@ class EtiketController extends Controller
     }
     public function Show(){
         
-        
+        //Update data setelah metode pembayaran
         $request    = \Config\Services::request();
         $db      = \Config\Database::connect();
         $session = session();
@@ -28,7 +28,7 @@ class EtiketController extends Controller
         $builder1->select('*');
         $builder1->update($data1);
 
-            // dd($_POST);
+        //bawa data dari page metodepembayaran
         $builder = $db->table('transaksi');
         $builder->select('*');
         $builder->join('transaksi_detail', 'transaksi_detail.id_transaksi = transaksi.id');

@@ -8,6 +8,7 @@ class PDDController extends BaseController
 {
     public function index()
     {
+        //ambil data dari page order
         $db      = \Config\Database::connect();
         $builder = $db->table('maskapai');
         $builder->select('*');
@@ -22,7 +23,6 @@ class PDDController extends BaseController
     public function Ambil()
     {
         // Ambil id_harga
-        
         $request = \Config\Services::request();
         $db      = \Config\Database::connect();
         $builder = $db->table('maskapai');
@@ -32,13 +32,7 @@ class PDDController extends BaseController
         $builder->join('harga', 'harga.id_penerbangan = penerbangan.id');
         $builder->where('id_harga', $_POST['harga_id']);
         $query = $builder->get()->getResult('array');
-        
         $data['tampil'] = $query;
-
-        
-
-        
-
         return view('DetailPemesanPenumpang', $data);
     }
 
