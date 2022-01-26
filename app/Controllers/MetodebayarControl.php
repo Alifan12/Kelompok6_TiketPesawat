@@ -29,7 +29,7 @@ class MetodebayarControl extends BaseController
     //fungsi random id
     public function RandomIDdetail()
     {
-        $characters = '0123456789A';
+        $characters = '0123456789'; 
         $randstring = '';
         for ($i = 0; $i < 7; $i++) {
             $randstring = $randstring.$characters[rand(0, strlen($characters))];
@@ -60,7 +60,7 @@ class MetodebayarControl extends BaseController
         $builder2 = $db->table('transaksi_detail');
         helper(['form']);
         $data2 = [
-            'id'                    => $this->RandomIDdetail(),
+            'idtransaksidetail'     => $this->RandomIDdetail(),
             'id_transaksi'          => $data1['id'],
             'id_harga_harga'        => $_POST['id_harga'],
             'kelompok_penumpang'    =>'Dewasa',

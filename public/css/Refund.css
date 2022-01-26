@@ -160,13 +160,13 @@ h1 {
 .kol12 {
   grid-area: arrival;
   font-size: 17pt;
-  margin-left: -7cm;
+  margin-left: 0cm;
   margin-top: -10px;
 }
 .kol13 {
   grid-area: arrival;
   font-size: 17pt;
-  margin-left: -0cm;
+  margin-left: -2cm;
   margin-top: -10px;
 }
 .kol4 {

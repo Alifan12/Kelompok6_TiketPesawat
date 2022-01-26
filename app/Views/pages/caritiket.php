@@ -84,13 +84,13 @@
             <label>Jumlah Penumpang</label>
             <div class="penumpang " >
                 <label class="grid-1">Dewasa</label>
-                <input type="number" name="Dewasa" id="Dewasa" min="0" required >
+                <input type="number" name="Dewasa" id="Dewasa" min="0" max="1" required >
 
                 <label class="grid-2">Anak-Anak</label>
-                <input type="number" name="anak-anakk" id="anak-anakk" min="0" value=0>
+                <input type="number" name="anak-anakk" id="anak-anakk" min="0" value=0 disable>
 
                 <label class="grid-3">Bayi</label>
-                <input type="number" name="bayi" id="bayi" min="0" value=0>
+                <input type="number" name="bayi" id="bayi" min="0" value=0 disable>
 
             </div>
             <br><br>
@@ -99,7 +99,7 @@
                 <label for="kelaskabin">
                     <img src="/gambar/Cari/cabin.png" width="30px"></label>
                 <select name="kelas">
-                    <option ></option>
+                    <option >-Pilih Kelas-</option>
                     <option value="Ekonomi">Ekonomi</option>
                     <option value="Bisnis">Bisnis</option>
                 </select>
