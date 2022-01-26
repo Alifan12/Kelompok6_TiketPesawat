@@ -1,35 +1,16 @@
 <?php
 
 namespace App\Controllers;
+use Dompdf\Dompdf;
 
-use CodeIgniter\Controller;
-use App\Models\transaksiModel;
-
-class EtiketController extends Controller
+class TestingControl extends BaseController
 {
     public function index()
     {
-        echo view('/Etiket.php');
-    }
-    public function Show(){
-        
-        
-        //Update data setelah metode pembayaran
-        $request = \Config\Services::request();
+        $request    = \Config\Services::request();
         $db      = \Config\Database::connect();
         $session = session();
-        $model=new transaksiModel();
-        $builder1 = $db->table('transaksi');
-        helper(['form']);
-        $data1 = [
-            'id_account'          =>$session->get('id'),
-            'id_metode_pembayaran'=>$_POST['metodebayar'],
-            'status_pembayaran'   =>'Pembayaran berhasil',
-        ];
-        $builder1->select('*');
-        $builder1->update($data1);
-
-        //bawa data dari page metodepembayaran
+        $session->get('username');
         $builder = $db->table('transaksi');
         $builder->select('*');
         $builder->join('transaksi_detail', 'transaksi_detail.id_transaksi = transaksi.id');
@@ -42,5 +23,25 @@ class EtiketController extends Controller
         $data['tampil'] = $query;
         
         return view('Etiket', $data);
+    }
+
+    public function generate()
+    {
+        $filename = date('y-m-d-H-i-s'). 'OrderTiket';
+
+        // instantiate and use the dompdf class
+        $dompdf = new Dompdf();
+
+        // load HTML content
+        $dompdf->loadHtml(view('Testing'));
+
+        // (optional) setup the paper size and orientation
+        $dompdf->setPaper('A4', 'landscape');
+
+        // render html as PDF
+        $dompdf->render();
+
+        // output the generated pdf
+        $dompdf->stream($filename);
     }
 }

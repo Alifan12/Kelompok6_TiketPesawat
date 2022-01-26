@@ -25,8 +25,21 @@ class KonfirmCOntrol extends Controller
         $builder = $db->table('transaksi');
         $builder->select('*');
         $builder->where('transaksi.id', $_POST['transaksi']);
-        $builder->delete();    
+        $builder->delete();  
+        
+        $request = \Config\Services::request();
+        $db      = \Config\Database::connect();
+        $session = session();
+        $username=$session->get('username');
+        $builder = $db->table('account');
+        $builder->select('*');
+        $builder->join('transaksi', 'transaksi.id_account = account.id');
+        $builder->join('transaksi_detail', 'transaksi_detail.id_transaksi = transaksi.id');
+        $builder->join('harga', 'harga.id_harga = transaksi_detail.id_harga_harga');
+        $builder->join('penerbangan', 'penerbangan.id = harga.id_penerbangan');
+        $builder->where('username', $username);
+        $data = $builder->get()->getResult('array');
 
-        return view('Homepembatalan');
+        return view('Homepembatalan',$data);
     }
 }

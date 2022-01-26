@@ -283,9 +283,8 @@
 
   <?php
   foreach ($this->data as $index => $value) :
-  $i=0;
-  $date1 = date_create($value[$i]['waktu_berangkat']);
-  $date2 = date_create($value[$i]['waktu_sampai']);
+  $date1 = date_create($value['waktu_berangkat']);
+  $date2 = date_create($value['waktu_sampai']);
 
     $interval = date_diff($date1, $date2, true);
     ?>
@@ -293,7 +292,7 @@
       <div class="top-list-pesanan">
         <div class="top-right">
           <form action="<?= base_url(); ?>/getRefund" method="post">
-            <input type="text" name="id_transaksi" value="<?= $value[$i]['id_transaksi']; ?>" hidden>
+            <input type="text" name="id_transaksi" value="<?= $value['id_transaksi']; ?>" hidden>
             <button class="to-refund">Refund</button>
           </form>
         </div>
@@ -307,8 +306,8 @@
           <table>
             <tr>
               <td>Order ID : </td>
-              <td>XCA980
-                <?= $value[$i]['idtransaksidetail'] ?>
+              <td>
+                <?= $value['idtransaksidetail'] ?>
               </td>
             </tr>
           </table>
@@ -346,7 +345,7 @@
       </div>
     </div>
 
-    <?php $i++;
+    <?php 
   endforeach; ?>
   </div>
 </body>

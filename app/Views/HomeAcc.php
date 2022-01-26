@@ -421,7 +421,6 @@
     <div class="main-content">
       <div class="menu">
         <img src="/gambar/booking.png" width="120" width="120">
-        
         <input class="gambar2" type="image" src="/gambar/clipboard.png" onClick="window.location.href='/Homepembatalan'" alt="submit">
         
         <input type="text" name="username" id="username" value="<?= $username ?>" hidden>

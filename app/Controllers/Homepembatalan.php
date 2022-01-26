@@ -20,8 +20,8 @@ class Homepembatalan extends BaseController
         $builder->join('harga', 'harga.id_harga = transaksi_detail.id_harga_harga');
         $builder->join('penerbangan', 'penerbangan.id = harga.id_penerbangan');
         $builder->where('username', $_POST['username']);
-        $query = $builder->get()->getResult('array');
-        $data['tampil'] = $query;
+        $data = $builder->get()->getResult('array');
+        
         return view('homePembatalan', $data);
         
     }
