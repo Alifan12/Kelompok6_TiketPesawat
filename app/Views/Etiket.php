@@ -289,6 +289,10 @@
     </style>
 </head>
 <?php  //$this->data[0]; 
+$date1 = date_create($this->data['tampil'][0]['waktu_berangkat']);
+$date2 = date_create($this->data['tampil'][0]['waktu_sampai']);
+
+$interval = date_diff($date1, $date2, true);
 ?>
 
 <body>
@@ -325,25 +329,25 @@
     <div class="layout3">
 
         <div class="jam">
-            <p> <?= $this->data['tampil'][0]['waktu_berangkat'] ?></p>
+            <p> <?= date_format($date1, 'H:i'); ?></p>
         </div>
         <div class="bandara-asal">
             <p> <?= $this->data['tampil'][0]['kode_bandara_asal'] ?></p>
         </div>
         <div class="durasi">
-            <br>|<br>|<br>|<br>2 jam 0 menit<br>|<br>|<br>|<br>v<br>
+            <br>|<br>|<br>|<br><?= $interval->format('%h jam %i menit'); ?><br>|<br>|<br>|<br>v<br>
         </div>
         <div class="bandara-tujuan">
             <p> <?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?></p>
         </div>
         <div class="jam">
-            <p> <?= $this->data['tampil'][0]['waktu_sampai'] ?></p>
+            <p> <?= date_format($date2, 'H:i'); ?></p>
         </div>
     </div>
     <div class="detail-penumpang">
         <h3>Penumpang</h3>
         <div class='table-penumpang'>
-            <table>
+            <table">
                 <tr>
                     <div class="no">
                         <th>No</th>
