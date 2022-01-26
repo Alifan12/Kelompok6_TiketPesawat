@@ -350,7 +350,7 @@
         <div class="row-1">
           <div class="sub1-row1">
             <label for="titel">Titel</label>
-            <select name="title" id="titel">
+            <select name="tit" id="tit">
               <option value=""></option>
               <option value="Tuan">Tuan</option>
               <option value="Nona">Nona</option>
@@ -380,7 +380,7 @@
           </div>
 
           <div class="sub2-row3">
-            <label for="notelepon">No Telepon</label>
+            <label for="Nomor Telepon">No Telepon</label>
             <input type="text">
           </div>
         </div>
@@ -429,7 +429,7 @@
         </div>
       </div>
     </div>
-
+    <form action="<?= base_url(); ?>/show" method="post">
     <!-- Kolom Penumpang -->
     <div class="detail-penumpang">
       <div class="logo-detail">
@@ -437,7 +437,6 @@
         <span>Detail Penumpang</span>
       </div>
 
-      <form action="<?= base_url(); ?> MetodebayarControl/save " method="post">
         <div class="row-1">
           <div class="sub1-row1">
             <label for="titel">Titel</label>
@@ -459,7 +458,7 @@
         <div class="row-2">
           <div class="sub-row2">
             <label for="nik">NIK</label>
-            <input type="text">
+            <input type="text" name="nik">
             <p>Isi sesuai KTP/KK</p>
           </div>
         </div>
@@ -467,29 +466,21 @@
         <div class="row-3">
           <div class="sub1-row3">
             <label for="kodeNegara">Kode Negara</label>
-            <input type="text">
+            <input type="text" value="+62(Indonesia)">
           </div>
 
           <div class="sub2-row3">
             <label for="noTelepon">No Telepon</label>
-            <input type="text">
+            <input type="text" name="noTelepon">
           </div>
         </div>
-      </form>
-      <!-- <form action="<?= base_url(); ?>/show" method="post">
-        <input type="text" name="id_harga" id="id_harga" value="<?= $this->data['tampil'][0]['id_harga']; ?>" hidden>
-        <button class="submit" type="submit">Lanjut Ke Pembayaran</button>
-      </form> -->
+      
 
-    </div>
-    <form action="<?= base_url(); ?>/show" method="post">
+      </div>
+      
       <input type="text" name="id_harga" id="id_harga" value="<?= $this->data['tampil'][0]['id_harga']; ?>" hidden>
       <button class="submit" type="submit">Lanjut Ke Pembayaran</button>
     </form>
-    <!-- </div>
-  <a href="MetodeBayarController">
-    <input type="submit" value="Submit">
-  </a> -->
 
 </body>
 

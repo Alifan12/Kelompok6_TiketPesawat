@@ -424,12 +424,13 @@
         
         <input class="gambar2" type="image" src="/gambar/clipboard.png" onClick="window.location.href='/Homepembatalan'" alt="submit">
         
+        <input type="text" name="username" id="username" value="<?= $username ?>" hidden>
         <a href="Carimaskapi"> <button class="sub-menu">Pesan Tiket</button></a>
+        
         <form action="<?= base_url(); ?>/getUsername" method="post">
           <input type="text" name="username" id="username" value="<?= $username ?>" hidden>
           <b href="Homepembatalan/tampil"><button class="sub-menu2">pesanan saya</button></b>
         </form>
-        <!-- <a href="Homepembatalan"><button class="sub-menu">pesanan saya</button></a> -->
       </div>
 
     </div>

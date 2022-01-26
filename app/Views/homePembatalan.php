@@ -323,7 +323,7 @@
         <div class="keberangkatan">
           <table>
             <tr>
-              <td>2 Dewasa</td>
+              <td> Dewasa</td>
               <td><img src="/gambar/homePembatalan/line.png" width="18px"></td>
               <td> <?= date_format($date1, 'l,d F Y'); ?></td>
               <td><img src="/gambar/DetailPemesan/record.png" width="5px"></td>

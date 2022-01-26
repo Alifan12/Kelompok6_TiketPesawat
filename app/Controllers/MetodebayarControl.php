@@ -1,11 +1,14 @@
 <?php
 
 namespace App\Controllers;
+use App\Models\transaksiModel;
+use App\Models\transaksidetailModel;
 
 class MetodebayarControl extends BaseController
 {
     public function index()
     {
+        
         $db      = \Config\Database::connect();
         $builder = $db->table('metode_pembayaran');
         $query   = $builder->get();  // Produces: SELECT * FROM mytable
@@ -17,11 +20,51 @@ class MetodebayarControl extends BaseController
     //     $query   = $builder->get();  // Produces: SELECT * FROM mytable
     //     return view('MetodePembayaran.php');
     // }
+    public function RandomString()
+    {
+        $characters = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+        $randstring = '';
+        for ($i = 0; $i < 5; $i++) {
+            $randstring = $randstring.$characters[rand(0, strlen($characters))];
+        }
+        return $randstring;
+    }
 
     public function Show()
     {
-        $request    = \Config\Services::request();
+        //inserttransaksiModel
+        
+        $session = session();
+        $request = \Config\Services::request();
         $db      = \Config\Database::connect();
+        $model=new transaksiModel();
+        $builder1 = $db->table('transaksi');
+        helper(['form']);
+        $data1 = [
+            'id'                  => $this->RandomString(),
+            'id_account'          => $session->get('id'),
+            'id_metode_pembayaran'=>'BCA',
+            'status_pembayaran'   =>'Pending',
+        ];
+        $builder1->select('*');
+        $builder1->insert($data1);
+
+        $model=new transaksidetailModel();
+        $builder2 = $db->table('transaksi_detail');
+        helper(['form']);
+        $data2 = [
+            'id_transaksi'          => $data1['id'],
+            'id_harga_harga'        => $_POST['id_harga'],
+            'kelompok_penumpang'    =>'Dewasa',
+            'title'                 => $this->request->getVar('titel'),
+            'nama_penumpang'        => $this->request->getVar('nama_lengkap'),
+            'NIK'                   => $this->request->getVar('nik'),
+            'No_telepon'            => $this->request->getVar('noTelepon'),
+        ];
+        $builder2->select('*');
+        $builder2->insert($data2);
+
+        
         $builder = $db->table('transaksi');
         $builder->select('*');
         $builder->join('transaksi_detail', 'transaksi_detail.id_transaksi = transaksi.id');
@@ -29,7 +72,11 @@ class MetodebayarControl extends BaseController
         $builder->join('penerbangan', 'harga.id_penerbangan = penerbangan.id');
         $builder->where('id_harga', $_POST['id_harga']);
         $query = $builder->get()->getResult('array');
+        
         $data['tampil'] = $query;
+        // dd($query);
+        
+
         return view('MetodePembayaran', $data);
     }
 }

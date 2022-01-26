@@ -25,4 +25,5 @@ class Carimaskapi extends Controller
         $data = $model->cariPenerbangan($depart, $arrival, $waktu_mulai, $kelas);
         return view('pages/order', $data);
     }
+    
 }

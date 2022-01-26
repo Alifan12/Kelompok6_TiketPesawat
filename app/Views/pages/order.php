@@ -100,7 +100,7 @@
         </div>
 
         <form action="<?= base_url(); ?>/PDD" method="post">
-          <input type="text" name="id_harga" id="id_harga" value="<?= $value['id_harga'] ?>" hidden>
+          <input type="text" name="harga_id" id="id_harga" value="<?= $value['id_harga'] ?>" hidden>
           <button class="kol7" type="submit">Pilih</button>
         </form>
       </div>

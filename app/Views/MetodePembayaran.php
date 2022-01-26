@@ -40,6 +40,7 @@
         <div class="lokasi">
           <table>
             <tr>
+              
               <td><?= $this->data['tampil'][0]['kode_bandara_asal'] ?></td>
               <td><img src="/gambar/DetailPemesan/right-arrow.png" width="10px"></td>
               <td><?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?></td>
@@ -86,10 +87,26 @@
                   <h4>7800 1010 0559 1862</h4>
                 </li>
                 <li>
+                  <p>Order</p>
+                </li>
+                <li>
+                  <h4> <?= $this->data['tampil'][0]['id_transaksi'] ?></h4>
+                </li>
+                <li>
                   <p>Total Pembayaran</p>
                 </li>
                 <li>
                   <h4>IDR <?= $this->data['tampil'][0]['harga'] ?></h4>
+                </li>
+                <li>
+                <form action="<?= base_url(); ?>/Informasibayar" method="post">
+                      <div class="submit"> 
+                        <input type="text" name="metodebayar" value="<?= $this->data['tampil'][0]['id_metode_pembayaran'] ?>" hidden>
+                        <input type="text" name="status" value="<?= $this->data['tampil'][0]['status_pembayaran']='Pembayaran berhasil' ?>" hidden>
+                        <input type="text" name="id_harga" value="<?= $this->data['tampil'][0]['id_harga'] ?>" hidden>
+                      <a href="EtiketController"><button>SAYA SUDAH MEMBAYAR</button></a>
+                      </div>
+                </form>
                 </li>
               </ul>
             </div>
@@ -109,10 +126,26 @@
                   <h4>8878 8000 0899 7599</h4>
                 </li>
                 <li>
+                  <p>Order</p>
+                </li>
+                <li>
+                  <h4> <?= $this->data['tampil'][0]['id_transaksi'] ?></h4>
+                </li>
+                <li>
                   <p>Total Pembayaran</p>
                 </li>
                 <li>
                   <h4>IDR <?= $this->data['tampil'][0]['harga'] ?></h4>
+                </li>
+                <li>
+                <form action="<?= base_url(); ?>/Informasibayar" method="post">
+                      <div class="submit">
+                      <input type="text" name="metodebayar" value="<?= $this->data['tampil'][0]['id_metode_pembayaran']='BRI' ?>" hidden>
+                      <input type="text" name="status" value="<?= $this->data['tampil'][0]['status_pembayaran']='Pembayaran berhasil' ?>" hidden>
+                      <input type="text" name="id_harga" value="<?= $this->data['tampil'][0]['id_harga'] ?>" hidden>
+                      <a href="EtiketController"><button>SAYA SUDAH MEMBAYAR</button></a>
+                      </div>
+                </form>
                 </li>
               </ul>
             </div>
@@ -121,12 +154,6 @@
         </div>
       </div>
     </div>
-    <form action="<?= base_url(); ?>/Informasibayar" method="post">
-    <div class="submit">
-    <input type="text" name="id_harga" value="<?= $this->data['tampil'][0]['id_harga'] ?>" hidden>
-      <a href="EtiketController"><button>SAYA SUDAH MEMBAYAR</button></a>
-    </div>
-    </form>
   </div>
   <script>
     function menuToggleBCA() {
