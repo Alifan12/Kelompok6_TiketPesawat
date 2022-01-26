@@ -36,10 +36,16 @@ $routes->get('/HomeAcc', 'HomeAccController::index', ['filter' => 'auth']);
 $routes->post('/search', 'Carimaskapi::cari');
 $routes->post('/PDD', 'PDDController::Ambil');
 $routes->post('/show', 'MetodebayarControl::Show');
+<<<<<<< Updated upstream
 $routes->post('/Informasibayar','EtiketController::Show');
 $routes->post('/getUsername', 'Homepembatalan::tampil');
 $routes->post('/getRefund','Refund::gotRefund');
 $routes->post('/del','KonfirmControl::delete');
+=======
+$routes->post('/Informasibayar', 'EtiketController::Show');
+$routes->post('/getUsername', 'Homepembatalan::index');
+$routes->post('/getRefund', 'Refund::gotrefund');
+>>>>>>> Stashed changes
 
 
 /*
