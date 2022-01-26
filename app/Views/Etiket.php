@@ -288,7 +288,9 @@
         }
     </style>
 </head>
-<?php  //$this->data[0]; ?>
+<?php  //$this->data[0]; 
+?>
+
 <body>
     <nav class="navbar-menu">
         <div class="navbar">
@@ -321,26 +323,21 @@
         </div>
     </div>
     <div class="layout3">
+
         <div class="jam">
-            <p>04.00</p>
-        </div>
-        <div class="hari">
-            <p>Senin, 3 Januari 2022</p>
+            <p> <?= $this->data['tampil'][0]['waktu_berangkat'] ?></p>
         </div>
         <div class="bandara-asal">
-            <p>Jakarta (CKG)</p>
+            <p> <?= $this->data['tampil'][0]['kode_bandara_asal'] ?></p>
         </div>
         <div class="durasi">
             <br>|<br>|<br>|<br>2 jam 0 menit<br>|<br>|<br>|<br>v<br>
         </div>
         <div class="bandara-tujuan">
-            <p>Surabaya (SUB)</p>
+            <p> <?= $this->data['tampil'][0]['kode_bandara_tujuan'] ?></p>
         </div>
         <div class="jam">
-            <p>06.00</p>
-        </div>
-        <div class="hari">
-            <p>Senin, 3 Januari 2022</p>
+            <p> <?= $this->data['tampil'][0]['waktu_sampai'] ?></p>
         </div>
     </div>
     <div class="detail-penumpang">
@@ -372,7 +369,7 @@
                     <td><?= $this->data['tampil'][0]['nama_penumpang']; ?></td>
                     <td><?= $this->data['tampil'][0]['kelompok_penumpang']; ?></td>
                     <td><?= $this->data['tampil'][0]['title']; ?></td>
-                    <td>XCA980<?= $this->data['tampil'][0]['idtransaksidetail']; ?></td>
+                    <td><?= $this->data['tampil'][0]['id_transaksi']; ?></td>
                     <td>20Kg</td>
                 </tr>
         </div>
