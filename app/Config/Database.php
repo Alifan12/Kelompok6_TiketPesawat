@@ -33,13 +33,15 @@ class Database extends Config
     public $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
-        'DBDriver' => 'MySQLi',
+        'username' => 'posgres',
+        'password' => 'admin',
+        'database' => 'Swings',
+        'DBDriver' => 'Postgre',
         'DBPrefix' => '',
         'pConnect' => false,
         'DBDebug'  => (ENVIRONMENT !== 'production'),
+        'cacheOn'  => false,
+        'cacheDir' => '',
         'charset'  => 'utf8',
         'DBCollat' => 'utf8_general_ci',
         'swapPre'  => '',
@@ -47,7 +49,7 @@ class Database extends Config
         'compress' => false,
         'strictOn' => false,
         'failover' => [],
-        'port'     => 3306,
+        'port'     => 5433,
     ];
 
     /**
